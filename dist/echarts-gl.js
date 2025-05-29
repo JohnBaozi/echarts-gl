@@ -54824,9 +54824,11 @@ var PointsMesh = util_graphicGL.Mesh.extend(function () {
         if (!positionNDC || positionNDC.length / 2 !== geometry.vertexCount) {
             positionNDC = this._positionNDC = new Float32Array(geometry.vertexCount * 2);
         }
+        ////// --- new1：通过这里，将positionNDC信息放出来，实现三维坐标转为二维坐标
+        // console.log('PointsMesh.js ==> updateNDCPosition | api', api);
         api.getPositionNDC = function () {
-            return positionNDC;
-        };
+            return [].concat(...positionNDC);
+        }
 
         var pos = PointsMesh_vec4.create();
         for (var i = 0; i < geometry.vertexCount; i++) {
@@ -55532,6 +55534,7 @@ PointsBuilder.prototype = {
     _toggleStatus: function (status, seriesModel, ecModel, api, payload) {
         var data = seriesModel.getData();
         var dataIndex = util_retrieve.queryDataIndex(data, payload);
+        ////// --- new2：这里原本代码有问题，会导致报错，致使_positionNDC不更新
         var _tempArr = this._pointsBuilderList;
         var isHighlight = status === 'highlight';
         if (dataIndex != null) {

@@ -98,9 +98,11 @@ var PointsMesh = graphicGL.Mesh.extend(function () {
         if (!positionNDC || positionNDC.length / 2 !== geometry.vertexCount) {
             positionNDC = this._positionNDC = new Float32Array(geometry.vertexCount * 2);
         }
+        ////// --- new1：通过这里，将positionNDC信息放出来，实现三维坐标转为二维坐标
+        // console.log('PointsMesh.js ==> updateNDCPosition | api', api);
         api.getPositionNDC = function () {
-            return positionNDC;
-        };
+            return [].concat(...positionNDC);
+        }
 
         var pos = vec4.create();
         for (var i = 0; i < geometry.vertexCount; i++) {

@@ -100,6 +100,7 @@ export default echarts.ChartView.extend({
     _toggleStatus: function (status, seriesModel, ecModel, api, payload) {
         var data = seriesModel.getData();
         var dataIndex = retrieve.queryDataIndex(data, payload);
+        ////// --- new2：这里原本代码有问题，会导致报错，致使_positionNDC不更新
         var _tempArr = this._pointsBuilderList;
         var isHighlight = status === 'highlight';
         if (dataIndex != null) {
