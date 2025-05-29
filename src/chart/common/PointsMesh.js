@@ -98,6 +98,9 @@ var PointsMesh = graphicGL.Mesh.extend(function () {
         if (!positionNDC || positionNDC.length / 2 !== geometry.vertexCount) {
             positionNDC = this._positionNDC = new Float32Array(geometry.vertexCount * 2);
         }
+        api.getPositionNDC = function () {
+            return positionNDC;
+        };
 
         var pos = vec4.create();
         for (var i = 0; i < geometry.vertexCount; i++) {

@@ -100,12 +100,12 @@ export default echarts.ChartView.extend({
     _toggleStatus: function (status, seriesModel, ecModel, api, payload) {
         var data = seriesModel.getData();
         var dataIndex = retrieve.queryDataIndex(data, payload);
-
+        var _tempArr = this._pointsBuilderList;
         var isHighlight = status === 'highlight';
         if (dataIndex != null) {
             echarts.util.each(format.normalizeToArray(dataIndex), function (dataIdx) {
-                for (var i = 0; i < this._pointsBuilderList.length; i++) {
-                    var pointsBuilder = this._pointsBuilderList[i];
+                for (var i = 0; i < _tempArr.length; i++) {
+                    var pointsBuilder = _tempArr[i];
                     isHighlight ? pointsBuilder.highlight(data, dataIdx) : pointsBuilder.downplay(data, dataIdx);
                 }
             }, this);
@@ -113,8 +113,8 @@ export default echarts.ChartView.extend({
         else {
             // PENDING, OPTIMIZE
             data.each(function (dataIdx) {
-                for (var i = 0; i < this._pointsBuilderList.length; i++) {
-                    var pointsBuilder = this._pointsBuilderList[i];
+                for (var i = 0; i < _tempArr.length; i++) {
+                    var pointsBuilder = _tempArr[i];
                     isHighlight ? pointsBuilder.highlight(data, dataIdx) : pointsBuilder.downplay(data, dataIdx);
                 }
             });
