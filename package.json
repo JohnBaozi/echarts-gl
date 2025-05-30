@@ -59,5 +59,10 @@
     "echarts-gl",
     "fixShowTip"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "browserslist": [
+    "chrome 60",
+    "firefox 60",
+    "ie 11"
+  ]
 }

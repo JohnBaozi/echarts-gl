@@ -7,8 +7,8 @@
 		exports["echarts-gl"] = factory(require("echarts"));
 	else
 		root["echarts-gl"] = factory(root["echarts"]);
-})(self, (__WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__) => {
-return /******/ (() => { // webpackBootstrap
+})(self, function(__WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__) {
+return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -16,7 +16,7 @@ return /******/ (() => { // webpackBootstrap
 /*!**************************!*\
   !*** external "echarts" ***!
   \**************************/
-/***/ ((module) => {
+/***/ (function(module) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__;
 
@@ -50,7 +50,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -59,12 +59,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__;
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
-(() => {
+!function() {
 /*!*****************************************!*\
   !*** ./src/export/all.js + 343 modules ***!
   \*****************************************/
@@ -171,7 +171,7 @@ function extendWithPropList(target, source, propList) {
  * @alias clay.core.mixin.extend
  * @mixin
  */
-/* harmony default export */ const mixin_extend = ({
+/* harmony default export */ var mixin_extend = ({
 
     extend: derive,
 
@@ -382,7 +382,7 @@ var notifier = {
     }
 };
 
-/* harmony default export */ const mixin_notifier = (notifier);
+/* harmony default export */ var mixin_notifier = (notifier);
 ;// ./node_modules/claygl/src/core/util.js
 var guid = 0;
 
@@ -586,7 +586,7 @@ var util = {
     }
 };
 
-/* harmony default export */ const core_util = (util);
+/* harmony default export */ var core_util = (util);
 
 ;// ./node_modules/claygl/src/core/Base.js
 
@@ -615,7 +615,7 @@ Base.__initializers__ = [
 core_util.extend(Base, mixin_extend);
 core_util.extend(Base.prototype, mixin_notifier);
 
-/* harmony default export */ const core_Base = (Base);
+/* harmony default export */ var core_Base = (Base);
 
 ;// ./node_modules/claygl/src/core/GLInfo.js
 var EXTENSION_LIST = [
@@ -681,14 +681,14 @@ function GLInfo(_gl) {
     }
 }
 
-/* harmony default export */ const core_GLInfo = (GLInfo);
+/* harmony default export */ var core_GLInfo = (GLInfo);
 
 ;// ./node_modules/claygl/src/core/glenum.js
 /**
  * @namespace clay.core.glenum
  * @see http://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14
  */
-/* harmony default export */ const glenum = ({
+/* harmony default export */ var glenum = ({
     /* ClearBufferMask */
     DEPTH_BUFFER_BIT               : 0x00000100,
     STENCIL_BUFFER_BIT             : 0x00000400,
@@ -1143,7 +1143,7 @@ function get(options) {
     xhr.send(null);
 }
 
-/* harmony default export */ const request = ({
+/* harmony default export */ var request = ({
     get: get
 });
 
@@ -1224,7 +1224,7 @@ vendor.removeEventListener = function (dom, type, func) {
     dom.removeEventListener(type, func);
 };
 
-/* harmony default export */ const core_vendor = (vendor);
+/* harmony default export */ var core_vendor = (vendor);
 
 ;// ./node_modules/claygl/src/core/LinkedList.js
 /**
@@ -1484,7 +1484,7 @@ LinkedList.Entry = function (val) {
     this.prev = null;
 };
 
-/* harmony default export */ const core_LinkedList = (LinkedList);
+/* harmony default export */ var core_LinkedList = (LinkedList);
 
 ;// ./node_modules/claygl/src/core/LRU.js
 
@@ -1567,7 +1567,7 @@ LRU.prototype.clear = function () {
     this._map = {};
 };
 
-/* harmony default export */ const core_LRU = (LRU);
+/* harmony default export */ var core_LRU = (LRU);
 
 ;// ./node_modules/claygl/src/core/color.js
 /**
@@ -2115,7 +2115,7 @@ colorUtil.stringify = function (arrColor, type) {
 
 
 
-/* harmony default export */ const color = (colorUtil);
+/* harmony default export */ var color = (colorUtil);
 ;// ./node_modules/claygl/src/Material.js
 
 
@@ -2615,7 +2615,7 @@ var Material = core_Base.extend(function () {
     }
 });
 
-/* harmony default export */ const src_Material = (Material);
+/* harmony default export */ var src_Material = (Material);
 
 ;// ./node_modules/claygl/src/glmatrix/common.js
 
@@ -3146,7 +3146,7 @@ vec2.forEach = (function() {
     };
 })();
 
-/* harmony default export */ const glmatrix_vec2 = (vec2);
+/* harmony default export */ var glmatrix_vec2 = (vec2);
 ;// ./node_modules/claygl/src/math/Vector2.js
 
 
@@ -3876,7 +3876,7 @@ Vector2.transformMat4 = function(out, a, m) {
     return out;
 };
 
-/* harmony default export */ const math_Vector2 = (Vector2);
+/* harmony default export */ var math_Vector2 = (Vector2);
 
 ;// ./node_modules/claygl/src/gpu/GLProgram.js
 
@@ -4216,7 +4216,7 @@ var GLProgram = core_Base.extend({
     }
 });
 
-/* harmony default export */ const gpu_GLProgram = (GLProgram);
+/* harmony default export */ var gpu_GLProgram = (GLProgram);
 ;// ./node_modules/claygl/src/gpu/ProgramManager.js
 
 
@@ -4404,7 +4404,7 @@ ProgramManager.prototype.getProgram = function (renderable, material, scene) {
     return program;
 };
 
-/* harmony default export */ const gpu_ProgramManager = (ProgramManager);
+/* harmony default export */ var gpu_ProgramManager = (ProgramManager);
 ;// ./node_modules/claygl/src/Shader.js
 /**
  * Mainly do the parse and compile of shader string
@@ -5085,10 +5085,10 @@ Shader.source = function (name) {
     return obj;
 };
 
-/* harmony default export */ const src_Shader = (Shader);
+/* harmony default export */ var src_Shader = (Shader);
 
 ;// ./node_modules/claygl/src/shader/source/prez.glsl.js
-/* harmony default export */ const prez_glsl = ("@export clay.prez.vertex\nuniform mat4 WVP : WORLDVIEWPROJECTION;\nattribute vec3 pos : POSITION;\nattribute vec2 uv : TEXCOORD_0;\nuniform vec2 uvRepeat : [1.0, 1.0];\nuniform vec2 uvOffset : [0.0, 0.0];\n@import clay.chunk.skinning_header\n@import clay.chunk.instancing_header\nvarying vec2 v_Texcoord;\nvoid main()\n{\n vec4 P = vec4(pos, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n gl_Position = WVP * P;\n v_Texcoord = uv * uvRepeat + uvOffset;\n}\n@end\n@export clay.prez.fragment\nuniform sampler2D alphaMap;\nuniform float alphaCutoff: 0.0;\nvarying vec2 v_Texcoord;\nvoid main()\n{\n if (alphaCutoff > 0.0) {\n if (texture2D(alphaMap, v_Texcoord).a <= alphaCutoff) {\n discard;\n }\n }\n gl_FragColor = vec4(0.0,0.0,0.0,1.0);\n}\n@end");
+/* harmony default export */ var prez_glsl = ("@export clay.prez.vertex\nuniform mat4 WVP : WORLDVIEWPROJECTION;\nattribute vec3 pos : POSITION;\nattribute vec2 uv : TEXCOORD_0;\nuniform vec2 uvRepeat : [1.0, 1.0];\nuniform vec2 uvOffset : [0.0, 0.0];\n@import clay.chunk.skinning_header\n@import clay.chunk.instancing_header\nvarying vec2 v_Texcoord;\nvoid main()\n{\n vec4 P = vec4(pos, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n gl_Position = WVP * P;\n v_Texcoord = uv * uvRepeat + uvOffset;\n}\n@end\n@export clay.prez.fragment\nuniform sampler2D alphaMap;\nuniform float alphaCutoff: 0.0;\nvarying vec2 v_Texcoord;\nvoid main()\n{\n if (alphaCutoff > 0.0) {\n if (texture2D(alphaMap, v_Texcoord).a <= alphaCutoff) {\n discard;\n }\n }\n gl_FragColor = vec4(0.0,0.0,0.0,1.0);\n}\n@end");
 
 ;// ./node_modules/claygl/src/glmatrix/mat4.js
 
@@ -6034,7 +6034,7 @@ mat4.frob = function (a) {
     return(Math.sqrt(Math.pow(a[0], 2) + Math.pow(a[1], 2) + Math.pow(a[2], 2) + Math.pow(a[3], 2) + Math.pow(a[4], 2) + Math.pow(a[5], 2) + Math.pow(a[6], 2) + Math.pow(a[7], 2) + Math.pow(a[8], 2) + Math.pow(a[9], 2) + Math.pow(a[10], 2) + Math.pow(a[11], 2) + Math.pow(a[12], 2) + Math.pow(a[13], 2) + Math.pow(a[14], 2) + Math.pow(a[15], 2) ))
 };
 
-/* harmony default export */ const glmatrix_mat4 = (mat4);
+/* harmony default export */ var glmatrix_mat4 = (mat4);
 ;// ./node_modules/claygl/src/glmatrix/vec3.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
@@ -6686,7 +6686,7 @@ vec3.angle = function(a, b) {
     }
 };
 
-/* harmony default export */ const glmatrix_vec3 = (vec3);
+/* harmony default export */ var glmatrix_vec3 = (vec3);
 ;// ./node_modules/claygl/src/Renderer.js
 // TODO Resources like shader, texture, geometry reference management
 // Trace and find out which shader, texture, geometry can be destroyed
@@ -8095,7 +8095,7 @@ Renderer.DEPTH_BUFFER_BIT = glenum.DEPTH_BUFFER_BIT;
  */
 Renderer.STENCIL_BUFFER_BIT = glenum.STENCIL_BUFFER_BIT;
 
-/* harmony default export */ const src_Renderer = (Renderer);
+/* harmony default export */ var src_Renderer = (Renderer);
 
 ;// ./node_modules/claygl/src/math/Vector3.js
 
@@ -9097,7 +9097,7 @@ Object.defineProperties(Vector3, {
     }
 });
 
-/* harmony default export */ const math_Vector3 = (Vector3);
+/* harmony default export */ var math_Vector3 = (Vector3);
 
 ;// ./node_modules/claygl/src/math/Ray.js
 
@@ -9418,7 +9418,7 @@ Ray.prototype = {
     }
 };
 
-/* harmony default export */ const math_Ray = (Ray);
+/* harmony default export */ var math_Ray = (Ray);
 
 ;// ./node_modules/claygl/src/glmatrix/vec4.js
 
@@ -9950,7 +9950,7 @@ vec4.forEach = (function() {
     };
 })();
 
-/* harmony default export */ const glmatrix_vec4 = (vec4);
+/* harmony default export */ var glmatrix_vec4 = (vec4);
 ;// ./node_modules/claygl/src/glmatrix/mat3.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
@@ -10430,7 +10430,7 @@ mat3.frob = function (a) {
 };
 
 
-/* harmony default export */ const glmatrix_mat3 = (mat3);
+/* harmony default export */ var glmatrix_mat3 = (mat3);
 ;// ./node_modules/claygl/src/glmatrix/quat.js
 
 
@@ -10956,7 +10956,7 @@ quat.fromMat3 = function(out, m) {
     return out;
 };
 
-/* harmony default export */ const glmatrix_quat = (quat);
+/* harmony default export */ var glmatrix_quat = (quat);
 ;// ./node_modules/claygl/src/math/Matrix4.js
 
 
@@ -11676,7 +11676,7 @@ Matrix4.translate = function(out, a, v) {
     return out;
 };
 
-/* harmony default export */ const math_Matrix4 = (Matrix4);
+/* harmony default export */ var math_Matrix4 = (Matrix4);
 
 ;// ./node_modules/claygl/src/math/Quaternion.js
 
@@ -12452,7 +12452,7 @@ Quaternion.fromEuler = function (out, v, order) {
     }
 };
 
-/* harmony default export */ const math_Quaternion = (Quaternion);
+/* harmony default export */ var math_Quaternion = (Quaternion);
 
 ;// ./node_modules/claygl/src/math/BoundingBox.js
 
@@ -12764,7 +12764,7 @@ BoundingBox.prototype = {
     }
 };
 
-/* harmony default export */ const math_BoundingBox = (BoundingBox);
+/* harmony default export */ var math_BoundingBox = (BoundingBox);
 
 ;// ./node_modules/claygl/src/Node.js
 
@@ -13432,7 +13432,7 @@ var Node = core_Base.extend(/** @lends clay.Node# */{
     })()
 });
 
-/* harmony default export */ const src_Node = (Node);
+/* harmony default export */ var src_Node = (Node);
 
 ;// ./node_modules/claygl/src/Renderable.js
 
@@ -13645,7 +13645,7 @@ Renderable.CW = glenum.CW;
  */
 Renderable.CCW = glenum.CCW;
 
-/* harmony default export */ const src_Renderable = (Renderable);
+/* harmony default export */ var src_Renderable = (Renderable);
 
 ;// ./node_modules/claygl/src/picking/RayPicking.js
 
@@ -13908,7 +13908,7 @@ RayPicking.Intersection = function (point, pointWorld, target, triangle, triangl
     this.distance = distance;
 };
 
-/* harmony default export */ const picking_RayPicking = (RayPicking);
+/* harmony default export */ var picking_RayPicking = (RayPicking);
 
 ;// ./node_modules/claygl/src/core/Cache.js
 var DIRTY_PREFIX = '__dt__';
@@ -14019,7 +14019,7 @@ Cache.prototype = {
 
 Cache.prototype.constructor = Cache;
 
-/* harmony default export */ const core_Cache = (Cache);
+/* harmony default export */ var core_Cache = (Cache);
 
 ;// ./node_modules/claygl/src/Texture.js
 /**
@@ -14436,7 +14436,7 @@ Texture.CLAMP_TO_EDGE = glenum.CLAMP_TO_EDGE;
 Texture.MIRRORED_REPEAT = glenum.MIRRORED_REPEAT;
 
 
-/* harmony default export */ const src_Texture = (Texture);
+/* harmony default export */ var src_Texture = (Texture);
 
 ;// ./node_modules/claygl/src/Mesh.js
 
@@ -14501,7 +14501,7 @@ Mesh.FRONT_AND_BACK = glenum.FRONT_AND_BACK;
 Mesh.CW = glenum.CW;
 Mesh.CCW = glenum.CCW;
 
-/* harmony default export */ const src_Mesh = (Mesh);
+/* harmony default export */ var src_Mesh = (Mesh);
 
 ;// ./node_modules/claygl/src/math/util.js
 var mathUtil = {};
@@ -14526,7 +14526,7 @@ mathUtil.nearestPowerOfTwo = function (value) {
     return Math.pow( 2, Math.round( Math.log( value ) / Math.LN2 ) );
 };
 
-/* harmony default export */ const math_util = (mathUtil);
+/* harmony default export */ var math_util = (mathUtil);
 
 ;// ./node_modules/claygl/src/Texture2D.js
 
@@ -14780,7 +14780,7 @@ Object.defineProperty(Texture2D.prototype, 'height', {
     }
 });
 
-/* harmony default export */ const src_Texture2D = (Texture2D);
+/* harmony default export */ var src_Texture2D = (Texture2D);
 
 ;// ./node_modules/claygl/src/GeometryBase.js
 
@@ -15450,7 +15450,7 @@ GeometryBase.IndicesBuffer = IndicesBuffer;
 
 GeometryBase.Attribute = Attribute;
 
-/* harmony default export */ const src_GeometryBase = (GeometryBase);
+/* harmony default export */ var src_GeometryBase = (GeometryBase);
 
 ;// ./node_modules/claygl/src/Geometry.js
 
@@ -16024,10 +16024,10 @@ Geometry.IndicesBuffer = src_GeometryBase.IndicesBuffer;
 
 Geometry.Attribute = Geometry_Attribute;
 
-/* harmony default export */ const src_Geometry = (Geometry);
+/* harmony default export */ var src_Geometry = (Geometry);
 
 ;// ./node_modules/claygl/src/shader/source/header/calcAmbientSHLight.glsl.js
-/* harmony default export */ const calcAmbientSHLight_glsl = ("vec3 calcAmbientSHLight(int idx, vec3 N) {\n int offset = 9 * idx;\n return ambientSHLightCoefficients[0]\n + ambientSHLightCoefficients[1] * N.x\n + ambientSHLightCoefficients[2] * N.y\n + ambientSHLightCoefficients[3] * N.z\n + ambientSHLightCoefficients[4] * N.x * N.z\n + ambientSHLightCoefficients[5] * N.z * N.y\n + ambientSHLightCoefficients[6] * N.y * N.x\n + ambientSHLightCoefficients[7] * (3.0 * N.z * N.z - 1.0)\n + ambientSHLightCoefficients[8] * (N.x * N.x - N.y * N.y);\n}");
+/* harmony default export */ var calcAmbientSHLight_glsl = ("vec3 calcAmbientSHLight(int idx, vec3 N) {\n int offset = 9 * idx;\n return ambientSHLightCoefficients[0]\n + ambientSHLightCoefficients[1] * N.x\n + ambientSHLightCoefficients[2] * N.y\n + ambientSHLightCoefficients[3] * N.z\n + ambientSHLightCoefficients[4] * N.x * N.z\n + ambientSHLightCoefficients[5] * N.z * N.y\n + ambientSHLightCoefficients[6] * N.y * N.x\n + ambientSHLightCoefficients[7] * (3.0 * N.z * N.z - 1.0)\n + ambientSHLightCoefficients[8] * (N.x * N.x - N.y * N.y);\n}");
 
 ;// ./node_modules/claygl/src/shader/source/header/light.js
 
@@ -16037,7 +16037,7 @@ var uniformFloatPrefix = 'uniform float ';
 var exportHeaderPrefix = '@export clay.header.';
 var exportEnd = '@end';
 var unconfigurable = ':unconfigurable;';
-/* harmony default export */ const light = ([
+/* harmony default export */ var light = ([
     exportHeaderPrefix + 'directional_light',
     uniformVec3Prefix + 'directionalLightDirection[DIRECTIONAL_LIGHT_COUNT]' + unconfigurable,
     uniformVec3Prefix + 'directionalLightColor[DIRECTIONAL_LIGHT_COUNT]' + unconfigurable,
@@ -16147,7 +16147,7 @@ var Light = src_Node.extend(function(){
     }
 });
 
-/* harmony default export */ const src_Light = (Light);
+/* harmony default export */ var src_Light = (Light);
 
 ;// ./node_modules/claygl/src/math/Plane.js
 
@@ -16316,7 +16316,7 @@ Plane.prototype = {
     }
 };
 
-/* harmony default export */ const math_Plane = (Plane);
+/* harmony default export */ var math_Plane = (Plane);
 
 ;// ./node_modules/claygl/src/math/Frustum.js
 
@@ -16501,7 +16501,7 @@ Frustum.prototype = {
         };
     }) ()
 };
-/* harmony default export */ const math_Frustum = (Frustum);
+/* harmony default export */ var math_Frustum = (Frustum);
 
 ;// ./node_modules/claygl/src/Camera.js
 
@@ -16627,7 +16627,7 @@ var Camera = src_Node.extend(function () {
      */
 });
 
-/* harmony default export */ const src_Camera = (Camera);
+/* harmony default export */ var src_Camera = (Camera);
 
 ;// ./node_modules/claygl/src/Scene.js
 
@@ -17186,7 +17186,7 @@ function lightSortFunc(a, b) {
     }
 }
 
-/* harmony default export */ const src_Scene = (Scene);
+/* harmony default export */ var src_Scene = (Scene);
 
 ;// ./node_modules/zrender/lib/core/LRU.js
 var Entry = (function () {
@@ -17298,7 +17298,7 @@ var LRU_LRU = (function () {
     };
     return LRU;
 }());
-/* harmony default export */ const lib_core_LRU = (LRU_LRU);
+/* harmony default export */ var lib_core_LRU = (LRU_LRU);
 
 ;// ./node_modules/claygl/src/TextureCube.js
 
@@ -17570,7 +17570,7 @@ function isImageRenderable(image) {
     return image.width > 0 && image.height > 0;
 }
 
-/* harmony default export */ const src_TextureCube = (TextureCube);
+/* harmony default export */ var src_TextureCube = (TextureCube);
 
 ;// ./node_modules/claygl/src/camera/Perspective.js
 
@@ -17630,7 +17630,7 @@ var Perspective = src_Camera.extend(/** @lends clay.camera.Perspective# */{
     }
 });
 
-/* harmony default export */ const camera_Perspective = (Perspective);
+/* harmony default export */ var camera_Perspective = (Perspective);
 
 ;// ./node_modules/claygl/src/FrameBuffer.js
 
@@ -18024,7 +18024,7 @@ FrameBuffer.COLOR_ATTACHMENT0 = GL_COLOR_ATTACHMENT0;
 FrameBuffer.STENCIL_ATTACHMENT = glenum.STENCIL_ATTACHMENT;
 FrameBuffer.DEPTH_STENCIL_ATTACHMENT = glenum.DEPTH_STENCIL_ATTACHMENT;
 
-/* harmony default export */ const src_FrameBuffer = (FrameBuffer);
+/* harmony default export */ var src_FrameBuffer = (FrameBuffer);
 
 ;// ./node_modules/claygl/src/prePass/EnvironmentMap.js
 
@@ -18169,7 +18169,7 @@ var EnvironmentMapPass = core_Base.extend(function() {
     }
 });
 
-/* harmony default export */ const EnvironmentMap = (EnvironmentMapPass);
+/* harmony default export */ var EnvironmentMap = (EnvironmentMapPass);
 
 ;// ./node_modules/claygl/src/geometry/Plane.js
 
@@ -18243,7 +18243,7 @@ var Plane_Plane = src_Geometry.extend(
     }
 });
 
-/* harmony default export */ const geometry_Plane = (Plane_Plane);
+/* harmony default export */ var geometry_Plane = (Plane_Plane);
 
 ;// ./node_modules/claygl/src/geometry/Cube.js
 
@@ -18383,10 +18383,10 @@ function createPlane(pos, widthSegments, heightSegments) {
     return plane;
 }
 
-/* harmony default export */ const geometry_Cube = (Cube);
+/* harmony default export */ var geometry_Cube = (Cube);
 
 ;// ./node_modules/claygl/src/shader/source/skybox.glsl.js
-/* harmony default export */ const skybox_glsl = ("@export clay.skybox.vertex\n#define SHADER_NAME skybox\nuniform mat4 world : WORLD;\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nvarying vec3 v_WorldPosition;\nvoid main()\n{\n v_WorldPosition = (world * vec4(position, 1.0)).xyz;\n gl_Position = worldViewProjection * vec4(position, 1.0);\n}\n@end\n@export clay.skybox.fragment\n#define PI 3.1415926\nuniform mat4 viewInverse : VIEWINVERSE;\n#ifdef EQUIRECTANGULAR\nuniform sampler2D environmentMap;\n#else\nuniform samplerCube environmentMap;\n#endif\nuniform float lod: 0.0;\nvarying vec3 v_WorldPosition;\n@import clay.util.rgbm\n@import clay.util.srgb\n@import clay.util.ACES\nvoid main()\n{\n vec3 eyePos = viewInverse[3].xyz;\n vec3 V = normalize(v_WorldPosition - eyePos);\n#ifdef EQUIRECTANGULAR\n float phi = acos(V.y);\n float theta = atan(-V.x, V.z) + PI * 0.5;\n vec2 uv = vec2(theta / 2.0 / PI, phi / PI);\n vec4 texel = decodeHDR(texture2D(environmentMap, fract(uv)));\n#else\n #if defined(LOD) || defined(SUPPORT_TEXTURE_LOD)\n vec4 texel = decodeHDR(textureCubeLodEXT(environmentMap, V, lod));\n #else\n vec4 texel = decodeHDR(textureCube(environmentMap, V));\n #endif\n#endif\n#ifdef SRGB_DECODE\n texel = sRGBToLinear(texel);\n#endif\n#ifdef TONEMAPPING\n texel.rgb = ACESToneMapping(texel.rgb);\n#endif\n#ifdef SRGB_ENCODE\n texel = linearTosRGB(texel);\n#endif\n gl_FragColor = encodeHDR(vec4(texel.rgb, 1.0));\n}\n@end");
+/* harmony default export */ var skybox_glsl = ("@export clay.skybox.vertex\n#define SHADER_NAME skybox\nuniform mat4 world : WORLD;\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nvarying vec3 v_WorldPosition;\nvoid main()\n{\n v_WorldPosition = (world * vec4(position, 1.0)).xyz;\n gl_Position = worldViewProjection * vec4(position, 1.0);\n}\n@end\n@export clay.skybox.fragment\n#define PI 3.1415926\nuniform mat4 viewInverse : VIEWINVERSE;\n#ifdef EQUIRECTANGULAR\nuniform sampler2D environmentMap;\n#else\nuniform samplerCube environmentMap;\n#endif\nuniform float lod: 0.0;\nvarying vec3 v_WorldPosition;\n@import clay.util.rgbm\n@import clay.util.srgb\n@import clay.util.ACES\nvoid main()\n{\n vec3 eyePos = viewInverse[3].xyz;\n vec3 V = normalize(v_WorldPosition - eyePos);\n#ifdef EQUIRECTANGULAR\n float phi = acos(V.y);\n float theta = atan(-V.x, V.z) + PI * 0.5;\n vec2 uv = vec2(theta / 2.0 / PI, phi / PI);\n vec4 texel = decodeHDR(texture2D(environmentMap, fract(uv)));\n#else\n #if defined(LOD) || defined(SUPPORT_TEXTURE_LOD)\n vec4 texel = decodeHDR(textureCubeLodEXT(environmentMap, V, lod));\n #else\n vec4 texel = decodeHDR(textureCube(environmentMap, V));\n #endif\n#endif\n#ifdef SRGB_DECODE\n texel = sRGBToLinear(texel);\n#endif\n#ifdef TONEMAPPING\n texel.rgb = ACESToneMapping(texel.rgb);\n#endif\n#ifdef SRGB_ENCODE\n texel = linearTosRGB(texel);\n#endif\n gl_FragColor = encodeHDR(vec4(texel.rgb, 1.0));\n}\n@end");
 
 ;// ./node_modules/claygl/src/plugin/Skybox.js
 // TODO Should not derived from mesh?
@@ -18538,12 +18538,12 @@ var Skybox = src_Mesh.extend(function () {
     }
 });
 
-/* harmony default export */ const plugin_Skybox = (Skybox);
+/* harmony default export */ var plugin_Skybox = (Skybox);
 
 ;// ./node_modules/claygl/src/plugin/Skydome.js
 
 
-/* harmony default export */ const Skydome = (plugin_Skybox);
+/* harmony default export */ var Skydome = (plugin_Skybox);
 ;// ./node_modules/claygl/src/util/dds.js
 
 
@@ -18700,7 +18700,7 @@ var ret = {
     }
 };
 
-/* harmony default export */ const dds = (ret);
+/* harmony default export */ var dds = (ret);
 
 ;// ./node_modules/claygl/src/util/hdr.js
 
@@ -18879,7 +18879,7 @@ var hdr_ret = {
     }
 };
 
-/* harmony default export */ const hdr = (hdr_ret);
+/* harmony default export */ var hdr = (hdr_ret);
 
 ;// ./node_modules/claygl/src/util/texture.js
 
@@ -19193,7 +19193,7 @@ var textureUtil = {
     }
 };
 
-/* harmony default export */ const util_texture = (textureUtil);
+/* harmony default export */ var util_texture = (textureUtil);
 
 ;// ./src/util/EChartsSurface.js
 /**
@@ -19372,7 +19372,7 @@ EChartsSurface.prototype = {
     }
 };
 
-/* harmony default export */ const util_EChartsSurface = (EChartsSurface);
+/* harmony default export */ var util_EChartsSurface = (EChartsSurface);
 ;// ./node_modules/claygl/src/camera/Orthographic.js
 
 /**
@@ -19439,10 +19439,10 @@ var Orthographic = src_Camera.extend(
     }
 });
 
-/* harmony default export */ const camera_Orthographic = (Orthographic);
+/* harmony default export */ var camera_Orthographic = (Orthographic);
 
 ;// ./node_modules/claygl/src/shader/source/compositor/vertex.glsl.js
-/* harmony default export */ const vertex_glsl = ("\n@export clay.compositor.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nvarying vec2 v_Texcoord;\nvoid main()\n{\n v_Texcoord = texcoord;\n gl_Position = worldViewProjection * vec4(position, 1.0);\n}\n@end");
+/* harmony default export */ var vertex_glsl = ("\n@export clay.compositor.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nvarying vec2 v_Texcoord;\nvoid main()\n{\n v_Texcoord = texcoord;\n gl_Position = worldViewProjection * vec4(position, 1.0);\n}\n@end");
 
 ;// ./node_modules/claygl/src/compositor/Pass.js
 
@@ -19648,13 +19648,13 @@ var Pass = core_Base.extend(function () {
     dispose: function (renderer) {}
 });
 
-/* harmony default export */ const compositor_Pass = (Pass);
+/* harmony default export */ var compositor_Pass = (Pass);
 
 ;// ./node_modules/claygl/src/util/shader/integrateBRDF.glsl.js
-/* harmony default export */ const integrateBRDF_glsl = ("#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\nuniform sampler2D normalDistribution;\nuniform vec2 viewportSize : [512, 256];\nconst vec3 N = vec3(0.0, 0.0, 1.0);\nconst float fSampleNumber = float(SAMPLE_NUMBER);\nvec3 importanceSampleNormal(float i, float roughness, vec3 N) {\n vec3 H = texture2D(normalDistribution, vec2(roughness, i)).rgb;\n vec3 upVector = abs(N.y) > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\n vec3 tangentX = normalize(cross(N, upVector));\n vec3 tangentZ = cross(N, tangentX);\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\n}\nfloat G_Smith(float roughness, float NoV, float NoL) {\n float k = roughness * roughness / 2.0;\n float G1V = NoV / (NoV * (1.0 - k) + k);\n float G1L = NoL / (NoL * (1.0 - k) + k);\n return G1L * G1V;\n}\nvoid main() {\n vec2 uv = gl_FragCoord.xy / viewportSize;\n float NoV = uv.x;\n float roughness = uv.y;\n vec3 V;\n V.x = sqrt(1.0 - NoV * NoV);\n V.y = 0.0;\n V.z = NoV;\n float A = 0.0;\n float B = 0.0;\n for (int i = 0; i < SAMPLE_NUMBER; i++) {\n vec3 H = importanceSampleNormal(float(i) / fSampleNumber, roughness, N);\n vec3 L = reflect(-V, H);\n float NoL = clamp(L.z, 0.0, 1.0);\n float NoH = clamp(H.z, 0.0, 1.0);\n float VoH = clamp(dot(V, H), 0.0, 1.0);\n if (NoL > 0.0) {\n float G = G_Smith(roughness, NoV, NoL);\n float G_Vis = G * VoH / (NoH * NoV);\n float Fc = pow(1.0 - VoH, 5.0);\n A += (1.0 - Fc) * G_Vis;\n B += Fc * G_Vis;\n }\n }\n gl_FragColor = vec4(vec2(A, B) / fSampleNumber, 0.0, 1.0);\n}\n");
+/* harmony default export */ var integrateBRDF_glsl = ("#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\nuniform sampler2D normalDistribution;\nuniform vec2 viewportSize : [512, 256];\nconst vec3 N = vec3(0.0, 0.0, 1.0);\nconst float fSampleNumber = float(SAMPLE_NUMBER);\nvec3 importanceSampleNormal(float i, float roughness, vec3 N) {\n vec3 H = texture2D(normalDistribution, vec2(roughness, i)).rgb;\n vec3 upVector = abs(N.y) > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\n vec3 tangentX = normalize(cross(N, upVector));\n vec3 tangentZ = cross(N, tangentX);\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\n}\nfloat G_Smith(float roughness, float NoV, float NoL) {\n float k = roughness * roughness / 2.0;\n float G1V = NoV / (NoV * (1.0 - k) + k);\n float G1L = NoL / (NoL * (1.0 - k) + k);\n return G1L * G1V;\n}\nvoid main() {\n vec2 uv = gl_FragCoord.xy / viewportSize;\n float NoV = uv.x;\n float roughness = uv.y;\n vec3 V;\n V.x = sqrt(1.0 - NoV * NoV);\n V.y = 0.0;\n V.z = NoV;\n float A = 0.0;\n float B = 0.0;\n for (int i = 0; i < SAMPLE_NUMBER; i++) {\n vec3 H = importanceSampleNormal(float(i) / fSampleNumber, roughness, N);\n vec3 L = reflect(-V, H);\n float NoL = clamp(L.z, 0.0, 1.0);\n float NoH = clamp(H.z, 0.0, 1.0);\n float VoH = clamp(dot(V, H), 0.0, 1.0);\n if (NoL > 0.0) {\n float G = G_Smith(roughness, NoV, NoL);\n float G_Vis = G * VoH / (NoH * NoV);\n float Fc = pow(1.0 - VoH, 5.0);\n A += (1.0 - Fc) * G_Vis;\n B += Fc * G_Vis;\n }\n }\n gl_FragColor = vec4(vec2(A, B) / fSampleNumber, 0.0, 1.0);\n}\n");
 
 ;// ./node_modules/claygl/src/util/shader/prefilter.glsl.js
-/* harmony default export */ const prefilter_glsl = ("#define SHADER_NAME prefilter\n#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\nuniform mat4 viewInverse : VIEWINVERSE;\nuniform samplerCube environmentMap;\nuniform sampler2D normalDistribution;\nuniform float roughness : 0.5;\nvarying vec2 v_Texcoord;\nvarying vec3 v_WorldPosition;\n@import clay.util.rgbm\nvec3 importanceSampleNormal(float i, float roughness, vec3 N) {\n vec3 H = texture2D(normalDistribution, vec2(roughness, i)).rgb;\n vec3 upVector = abs(N.y) > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\n vec3 tangentX = normalize(cross(N, upVector));\n vec3 tangentZ = cross(N, tangentX);\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\n}\nvoid main() {\n vec3 eyePos = viewInverse[3].xyz;\n vec3 V = normalize(v_WorldPosition - eyePos);\n vec3 N = V;\n vec3 prefilteredColor = vec3(0.0);\n float totalWeight = 0.0;\n float fMaxSampleNumber = float(SAMPLE_NUMBER);\n for (int i = 0; i < SAMPLE_NUMBER; i++) {\n vec3 H = importanceSampleNormal(float(i) / fMaxSampleNumber, roughness, N);\n vec3 L = reflect(-V, H);\n float NoL = clamp(dot(N, L), 0.0, 1.0);\n if (NoL > 0.0) {\n prefilteredColor += decodeHDR(textureCube(environmentMap, L)).rgb * NoL;\n totalWeight += NoL;\n }\n }\n gl_FragColor = encodeHDR(vec4(prefilteredColor / totalWeight, 1.0));\n}\n");
+/* harmony default export */ var prefilter_glsl = ("#define SHADER_NAME prefilter\n#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\nuniform mat4 viewInverse : VIEWINVERSE;\nuniform samplerCube environmentMap;\nuniform sampler2D normalDistribution;\nuniform float roughness : 0.5;\nvarying vec2 v_Texcoord;\nvarying vec3 v_WorldPosition;\n@import clay.util.rgbm\nvec3 importanceSampleNormal(float i, float roughness, vec3 N) {\n vec3 H = texture2D(normalDistribution, vec2(roughness, i)).rgb;\n vec3 upVector = abs(N.y) > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\n vec3 tangentX = normalize(cross(N, upVector));\n vec3 tangentZ = cross(N, tangentX);\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\n}\nvoid main() {\n vec3 eyePos = viewInverse[3].xyz;\n vec3 V = normalize(v_WorldPosition - eyePos);\n vec3 N = V;\n vec3 prefilteredColor = vec3(0.0);\n float totalWeight = 0.0;\n float fMaxSampleNumber = float(SAMPLE_NUMBER);\n for (int i = 0; i < SAMPLE_NUMBER; i++) {\n vec3 H = importanceSampleNormal(float(i) / fMaxSampleNumber, roughness, N);\n vec3 L = reflect(-V, H);\n float NoL = clamp(dot(N, L), 0.0, 1.0);\n if (NoL > 0.0) {\n prefilteredColor += decodeHDR(textureCube(environmentMap, L)).rgb * NoL;\n totalWeight += NoL;\n }\n }\n gl_FragColor = encodeHDR(vec4(prefilteredColor / totalWeight, 1.0));\n}\n");
 
 ;// ./node_modules/claygl/src/util/cubemap.js
 // Cubemap prefilter utility
@@ -19943,7 +19943,7 @@ cubemapUtil.generateNormalDistribution = function (roughnessLevels, sampleSize) 
     return normalDistribution;
 };
 
-/* harmony default export */ const util_cubemap = (cubemapUtil);
+/* harmony default export */ var util_cubemap = (cubemapUtil);
 
 ;// ./node_modules/claygl/src/light/AmbientCubemap.js
 // https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/AmbientCubemap/
@@ -20044,7 +20044,7 @@ var AmbientCubemapLight = src_Light.extend({
      */
 });
 
-/* harmony default export */ const AmbientCubemap = (AmbientCubemapLight);
+/* harmony default export */ var AmbientCubemap = (AmbientCubemapLight);
 
 ;// ./node_modules/claygl/src/light/AmbientSH.js
 
@@ -20101,10 +20101,10 @@ var AmbientSHLight = src_Light.extend({
      */
 });
 
-/* harmony default export */ const AmbientSH = (AmbientSHLight);
+/* harmony default export */ var AmbientSH = (AmbientSHLight);
 
 ;// ./node_modules/claygl/src/util/shader/projectEnvMap.glsl.js
-/* harmony default export */ const projectEnvMap_glsl = ("uniform samplerCube environmentMap;\nvarying vec2 v_Texcoord;\n#define TEXTURE_SIZE 16\nmat3 front = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 1.0, 0.0,\n 0.0, 0.0, 1.0\n);\nmat3 back = mat3(\n -1.0, 0.0, 0.0,\n 0.0, 1.0, 0.0,\n 0.0, 0.0, -1.0\n);\nmat3 left = mat3(\n 0.0, 0.0, -1.0,\n 0.0, 1.0, 0.0,\n 1.0, 0.0, 0.0\n);\nmat3 right = mat3(\n 0.0, 0.0, 1.0,\n 0.0, 1.0, 0.0,\n -1.0, 0.0, 0.0\n);\nmat3 up = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 0.0, 1.0,\n 0.0, -1.0, 0.0\n);\nmat3 down = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 0.0, -1.0,\n 0.0, 1.0, 0.0\n);\nfloat harmonics(vec3 normal){\n int index = int(gl_FragCoord.x);\n float x = normal.x;\n float y = normal.y;\n float z = normal.z;\n if(index==0){\n return 1.0;\n }\n else if(index==1){\n return x;\n }\n else if(index==2){\n return y;\n }\n else if(index==3){\n return z;\n }\n else if(index==4){\n return x*z;\n }\n else if(index==5){\n return y*z;\n }\n else if(index==6){\n return x*y;\n }\n else if(index==7){\n return 3.0*z*z - 1.0;\n }\n else{\n return x*x - y*y;\n }\n}\nvec3 sampleSide(mat3 rot)\n{\n vec3 result = vec3(0.0);\n float divider = 0.0;\n for (int i = 0; i < TEXTURE_SIZE * TEXTURE_SIZE; i++) {\n float x = mod(float(i), float(TEXTURE_SIZE));\n float y = float(i / TEXTURE_SIZE);\n vec2 sidecoord = ((vec2(x, y) + vec2(0.5, 0.5)) / vec2(TEXTURE_SIZE)) * 2.0 - 1.0;\n vec3 normal = normalize(vec3(sidecoord, -1.0));\n vec3 fetchNormal = rot * normal;\n vec3 texel = textureCube(environmentMap, fetchNormal).rgb;\n result += harmonics(fetchNormal) * texel * -normal.z;\n divider += -normal.z;\n }\n return result / divider;\n}\nvoid main()\n{\n vec3 result = (\n sampleSide(front) +\n sampleSide(back) +\n sampleSide(left) +\n sampleSide(right) +\n sampleSide(up) +\n sampleSide(down)\n ) / 6.0;\n gl_FragColor = vec4(result, 1.0);\n}");
+/* harmony default export */ var projectEnvMap_glsl = ("uniform samplerCube environmentMap;\nvarying vec2 v_Texcoord;\n#define TEXTURE_SIZE 16\nmat3 front = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 1.0, 0.0,\n 0.0, 0.0, 1.0\n);\nmat3 back = mat3(\n -1.0, 0.0, 0.0,\n 0.0, 1.0, 0.0,\n 0.0, 0.0, -1.0\n);\nmat3 left = mat3(\n 0.0, 0.0, -1.0,\n 0.0, 1.0, 0.0,\n 1.0, 0.0, 0.0\n);\nmat3 right = mat3(\n 0.0, 0.0, 1.0,\n 0.0, 1.0, 0.0,\n -1.0, 0.0, 0.0\n);\nmat3 up = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 0.0, 1.0,\n 0.0, -1.0, 0.0\n);\nmat3 down = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 0.0, -1.0,\n 0.0, 1.0, 0.0\n);\nfloat harmonics(vec3 normal){\n int index = int(gl_FragCoord.x);\n float x = normal.x;\n float y = normal.y;\n float z = normal.z;\n if(index==0){\n return 1.0;\n }\n else if(index==1){\n return x;\n }\n else if(index==2){\n return y;\n }\n else if(index==3){\n return z;\n }\n else if(index==4){\n return x*z;\n }\n else if(index==5){\n return y*z;\n }\n else if(index==6){\n return x*y;\n }\n else if(index==7){\n return 3.0*z*z - 1.0;\n }\n else{\n return x*x - y*y;\n }\n}\nvec3 sampleSide(mat3 rot)\n{\n vec3 result = vec3(0.0);\n float divider = 0.0;\n for (int i = 0; i < TEXTURE_SIZE * TEXTURE_SIZE; i++) {\n float x = mod(float(i), float(TEXTURE_SIZE));\n float y = float(i / TEXTURE_SIZE);\n vec2 sidecoord = ((vec2(x, y) + vec2(0.5, 0.5)) / vec2(TEXTURE_SIZE)) * 2.0 - 1.0;\n vec3 normal = normalize(vec3(sidecoord, -1.0));\n vec3 fetchNormal = rot * normal;\n vec3 texel = textureCube(environmentMap, fetchNormal).rgb;\n result += harmonics(fetchNormal) * texel * -normal.z;\n divider += -normal.z;\n }\n return result / divider;\n}\nvoid main()\n{\n vec3 result = (\n sampleSide(front) +\n sampleSide(back) +\n sampleSide(left) +\n sampleSide(right) +\n sampleSide(up) +\n sampleSide(down)\n ) / 6.0;\n gl_FragColor = vec4(result, 1.0);\n}");
 
 ;// ./node_modules/claygl/src/util/sh.js
 // Spherical Harmonic Helpers
@@ -20322,7 +20322,7 @@ sh.projectEnvironmentMap = function (renderer, envMap, opts) {
     return projectEnvironmentMapCPU(renderer, cubePixels, width, height);
 };
 
-/* harmony default export */ const util_sh = (sh);
+/* harmony default export */ var util_sh = (sh);
 
 ;// ./src/util/retrieve.js
 
@@ -20364,7 +20364,7 @@ var retrieve = {
     }
 };
 
-/* harmony default export */ const util_retrieve = (retrieve);
+/* harmony default export */ var util_retrieve = (retrieve);
 ;// ./node_modules/claygl/src/geometry/Sphere.js
 
 
@@ -20504,7 +20504,7 @@ var Sphere = src_Geometry.extend(/** @lends clay.geometry.Sphere# */ {
     }
 });
 
-/* harmony default export */ const geometry_Sphere = (Sphere);
+/* harmony default export */ var geometry_Sphere = (Sphere);
 
 ;// ./node_modules/claygl/src/light/Ambient.js
 
@@ -20539,7 +20539,7 @@ var AmbientLight = src_Light.extend({
      */
 });
 
-/* harmony default export */ const Ambient = (AmbientLight);
+/* harmony default export */ var Ambient = (AmbientLight);
 
 ;// ./node_modules/claygl/src/light/Directional.js
 
@@ -20613,7 +20613,7 @@ var DirectionalLight = src_Light.extend(/** @lends clay.light.Directional# */ {
     }
 });
 
-/* harmony default export */ const Directional = (DirectionalLight);
+/* harmony default export */ var Directional = (DirectionalLight);
 
 ;// ./node_modules/claygl/src/light/Point.js
 
@@ -20669,7 +20669,7 @@ var PointLight = src_Light.extend(/** @lends clay.light.Point# */ {
     }
 });
 
-/* harmony default export */ const Point = (PointLight);
+/* harmony default export */ var Point = (PointLight);
 
 ;// ./node_modules/claygl/src/light/Spot.js
 
@@ -20772,7 +20772,7 @@ var SpotLight = src_Light.extend(/**@lends clay.light.Spot */ {
     }
 });
 
-/* harmony default export */ const Spot = (SpotLight);
+/* harmony default export */ var Spot = (SpotLight);
 
 ;// ./node_modules/claygl/src/math/Vector4.js
 
@@ -21493,7 +21493,7 @@ Vector4.transformQuat = function(out, a, q) {
     return out;
 };
 
-/* harmony default export */ const math_Vector4 = (Vector4);
+/* harmony default export */ var math_Vector4 = (Vector4);
 
 ;// ./node_modules/claygl/src/glmatrix/mat2.js
 
@@ -21752,7 +21752,7 @@ mat2.LDU = function (L, D, U, a) {
 };
 
 
-/* harmony default export */ const glmatrix_mat2 = (mat2);
+/* harmony default export */ var glmatrix_mat2 = (mat2);
 ;// ./node_modules/claygl/src/math/Matrix2.js
 
 
@@ -22040,7 +22040,7 @@ Matrix2.transpose = function(out, a) {
     return out;
 };
 
-/* harmony default export */ const math_Matrix2 = (Matrix2);
+/* harmony default export */ var math_Matrix2 = (Matrix2);
 
 ;// ./node_modules/claygl/src/glmatrix/mat2d.js
 
@@ -22290,7 +22290,7 @@ mat2d.frob = function (a) {
 };
 
 
-/* harmony default export */ const glmatrix_mat2d = (mat2d);
+/* harmony default export */ var glmatrix_mat2d = (mat2d);
 ;// ./node_modules/claygl/src/math/Matrix2d.js
 
 
@@ -22560,7 +22560,7 @@ Matrix2d.translate = function(out, a, v) {
     return out;
 };
 
-/* harmony default export */ const math_Matrix2d = (Matrix2d);
+/* harmony default export */ var math_Matrix2d = (Matrix2d);
 
 ;// ./node_modules/claygl/src/math/Matrix3.js
 
@@ -22958,7 +22958,7 @@ Matrix3.translate = function (out, a, v) {
     return out;
 };
 
-/* harmony default export */ const math_Matrix3 = (Matrix3);
+/* harmony default export */ var math_Matrix3 = (Matrix3);
 
 ;// ./node_modules/zrender/lib/animation/easing.js
 var easingFuncs = {
@@ -23155,7 +23155,7 @@ var easingFuncs = {
         return easingFuncs.bounceOut(k * 2 - 1) * 0.5 + 0.5;
     }
 };
-/* harmony default export */ const animation_easing = (easingFuncs);
+/* harmony default export */ var animation_easing = (easingFuncs);
 
 ;// ./node_modules/zrender/lib/core/platform.js
 var DEFAULT_FONT_SIZE = 12;
@@ -24325,7 +24325,7 @@ var Clip = (function () {
     };
     return Clip;
 }());
-/* harmony default export */ const animation_Clip = (Clip);
+/* harmony default export */ var animation_Clip = (Clip);
 
 ;// ./node_modules/zrender/lib/tool/color.js
 
@@ -24837,7 +24837,7 @@ function detect(ua, env) {
     env.transformSupported = env.transform3dSupported
         || (browser.ie && +browser.version >= 9);
 }
-/* harmony default export */ const core_env = (env);
+/* harmony default export */ var core_env = (env);
 
 ;// ./node_modules/zrender/lib/svg/helper.js
 
@@ -25731,7 +25731,7 @@ var Animator = (function () {
     };
     return Animator;
 }());
-/* harmony default export */ const animation_Animator = (Animator);
+/* harmony default export */ var animation_Animator = (Animator);
 
 ;// ./src/util/animatableMixin.js
 
@@ -25826,27 +25826,27 @@ var animatableMixin = {
     }
 };
 
-/* harmony default export */ const util_animatableMixin = (animatableMixin);
+/* harmony default export */ var util_animatableMixin = (animatableMixin);
 ;// ./node_modules/claygl/src/shader/source/util.glsl.js
-/* harmony default export */ const util_glsl = ("\n@export clay.util.rand\nhighp float rand(vec2 uv) {\n const highp float a = 12.9898, b = 78.233, c = 43758.5453;\n highp float dt = dot(uv.xy, vec2(a,b)), sn = mod(dt, 3.141592653589793);\n return fract(sin(sn) * c);\n}\n@end\n@export clay.util.calculate_attenuation\nuniform float attenuationFactor : 5.0;\nfloat lightAttenuation(float dist, float range)\n{\n float attenuation = 1.0;\n attenuation = dist*dist/(range*range+1.0);\n float att_s = attenuationFactor;\n attenuation = 1.0/(attenuation*att_s+1.0);\n att_s = 1.0/(att_s+1.0);\n attenuation = attenuation - att_s;\n attenuation /= 1.0 - att_s;\n return clamp(attenuation, 0.0, 1.0);\n}\n@end\n@export clay.util.edge_factor\n#ifdef SUPPORT_STANDARD_DERIVATIVES\nfloat edgeFactor(float width)\n{\n vec3 d = fwidth(v_Barycentric);\n vec3 a3 = smoothstep(vec3(0.0), d * width, v_Barycentric);\n return min(min(a3.x, a3.y), a3.z);\n}\n#else\nfloat edgeFactor(float width)\n{\n return 1.0;\n}\n#endif\n@end\n@export clay.util.encode_float\nvec4 encodeFloat(const in float depth)\n{\n const vec4 bitShifts = vec4(256.0*256.0*256.0, 256.0*256.0, 256.0, 1.0);\n const vec4 bit_mask = vec4(0.0, 1.0/256.0, 1.0/256.0, 1.0/256.0);\n vec4 res = fract(depth * bitShifts);\n res -= res.xxyz * bit_mask;\n return res;\n}\n@end\n@export clay.util.decode_float\nfloat decodeFloat(const in vec4 color)\n{\n const vec4 bitShifts = vec4(1.0/(256.0*256.0*256.0), 1.0/(256.0*256.0), 1.0/256.0, 1.0);\n return dot(color, bitShifts);\n}\n@end\n@export clay.util.float\n@import clay.util.encode_float\n@import clay.util.decode_float\n@end\n@export clay.util.rgbm_decode\nvec3 RGBMDecode(vec4 rgbm, float range) {\n return range * rgbm.rgb * rgbm.a;\n}\n@end\n@export clay.util.rgbm_encode\nvec4 RGBMEncode(vec3 color, float range) {\n if (dot(color, color) == 0.0) {\n return vec4(0.0);\n }\n vec4 rgbm;\n color /= range;\n rgbm.a = clamp(max(max(color.r, color.g), max(color.b, 1e-6)), 0.0, 1.0);\n rgbm.a = ceil(rgbm.a * 255.0) / 255.0;\n rgbm.rgb = color / rgbm.a;\n return rgbm;\n}\n@end\n@export clay.util.rgbm\n@import clay.util.rgbm_decode\n@import clay.util.rgbm_encode\nvec4 decodeHDR(vec4 color)\n{\n#if defined(RGBM_DECODE) || defined(RGBM)\n return vec4(RGBMDecode(color, 8.12), 1.0);\n#else\n return color;\n#endif\n}\nvec4 encodeHDR(vec4 color)\n{\n#if defined(RGBM_ENCODE) || defined(RGBM)\n return RGBMEncode(color.xyz, 8.12);\n#else\n return color;\n#endif\n}\n@end\n@export clay.util.srgb\nvec4 sRGBToLinear(in vec4 value) {\n return vec4(mix(pow(value.rgb * 0.9478672986 + vec3(0.0521327014), vec3(2.4)), value.rgb * 0.0773993808, vec3(lessThanEqual(value.rgb, vec3(0.04045)))), value.w);\n}\nvec4 linearTosRGB(in vec4 value) {\n return vec4(mix(pow(value.rgb, vec3(0.41666)) * 1.055 - vec3(0.055), value.rgb * 12.92, vec3(lessThanEqual(value.rgb, vec3(0.0031308)))), value.w);\n}\n@end\n@export clay.chunk.skinning_header\n#ifdef SKINNING\nattribute vec3 weight : WEIGHT;\nattribute vec4 joint : JOINT;\n#ifdef USE_SKIN_MATRICES_TEXTURE\nuniform sampler2D skinMatricesTexture : ignore;\nuniform float skinMatricesTextureSize: ignore;\nmat4 getSkinMatrix(sampler2D tex, float idx) {\n float j = idx * 4.0;\n float x = mod(j, skinMatricesTextureSize);\n float y = floor(j / skinMatricesTextureSize) + 0.5;\n vec2 scale = vec2(skinMatricesTextureSize);\n return mat4(\n texture2D(tex, vec2(x + 0.5, y) / scale),\n texture2D(tex, vec2(x + 1.5, y) / scale),\n texture2D(tex, vec2(x + 2.5, y) / scale),\n texture2D(tex, vec2(x + 3.5, y) / scale)\n );\n}\nmat4 getSkinMatrix(float idx) {\n return getSkinMatrix(skinMatricesTexture, idx);\n}\n#else\nuniform mat4 skinMatrix[JOINT_COUNT] : SKIN_MATRIX;\nmat4 getSkinMatrix(float idx) {\n return skinMatrix[int(idx)];\n}\n#endif\n#endif\n@end\n@export clay.chunk.skin_matrix\nmat4 skinMatrixWS = getSkinMatrix(joint.x) * weight.x;\nif (weight.y > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.y) * weight.y;\n}\nif (weight.z > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.z) * weight.z;\n}\nfloat weightW = 1.0-weight.x-weight.y-weight.z;\nif (weightW > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.w) * weightW;\n}\n@end\n@export clay.chunk.instancing_header\n#ifdef INSTANCING\nattribute vec4 instanceMat1;\nattribute vec4 instanceMat2;\nattribute vec4 instanceMat3;\n#endif\n@end\n@export clay.chunk.instancing_matrix\nmat4 instanceMat = mat4(\n vec4(instanceMat1.xyz, 0.0),\n vec4(instanceMat2.xyz, 0.0),\n vec4(instanceMat3.xyz, 0.0),\n vec4(instanceMat1.w, instanceMat2.w, instanceMat3.w, 1.0)\n);\n@end\n@export clay.util.parallax_correct\nvec3 parallaxCorrect(in vec3 dir, in vec3 pos, in vec3 boxMin, in vec3 boxMax) {\n vec3 first = (boxMax - pos) / dir;\n vec3 second = (boxMin - pos) / dir;\n vec3 further = max(first, second);\n float dist = min(further.x, min(further.y, further.z));\n vec3 fixedPos = pos + dir * dist;\n vec3 boxCenter = (boxMax + boxMin) * 0.5;\n return normalize(fixedPos - boxCenter);\n}\n@end\n@export clay.util.clamp_sample\nvec4 clampSample(const in sampler2D texture, const in vec2 coord)\n{\n#ifdef STEREO\n float eye = step(0.5, coord.x) * 0.5;\n vec2 coordClamped = clamp(coord, vec2(eye, 0.0), vec2(0.5 + eye, 1.0));\n#else\n vec2 coordClamped = clamp(coord, vec2(0.0), vec2(1.0));\n#endif\n return texture2D(texture, coordClamped);\n}\n@end\n@export clay.util.ACES\nvec3 ACESToneMapping(vec3 color)\n{\n const float A = 2.51;\n const float B = 0.03;\n const float C = 2.43;\n const float D = 0.59;\n const float E = 0.14;\n return (color * (A * color + B)) / (color * (C * color + D) + E);\n}\n@end");
+/* harmony default export */ var util_glsl = ("\n@export clay.util.rand\nhighp float rand(vec2 uv) {\n const highp float a = 12.9898, b = 78.233, c = 43758.5453;\n highp float dt = dot(uv.xy, vec2(a,b)), sn = mod(dt, 3.141592653589793);\n return fract(sin(sn) * c);\n}\n@end\n@export clay.util.calculate_attenuation\nuniform float attenuationFactor : 5.0;\nfloat lightAttenuation(float dist, float range)\n{\n float attenuation = 1.0;\n attenuation = dist*dist/(range*range+1.0);\n float att_s = attenuationFactor;\n attenuation = 1.0/(attenuation*att_s+1.0);\n att_s = 1.0/(att_s+1.0);\n attenuation = attenuation - att_s;\n attenuation /= 1.0 - att_s;\n return clamp(attenuation, 0.0, 1.0);\n}\n@end\n@export clay.util.edge_factor\n#ifdef SUPPORT_STANDARD_DERIVATIVES\nfloat edgeFactor(float width)\n{\n vec3 d = fwidth(v_Barycentric);\n vec3 a3 = smoothstep(vec3(0.0), d * width, v_Barycentric);\n return min(min(a3.x, a3.y), a3.z);\n}\n#else\nfloat edgeFactor(float width)\n{\n return 1.0;\n}\n#endif\n@end\n@export clay.util.encode_float\nvec4 encodeFloat(const in float depth)\n{\n const vec4 bitShifts = vec4(256.0*256.0*256.0, 256.0*256.0, 256.0, 1.0);\n const vec4 bit_mask = vec4(0.0, 1.0/256.0, 1.0/256.0, 1.0/256.0);\n vec4 res = fract(depth * bitShifts);\n res -= res.xxyz * bit_mask;\n return res;\n}\n@end\n@export clay.util.decode_float\nfloat decodeFloat(const in vec4 color)\n{\n const vec4 bitShifts = vec4(1.0/(256.0*256.0*256.0), 1.0/(256.0*256.0), 1.0/256.0, 1.0);\n return dot(color, bitShifts);\n}\n@end\n@export clay.util.float\n@import clay.util.encode_float\n@import clay.util.decode_float\n@end\n@export clay.util.rgbm_decode\nvec3 RGBMDecode(vec4 rgbm, float range) {\n return range * rgbm.rgb * rgbm.a;\n}\n@end\n@export clay.util.rgbm_encode\nvec4 RGBMEncode(vec3 color, float range) {\n if (dot(color, color) == 0.0) {\n return vec4(0.0);\n }\n vec4 rgbm;\n color /= range;\n rgbm.a = clamp(max(max(color.r, color.g), max(color.b, 1e-6)), 0.0, 1.0);\n rgbm.a = ceil(rgbm.a * 255.0) / 255.0;\n rgbm.rgb = color / rgbm.a;\n return rgbm;\n}\n@end\n@export clay.util.rgbm\n@import clay.util.rgbm_decode\n@import clay.util.rgbm_encode\nvec4 decodeHDR(vec4 color)\n{\n#if defined(RGBM_DECODE) || defined(RGBM)\n return vec4(RGBMDecode(color, 8.12), 1.0);\n#else\n return color;\n#endif\n}\nvec4 encodeHDR(vec4 color)\n{\n#if defined(RGBM_ENCODE) || defined(RGBM)\n return RGBMEncode(color.xyz, 8.12);\n#else\n return color;\n#endif\n}\n@end\n@export clay.util.srgb\nvec4 sRGBToLinear(in vec4 value) {\n return vec4(mix(pow(value.rgb * 0.9478672986 + vec3(0.0521327014), vec3(2.4)), value.rgb * 0.0773993808, vec3(lessThanEqual(value.rgb, vec3(0.04045)))), value.w);\n}\nvec4 linearTosRGB(in vec4 value) {\n return vec4(mix(pow(value.rgb, vec3(0.41666)) * 1.055 - vec3(0.055), value.rgb * 12.92, vec3(lessThanEqual(value.rgb, vec3(0.0031308)))), value.w);\n}\n@end\n@export clay.chunk.skinning_header\n#ifdef SKINNING\nattribute vec3 weight : WEIGHT;\nattribute vec4 joint : JOINT;\n#ifdef USE_SKIN_MATRICES_TEXTURE\nuniform sampler2D skinMatricesTexture : ignore;\nuniform float skinMatricesTextureSize: ignore;\nmat4 getSkinMatrix(sampler2D tex, float idx) {\n float j = idx * 4.0;\n float x = mod(j, skinMatricesTextureSize);\n float y = floor(j / skinMatricesTextureSize) + 0.5;\n vec2 scale = vec2(skinMatricesTextureSize);\n return mat4(\n texture2D(tex, vec2(x + 0.5, y) / scale),\n texture2D(tex, vec2(x + 1.5, y) / scale),\n texture2D(tex, vec2(x + 2.5, y) / scale),\n texture2D(tex, vec2(x + 3.5, y) / scale)\n );\n}\nmat4 getSkinMatrix(float idx) {\n return getSkinMatrix(skinMatricesTexture, idx);\n}\n#else\nuniform mat4 skinMatrix[JOINT_COUNT] : SKIN_MATRIX;\nmat4 getSkinMatrix(float idx) {\n return skinMatrix[int(idx)];\n}\n#endif\n#endif\n@end\n@export clay.chunk.skin_matrix\nmat4 skinMatrixWS = getSkinMatrix(joint.x) * weight.x;\nif (weight.y > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.y) * weight.y;\n}\nif (weight.z > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.z) * weight.z;\n}\nfloat weightW = 1.0-weight.x-weight.y-weight.z;\nif (weightW > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.w) * weightW;\n}\n@end\n@export clay.chunk.instancing_header\n#ifdef INSTANCING\nattribute vec4 instanceMat1;\nattribute vec4 instanceMat2;\nattribute vec4 instanceMat3;\n#endif\n@end\n@export clay.chunk.instancing_matrix\nmat4 instanceMat = mat4(\n vec4(instanceMat1.xyz, 0.0),\n vec4(instanceMat2.xyz, 0.0),\n vec4(instanceMat3.xyz, 0.0),\n vec4(instanceMat1.w, instanceMat2.w, instanceMat3.w, 1.0)\n);\n@end\n@export clay.util.parallax_correct\nvec3 parallaxCorrect(in vec3 dir, in vec3 pos, in vec3 boxMin, in vec3 boxMax) {\n vec3 first = (boxMax - pos) / dir;\n vec3 second = (boxMin - pos) / dir;\n vec3 further = max(first, second);\n float dist = min(further.x, min(further.y, further.z));\n vec3 fixedPos = pos + dir * dist;\n vec3 boxCenter = (boxMax + boxMin) * 0.5;\n return normalize(fixedPos - boxCenter);\n}\n@end\n@export clay.util.clamp_sample\nvec4 clampSample(const in sampler2D texture, const in vec2 coord)\n{\n#ifdef STEREO\n float eye = step(0.5, coord.x) * 0.5;\n vec2 coordClamped = clamp(coord, vec2(eye, 0.0), vec2(0.5 + eye, 1.0));\n#else\n vec2 coordClamped = clamp(coord, vec2(0.0), vec2(1.0));\n#endif\n return texture2D(texture, coordClamped);\n}\n@end\n@export clay.util.ACES\nvec3 ACESToneMapping(vec3 color)\n{\n const float A = 2.51;\n const float B = 0.03;\n const float C = 2.43;\n const float D = 0.59;\n const float E = 0.14;\n return (color * (A * color + B)) / (color * (C * color + D) + E);\n}\n@end");
 
 ;// ./src/util/shader/common.glsl.js
-/* harmony default export */ const common_glsl = ("// COMMON SHADERS\r\n\r\n// ----------------- UNIFORM AND ATTRIBUTES -----------\r\n@export ecgl.common.transformUniforms\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\r\nuniform mat4 world : WORLD;\r\n@end\r\n\r\n@export ecgl.common.attributes\r\nattribute vec3 position : POSITION;\r\nattribute vec2 texcoord : TEXCOORD_0;\r\nattribute vec3 normal : NORMAL;\r\n@end\r\n\r\n@export ecgl.common.uv.header\r\nuniform vec2 uvRepeat : [1.0, 1.0];\r\nuniform vec2 uvOffset : [0.0, 0.0];\r\nuniform vec2 detailUvRepeat : [1.0, 1.0];\r\nuniform vec2 detailUvOffset : [0.0, 0.0];\r\n\r\nvarying vec2 v_Texcoord;\r\nvarying vec2 v_DetailTexcoord;\r\n@end\r\n\r\n@export ecgl.common.uv.main\r\nv_Texcoord = texcoord * uvRepeat + uvOffset;\r\nv_DetailTexcoord = texcoord * detailUvRepeat + detailUvOffset;\r\n@end\r\n\r\n@export ecgl.common.uv.fragmentHeader\r\nvarying vec2 v_Texcoord;\r\nvarying vec2 v_DetailTexcoord;\r\n@end\r\n\r\n// ----------------- albedo -----------\r\n\r\n@export ecgl.common.albedo.main\r\n\r\n vec4 albedoTexel = vec4(1.0);\r\n#ifdef DIFFUSEMAP_ENABLED\r\n albedoTexel = texture2D(diffuseMap, v_Texcoord);\r\n #ifdef SRGB_DECODE\r\n albedoTexel = sRGBToLinear(albedoTexel);\r\n #endif\r\n#endif\r\n\r\n#ifdef DETAILMAP_ENABLED\r\n vec4 detailTexel = texture2D(detailMap, v_DetailTexcoord);\r\n #ifdef SRGB_DECODE\r\n detailTexel = sRGBToLinear(detailTexel);\r\n #endif\r\n albedoTexel.rgb = mix(albedoTexel.rgb, detailTexel.rgb, detailTexel.a);\r\n albedoTexel.a = detailTexel.a + (1.0 - detailTexel.a) * albedoTexel.a;\r\n#endif\r\n\r\n@end\r\n\r\n// -----------------WIREFRAME -----------\r\n@export ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef WIREFRAME_QUAD\r\nattribute vec4 barycentric;\r\nvarying vec4 v_Barycentric;\r\n#elif defined(WIREFRAME_TRIANGLE)\r\nattribute vec3 barycentric;\r\nvarying vec3 v_Barycentric;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.wireframe.vertexMain\r\n\r\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\r\n v_Barycentric = barycentric;\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.wireframe.fragmentHeader\r\n\r\nuniform float wireframeLineWidth : 1;\r\nuniform vec4 wireframeLineColor: [0, 0, 0, 0.5];\r\n\r\n#ifdef WIREFRAME_QUAD\r\nvarying vec4 v_Barycentric;\r\nfloat edgeFactor () {\r\n vec4 d = fwidth(v_Barycentric);\r\n vec4 a4 = smoothstep(vec4(0.0), d * wireframeLineWidth, v_Barycentric);\r\n return min(min(min(a4.x, a4.y), a4.z), a4.w);\r\n}\r\n#elif defined(WIREFRAME_TRIANGLE)\r\nvarying vec3 v_Barycentric;\r\nfloat edgeFactor () {\r\n vec3 d = fwidth(v_Barycentric);\r\n vec3 a3 = smoothstep(vec3(0.0), d * wireframeLineWidth, v_Barycentric);\r\n return min(min(a3.x, a3.y), a3.z);\r\n}\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.wireframe.fragmentMain\r\n\r\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\r\n if (wireframeLineWidth > 0.) {\r\n vec4 lineColor = wireframeLineColor;\r\n#ifdef SRGB_DECODE\r\n lineColor = sRGBToLinear(lineColor);\r\n#endif\r\n\r\n gl_FragColor.rgb = mix(gl_FragColor.rgb, lineColor.rgb, (1.0 - edgeFactor()) * lineColor.a);\r\n }\r\n#endif\r\n@end\r\n\r\n\r\n\r\n// ----------------- Bumpmap and normal map -----------\r\n\r\n@export ecgl.common.bumpMap.header\r\n\r\n#ifdef BUMPMAP_ENABLED\r\nuniform sampler2D bumpMap;\r\nuniform float bumpScale : 1.0;\r\n// Derivative maps - bump mapping unparametrized surfaces by Morten Mikkelsen\r\n// http://mmikkelsen3d.blogspot.sk/2011/07/derivative-maps.html\r\n\r\n// Evaluate the derivative of the height w.r.t. screen-space using forward differencing (listing 2)\r\n\r\nvec3 bumpNormal(vec3 surfPos, vec3 surfNormal, vec3 baseNormal)\r\n{\r\n vec2 dSTdx = dFdx(v_Texcoord);\r\n vec2 dSTdy = dFdy(v_Texcoord);\r\n\r\n float Hll = bumpScale * texture2D(bumpMap, v_Texcoord).x;\r\n float dHx = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdx).x - Hll;\r\n float dHy = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdy).x - Hll;\r\n\r\n vec3 vSigmaX = dFdx(surfPos);\r\n vec3 vSigmaY = dFdy(surfPos);\r\n vec3 vN = surfNormal;\r\n\r\n vec3 R1 = cross(vSigmaY, vN);\r\n vec3 R2 = cross(vN, vSigmaX);\r\n\r\n float fDet = dot(vSigmaX, R1);\r\n\r\n vec3 vGrad = sign(fDet) * (dHx * R1 + dHy * R2);\r\n return normalize(abs(fDet) * baseNormal - vGrad);\r\n\r\n}\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.vertexHeader\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nattribute vec4 tangent : TANGENT;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.vertexMain\r\n\r\n#ifdef NORMALMAP_ENABLED\r\n if (dot(tangent, tangent) > 0.0) {\r\n v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\r\n v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\r\n }\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.normalMap.fragmentHeader\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nuniform sampler2D normalMap;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.fragmentMain\r\n#ifdef NORMALMAP_ENABLED\r\n if (dot(v_Tangent, v_Tangent) > 0.0) {\r\n vec3 normalTexel = texture2D(normalMap, v_DetailTexcoord).xyz;\r\n if (dot(normalTexel, normalTexel) > 0.0) { // Valid normal map\r\n N = normalTexel * 2.0 - 1.0;\r\n mat3 tbn = mat3(v_Tangent, v_Bitangent, v_Normal);\r\n N = normalize(tbn * N);\r\n }\r\n }\r\n#endif\r\n@end\r\n\r\n\r\n//----------- Vertex animation ---------\r\n\r\n@export ecgl.common.vertexAnimation.header\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute vec3 prevNormal;\r\nuniform float percent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.vertexAnimation.main\r\n\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n vec3 norm = mix(prevNormal, normal, percent);\r\n#else\r\n vec3 pos = position;\r\n vec3 norm = normal;\r\n#endif\r\n\r\n@end\r\n\r\n//---------- SSAO MAP -------\r\n\r\n@export ecgl.common.ssaoMap.header\r\n#ifdef SSAOMAP_ENABLED\r\nuniform sampler2D ssaoMap;\r\nuniform vec4 viewport : VIEWPORT;\r\n#endif\r\n@end\r\n\r\n@export ecgl.common.ssaoMap.main\r\n float ao = 1.0;\r\n#ifdef SSAOMAP_ENABLED\r\n ao = texture2D(ssaoMap, (gl_FragCoord.xy - viewport.xy) / viewport.zw).r;\r\n#endif\r\n@end\r\n\r\n\r\n//----------- Layers ---------\r\n\r\n\r\n@export ecgl.common.diffuseLayer.header\r\n\r\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\r\nuniform float layerDiffuseIntensity[LAYER_DIFFUSEMAP_COUNT];\r\nuniform sampler2D layerDiffuseMap[LAYER_DIFFUSEMAP_COUNT];\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.emissiveLayer.header\r\n\r\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\r\nuniform float layerEmissionIntensity[LAYER_EMISSIVEMAP_COUNT];\r\nuniform sampler2D layerEmissiveMap[LAYER_EMISSIVEMAP_COUNT];\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.layers.header\r\n@import ecgl.common.diffuseLayer.header\r\n@import ecgl.common.emissiveLayer.header\r\n@end\r\n\r\n@export ecgl.common.diffuseLayer.main\r\n\r\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\r\n for (int _idx_ = 0; _idx_ < LAYER_DIFFUSEMAP_COUNT; _idx_++) {{\r\n float intensity = layerDiffuseIntensity[_idx_];\r\n vec4 texel2 = texture2D(layerDiffuseMap[_idx_], v_Texcoord);\r\n #ifdef SRGB_DECODE\r\n texel2 = sRGBToLinear(texel2);\r\n #endif\r\n // source-over blend\r\n albedoTexel.rgb = mix(albedoTexel.rgb, texel2.rgb * intensity, texel2.a);\r\n albedoTexel.a = texel2.a + (1.0 - texel2.a) * albedoTexel.a;\r\n }}\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.emissiveLayer.main\r\n\r\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\r\n for (int _idx_ = 0; _idx_ < LAYER_EMISSIVEMAP_COUNT; _idx_++)\r\n {{\r\n vec4 texel2 = texture2D(layerEmissiveMap[_idx_], v_Texcoord) * layerEmissionIntensity[_idx_];\r\n #ifdef SRGB_DECODE\r\n texel2 = sRGBToLinear(texel2);\r\n #endif\r\n float intensity = layerEmissionIntensity[_idx_];\r\n gl_FragColor.rgb += texel2.rgb * texel2.a * intensity;\r\n }}\r\n#endif\r\n\r\n@end\r\n");
+/* harmony default export */ var common_glsl = ("// COMMON SHADERS\r\n\r\n// ----------------- UNIFORM AND ATTRIBUTES -----------\r\n@export ecgl.common.transformUniforms\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\r\nuniform mat4 world : WORLD;\r\n@end\r\n\r\n@export ecgl.common.attributes\r\nattribute vec3 position : POSITION;\r\nattribute vec2 texcoord : TEXCOORD_0;\r\nattribute vec3 normal : NORMAL;\r\n@end\r\n\r\n@export ecgl.common.uv.header\r\nuniform vec2 uvRepeat : [1.0, 1.0];\r\nuniform vec2 uvOffset : [0.0, 0.0];\r\nuniform vec2 detailUvRepeat : [1.0, 1.0];\r\nuniform vec2 detailUvOffset : [0.0, 0.0];\r\n\r\nvarying vec2 v_Texcoord;\r\nvarying vec2 v_DetailTexcoord;\r\n@end\r\n\r\n@export ecgl.common.uv.main\r\nv_Texcoord = texcoord * uvRepeat + uvOffset;\r\nv_DetailTexcoord = texcoord * detailUvRepeat + detailUvOffset;\r\n@end\r\n\r\n@export ecgl.common.uv.fragmentHeader\r\nvarying vec2 v_Texcoord;\r\nvarying vec2 v_DetailTexcoord;\r\n@end\r\n\r\n// ----------------- albedo -----------\r\n\r\n@export ecgl.common.albedo.main\r\n\r\n vec4 albedoTexel = vec4(1.0);\r\n#ifdef DIFFUSEMAP_ENABLED\r\n albedoTexel = texture2D(diffuseMap, v_Texcoord);\r\n #ifdef SRGB_DECODE\r\n albedoTexel = sRGBToLinear(albedoTexel);\r\n #endif\r\n#endif\r\n\r\n#ifdef DETAILMAP_ENABLED\r\n vec4 detailTexel = texture2D(detailMap, v_DetailTexcoord);\r\n #ifdef SRGB_DECODE\r\n detailTexel = sRGBToLinear(detailTexel);\r\n #endif\r\n albedoTexel.rgb = mix(albedoTexel.rgb, detailTexel.rgb, detailTexel.a);\r\n albedoTexel.a = detailTexel.a + (1.0 - detailTexel.a) * albedoTexel.a;\r\n#endif\r\n\r\n@end\r\n\r\n// -----------------WIREFRAME -----------\r\n@export ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef WIREFRAME_QUAD\r\nattribute vec4 barycentric;\r\nvarying vec4 v_Barycentric;\r\n#elif defined(WIREFRAME_TRIANGLE)\r\nattribute vec3 barycentric;\r\nvarying vec3 v_Barycentric;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.wireframe.vertexMain\r\n\r\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\r\n v_Barycentric = barycentric;\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.wireframe.fragmentHeader\r\n\r\nuniform float wireframeLineWidth : 1;\r\nuniform vec4 wireframeLineColor: [0, 0, 0, 0.5];\r\n\r\n#ifdef WIREFRAME_QUAD\r\nvarying vec4 v_Barycentric;\r\nfloat edgeFactor () {\r\n vec4 d = fwidth(v_Barycentric);\r\n vec4 a4 = smoothstep(vec4(0.0), d * wireframeLineWidth, v_Barycentric);\r\n return min(min(min(a4.x, a4.y), a4.z), a4.w);\r\n}\r\n#elif defined(WIREFRAME_TRIANGLE)\r\nvarying vec3 v_Barycentric;\r\nfloat edgeFactor () {\r\n vec3 d = fwidth(v_Barycentric);\r\n vec3 a3 = smoothstep(vec3(0.0), d * wireframeLineWidth, v_Barycentric);\r\n return min(min(a3.x, a3.y), a3.z);\r\n}\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.wireframe.fragmentMain\r\n\r\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\r\n if (wireframeLineWidth > 0.) {\r\n vec4 lineColor = wireframeLineColor;\r\n#ifdef SRGB_DECODE\r\n lineColor = sRGBToLinear(lineColor);\r\n#endif\r\n\r\n gl_FragColor.rgb = mix(gl_FragColor.rgb, lineColor.rgb, (1.0 - edgeFactor()) * lineColor.a);\r\n }\r\n#endif\r\n@end\r\n\r\n\r\n\r\n// ----------------- Bumpmap and normal map -----------\r\n\r\n@export ecgl.common.bumpMap.header\r\n\r\n#ifdef BUMPMAP_ENABLED\r\nuniform sampler2D bumpMap;\r\nuniform float bumpScale : 1.0;\r\n// Derivative maps - bump mapping unparametrized surfaces by Morten Mikkelsen\r\n// http://mmikkelsen3d.blogspot.sk/2011/07/derivative-maps.html\r\n\r\n// Evaluate the derivative of the height w.r.t. screen-space using forward differencing (listing 2)\r\n\r\nvec3 bumpNormal(vec3 surfPos, vec3 surfNormal, vec3 baseNormal)\r\n{\r\n vec2 dSTdx = dFdx(v_Texcoord);\r\n vec2 dSTdy = dFdy(v_Texcoord);\r\n\r\n float Hll = bumpScale * texture2D(bumpMap, v_Texcoord).x;\r\n float dHx = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdx).x - Hll;\r\n float dHy = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdy).x - Hll;\r\n\r\n vec3 vSigmaX = dFdx(surfPos);\r\n vec3 vSigmaY = dFdy(surfPos);\r\n vec3 vN = surfNormal;\r\n\r\n vec3 R1 = cross(vSigmaY, vN);\r\n vec3 R2 = cross(vN, vSigmaX);\r\n\r\n float fDet = dot(vSigmaX, R1);\r\n\r\n vec3 vGrad = sign(fDet) * (dHx * R1 + dHy * R2);\r\n return normalize(abs(fDet) * baseNormal - vGrad);\r\n\r\n}\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.vertexHeader\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nattribute vec4 tangent : TANGENT;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.vertexMain\r\n\r\n#ifdef NORMALMAP_ENABLED\r\n if (dot(tangent, tangent) > 0.0) {\r\n v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\r\n v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\r\n }\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.normalMap.fragmentHeader\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nuniform sampler2D normalMap;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.fragmentMain\r\n#ifdef NORMALMAP_ENABLED\r\n if (dot(v_Tangent, v_Tangent) > 0.0) {\r\n vec3 normalTexel = texture2D(normalMap, v_DetailTexcoord).xyz;\r\n if (dot(normalTexel, normalTexel) > 0.0) { // Valid normal map\r\n N = normalTexel * 2.0 - 1.0;\r\n mat3 tbn = mat3(v_Tangent, v_Bitangent, v_Normal);\r\n N = normalize(tbn * N);\r\n }\r\n }\r\n#endif\r\n@end\r\n\r\n\r\n//----------- Vertex animation ---------\r\n\r\n@export ecgl.common.vertexAnimation.header\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute vec3 prevNormal;\r\nuniform float percent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.vertexAnimation.main\r\n\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n vec3 norm = mix(prevNormal, normal, percent);\r\n#else\r\n vec3 pos = position;\r\n vec3 norm = normal;\r\n#endif\r\n\r\n@end\r\n\r\n//---------- SSAO MAP -------\r\n\r\n@export ecgl.common.ssaoMap.header\r\n#ifdef SSAOMAP_ENABLED\r\nuniform sampler2D ssaoMap;\r\nuniform vec4 viewport : VIEWPORT;\r\n#endif\r\n@end\r\n\r\n@export ecgl.common.ssaoMap.main\r\n float ao = 1.0;\r\n#ifdef SSAOMAP_ENABLED\r\n ao = texture2D(ssaoMap, (gl_FragCoord.xy - viewport.xy) / viewport.zw).r;\r\n#endif\r\n@end\r\n\r\n\r\n//----------- Layers ---------\r\n\r\n\r\n@export ecgl.common.diffuseLayer.header\r\n\r\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\r\nuniform float layerDiffuseIntensity[LAYER_DIFFUSEMAP_COUNT];\r\nuniform sampler2D layerDiffuseMap[LAYER_DIFFUSEMAP_COUNT];\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.emissiveLayer.header\r\n\r\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\r\nuniform float layerEmissionIntensity[LAYER_EMISSIVEMAP_COUNT];\r\nuniform sampler2D layerEmissiveMap[LAYER_EMISSIVEMAP_COUNT];\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.layers.header\r\n@import ecgl.common.diffuseLayer.header\r\n@import ecgl.common.emissiveLayer.header\r\n@end\r\n\r\n@export ecgl.common.diffuseLayer.main\r\n\r\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\r\n for (int _idx_ = 0; _idx_ < LAYER_DIFFUSEMAP_COUNT; _idx_++) {{\r\n float intensity = layerDiffuseIntensity[_idx_];\r\n vec4 texel2 = texture2D(layerDiffuseMap[_idx_], v_Texcoord);\r\n #ifdef SRGB_DECODE\r\n texel2 = sRGBToLinear(texel2);\r\n #endif\r\n // source-over blend\r\n albedoTexel.rgb = mix(albedoTexel.rgb, texel2.rgb * intensity, texel2.a);\r\n albedoTexel.a = texel2.a + (1.0 - texel2.a) * albedoTexel.a;\r\n }}\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.emissiveLayer.main\r\n\r\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\r\n for (int _idx_ = 0; _idx_ < LAYER_EMISSIVEMAP_COUNT; _idx_++)\r\n {{\r\n vec4 texel2 = texture2D(layerEmissiveMap[_idx_], v_Texcoord) * layerEmissionIntensity[_idx_];\r\n #ifdef SRGB_DECODE\r\n texel2 = sRGBToLinear(texel2);\r\n #endif\r\n float intensity = layerEmissionIntensity[_idx_];\r\n gl_FragColor.rgb += texel2.rgb * texel2.a * intensity;\r\n }}\r\n#endif\r\n\r\n@end\r\n");
 
 ;// ./src/util/shader/color.glsl.js
-/* harmony default export */ const color_glsl = ("@export ecgl.color.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\n@import ecgl.common.uv.header\r\n\r\nattribute vec2 texcoord : TEXCOORD_0;\r\nattribute vec3 position: POSITION;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nattribute vec3 normal: NORMAL;\r\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\r\nvarying vec3 v_Normal;\r\n#endif\r\n\r\nvoid main()\r\n{\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n#else\r\n vec3 pos = position;\r\n#endif\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n @import ecgl.common.uv.main\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.color.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n\r\nuniform sampler2D diffuseMap;\r\nuniform sampler2D detailMap;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\nvarying vec3 v_Normal;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n@import ecgl.common.layers.header\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color);\r\n#else\r\n gl_FragColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n gl_FragColor *= albedoTexel;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n\r\n}\r\n@end");
+/* harmony default export */ var color_glsl = ("@export ecgl.color.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\n@import ecgl.common.uv.header\r\n\r\nattribute vec2 texcoord : TEXCOORD_0;\r\nattribute vec3 position: POSITION;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nattribute vec3 normal: NORMAL;\r\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\r\nvarying vec3 v_Normal;\r\n#endif\r\n\r\nvoid main()\r\n{\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n#else\r\n vec3 pos = position;\r\n#endif\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n @import ecgl.common.uv.main\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.color.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n\r\nuniform sampler2D diffuseMap;\r\nuniform sampler2D detailMap;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\nvarying vec3 v_Normal;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n@import ecgl.common.layers.header\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color);\r\n#else\r\n gl_FragColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n gl_FragColor *= albedoTexel;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n\r\n}\r\n@end");
 
 ;// ./src/util/shader/lambert.glsl.js
-/* harmony default export */ const lambert_glsl = ("/**\r\n * http://en.wikipedia.org/wiki/Lambertian_reflectance\r\n */\r\n\r\n@export ecgl.lambert.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n\r\n@import ecgl.common.attributes\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nvoid main()\r\n{\r\n @import ecgl.common.uv.main\r\n\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.lambert.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform sampler2D diffuseMap;\r\nuniform sampler2D detailMap;\r\n\r\n@import ecgl.common.layers.header\r\n\r\nuniform float emissionIntensity: 1.0;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\n#endif\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color);\r\n#else\r\n gl_FragColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n gl_FragColor *= sRGBToLinear(v_Color);\r\n #else\r\n gl_FragColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n gl_FragColor *= albedoTexel;\r\n\r\n vec3 N = v_Normal;\r\n#ifdef DOUBLE_SIDED\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n vec3 diffuseColor = vec3(0.0, 0.0, 0.0);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\r\n {\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n diffuseColor += ambientLightColor[i] * ambientFactor * ao;\r\n }\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n diffuseColor += calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_] * ao;\r\n }}\r\n#endif\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\r\n {\r\n vec3 lightDirection = -directionalLightDirection[i];\r\n vec3 lightColor = directionalLightColor[i];\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[i];\r\n }\r\n#endif\r\n\r\n float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\r\n\r\n diffuseColor += lightColor * clamp(ndl, 0.0, 1.0);\r\n }\r\n#endif\r\n\r\n gl_FragColor.rgb *= diffuseColor;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
+/* harmony default export */ var lambert_glsl = ("/**\r\n * http://en.wikipedia.org/wiki/Lambertian_reflectance\r\n */\r\n\r\n@export ecgl.lambert.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n\r\n@import ecgl.common.attributes\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nvoid main()\r\n{\r\n @import ecgl.common.uv.main\r\n\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.lambert.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform sampler2D diffuseMap;\r\nuniform sampler2D detailMap;\r\n\r\n@import ecgl.common.layers.header\r\n\r\nuniform float emissionIntensity: 1.0;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\n#endif\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color);\r\n#else\r\n gl_FragColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n gl_FragColor *= sRGBToLinear(v_Color);\r\n #else\r\n gl_FragColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n gl_FragColor *= albedoTexel;\r\n\r\n vec3 N = v_Normal;\r\n#ifdef DOUBLE_SIDED\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n vec3 diffuseColor = vec3(0.0, 0.0, 0.0);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\r\n {\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n diffuseColor += ambientLightColor[i] * ambientFactor * ao;\r\n }\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n diffuseColor += calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_] * ao;\r\n }}\r\n#endif\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\r\n {\r\n vec3 lightDirection = -directionalLightDirection[i];\r\n vec3 lightColor = directionalLightColor[i];\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[i];\r\n }\r\n#endif\r\n\r\n float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\r\n\r\n diffuseColor += lightColor * clamp(ndl, 0.0, 1.0);\r\n }\r\n#endif\r\n\r\n gl_FragColor.rgb *= diffuseColor;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
 
 ;// ./src/util/shader/realistic.glsl.js
-/* harmony default export */ const realistic_glsl = ("@export ecgl.realistic.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nattribute vec4 tangent : TANGENT;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nvoid main()\r\n{\r\n\r\n @import ecgl.common.uv.main\r\n\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n#ifdef NORMALMAP_ENABLED\r\n v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\r\n v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n}\r\n\r\n@end\r\n\r\n\r\n\r\n@export ecgl.realistic.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n#define PI 3.14159265358979\r\n#define ROUGHNESS_CHANEL 0\r\n#define METALNESS_CHANEL 1\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n// diffuseMap, bumpMap use v_Texcoord\r\nuniform sampler2D diffuseMap;\r\n\r\n// detailMap, metalnessMap, roughnessMap, normalMap use v_DetailTexcoord.\r\nuniform sampler2D detailMap;\r\nuniform sampler2D metalnessMap;\r\nuniform sampler2D roughnessMap;\r\n\r\n@import ecgl.common.layers.header\r\n\r\nuniform float emissionIntensity: 1.0;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform float metalness : 0.0;\r\nuniform float roughness : 0.5;\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\n#endif\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\r\n@import clay.header.ambient_cubemap_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n@import ecgl.common.normalMap.fragmentHeader\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import clay.util.rgbm\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\n// Fresnel\r\nvec3 F_Schlick(float ndv, vec3 spec) {\r\n return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\r\n}\r\n\r\nfloat D_Phong(float g, float ndh) {\r\n // from black ops 2\r\n float a = pow(8192.0, g);\r\n return (a + 2.0) / 8.0 * pow(ndh, a);\r\n}\r\n\r\nvoid main()\r\n{\r\n vec4 albedoColor = color;\r\n\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n albedoColor *= sRGBToLinear(v_Color);\r\n #else\r\n albedoColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n albedoColor *= albedoTexel;\r\n\r\n float m = metalness;\r\n\r\n#ifdef METALNESSMAP_ENABLED\r\n float m2 = texture2D(metalnessMap, v_DetailTexcoord)[METALNESS_CHANEL];\r\n // Adjust the brightness\r\n m = clamp(m2 + (m - 0.5) * 2.0, 0.0, 1.0);\r\n#endif\r\n\r\n vec3 baseColor = albedoColor.rgb;\r\n albedoColor.rgb = baseColor * (1.0 - m);\r\n vec3 specFactor = mix(vec3(0.04), baseColor, m);\r\n\r\n float g = 1.0 - roughness;\r\n\r\n#ifdef ROUGHNESSMAP_ENABLED\r\n float g2 = 1.0 - texture2D(roughnessMap, v_DetailTexcoord)[ROUGHNESS_CHANEL];\r\n // Adjust the brightness\r\n g = clamp(g2 + (g - 0.5) * 2.0, 0.0, 1.0);\r\n#endif\r\n\r\n vec3 N = v_Normal;\r\n\r\n#ifdef DOUBLE_SIDED\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n@import ecgl.common.normalMap.fragmentMain\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n vec3 diffuseTerm = vec3(0.0);\r\n vec3 specularTerm = vec3(0.0);\r\n\r\n float ndv = clamp(dot(N, V), 0.0, 1.0);\r\n vec3 fresnelTerm = F_Schlick(ndv, specFactor);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_LIGHT_COUNT; _idx_++)\r\n {{\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n diffuseTerm += ambientLightColor[_idx_] * ambientFactor * ao;\r\n }}\r\n#endif\r\n\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n diffuseTerm += calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_] * ao;\r\n }}\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++)\r\n {{\r\n vec3 L = -directionalLightDirection[_idx_];\r\n vec3 lc = directionalLightColor[_idx_];\r\n\r\n vec3 H = normalize(L + V);\r\n float ndl = clamp(dot(N, normalize(L)), 0.0, 1.0);\r\n float ndh = clamp(dot(N, H), 0.0, 1.0);\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[_idx_];\r\n }\r\n#endif\r\n\r\n vec3 li = lc * ndl * shadowContrib;\r\n\r\n diffuseTerm += li;\r\n specularTerm += li * fresnelTerm * D_Phong(g, ndh);\r\n }}\r\n#endif\r\n\r\n\r\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\r\n vec3 L = reflect(-V, N);\r\n L = vec3(L.x, L[NORMAL_UP_AXIS], L[NORMAL_FRONT_AXIS]);\r\n float rough2 = clamp(1.0 - g, 0.0, 1.0);\r\n // FIXME fixed maxMipmapLevel ?\r\n float bias2 = rough2 * 5.0;\r\n // One brdf lookup is enough\r\n vec2 brdfParam2 = texture2D(ambientCubemapLightBRDFLookup[0], vec2(rough2, ndv)).xy;\r\n vec3 envWeight2 = specFactor * brdfParam2.x + brdfParam2.y;\r\n vec3 envTexel2;\r\n for(int _idx_ = 0; _idx_ < AMBIENT_CUBEMAP_LIGHT_COUNT; _idx_++)\r\n {{\r\n envTexel2 = RGBMDecode(textureCubeLodEXT(ambientCubemapLightCubemap[_idx_], L, bias2), 8.12);\r\n // TODO mix ?\r\n specularTerm += ambientCubemapLightColor[_idx_] * envTexel2 * envWeight2 * ao;\r\n }}\r\n#endif\r\n\r\n gl_FragColor.rgb = albedoColor.rgb * diffuseTerm + specularTerm;\r\n gl_FragColor.a = albedoColor.a;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n#ifdef SRGB_ENCODE\r\n gl_FragColor = linearTosRGB(gl_FragColor);\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
+/* harmony default export */ var realistic_glsl = ("@export ecgl.realistic.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nattribute vec4 tangent : TANGENT;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nvoid main()\r\n{\r\n\r\n @import ecgl.common.uv.main\r\n\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n#ifdef NORMALMAP_ENABLED\r\n v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\r\n v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n}\r\n\r\n@end\r\n\r\n\r\n\r\n@export ecgl.realistic.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n#define PI 3.14159265358979\r\n#define ROUGHNESS_CHANEL 0\r\n#define METALNESS_CHANEL 1\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n// diffuseMap, bumpMap use v_Texcoord\r\nuniform sampler2D diffuseMap;\r\n\r\n// detailMap, metalnessMap, roughnessMap, normalMap use v_DetailTexcoord.\r\nuniform sampler2D detailMap;\r\nuniform sampler2D metalnessMap;\r\nuniform sampler2D roughnessMap;\r\n\r\n@import ecgl.common.layers.header\r\n\r\nuniform float emissionIntensity: 1.0;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform float metalness : 0.0;\r\nuniform float roughness : 0.5;\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\n#endif\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\r\n@import clay.header.ambient_cubemap_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n@import ecgl.common.normalMap.fragmentHeader\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import clay.util.rgbm\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\n// Fresnel\r\nvec3 F_Schlick(float ndv, vec3 spec) {\r\n return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\r\n}\r\n\r\nfloat D_Phong(float g, float ndh) {\r\n // from black ops 2\r\n float a = pow(8192.0, g);\r\n return (a + 2.0) / 8.0 * pow(ndh, a);\r\n}\r\n\r\nvoid main()\r\n{\r\n vec4 albedoColor = color;\r\n\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n albedoColor *= sRGBToLinear(v_Color);\r\n #else\r\n albedoColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n albedoColor *= albedoTexel;\r\n\r\n float m = metalness;\r\n\r\n#ifdef METALNESSMAP_ENABLED\r\n float m2 = texture2D(metalnessMap, v_DetailTexcoord)[METALNESS_CHANEL];\r\n // Adjust the brightness\r\n m = clamp(m2 + (m - 0.5) * 2.0, 0.0, 1.0);\r\n#endif\r\n\r\n vec3 baseColor = albedoColor.rgb;\r\n albedoColor.rgb = baseColor * (1.0 - m);\r\n vec3 specFactor = mix(vec3(0.04), baseColor, m);\r\n\r\n float g = 1.0 - roughness;\r\n\r\n#ifdef ROUGHNESSMAP_ENABLED\r\n float g2 = 1.0 - texture2D(roughnessMap, v_DetailTexcoord)[ROUGHNESS_CHANEL];\r\n // Adjust the brightness\r\n g = clamp(g2 + (g - 0.5) * 2.0, 0.0, 1.0);\r\n#endif\r\n\r\n vec3 N = v_Normal;\r\n\r\n#ifdef DOUBLE_SIDED\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n@import ecgl.common.normalMap.fragmentMain\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n vec3 diffuseTerm = vec3(0.0);\r\n vec3 specularTerm = vec3(0.0);\r\n\r\n float ndv = clamp(dot(N, V), 0.0, 1.0);\r\n vec3 fresnelTerm = F_Schlick(ndv, specFactor);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_LIGHT_COUNT; _idx_++)\r\n {{\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n diffuseTerm += ambientLightColor[_idx_] * ambientFactor * ao;\r\n }}\r\n#endif\r\n\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n diffuseTerm += calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_] * ao;\r\n }}\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++)\r\n {{\r\n vec3 L = -directionalLightDirection[_idx_];\r\n vec3 lc = directionalLightColor[_idx_];\r\n\r\n vec3 H = normalize(L + V);\r\n float ndl = clamp(dot(N, normalize(L)), 0.0, 1.0);\r\n float ndh = clamp(dot(N, H), 0.0, 1.0);\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[_idx_];\r\n }\r\n#endif\r\n\r\n vec3 li = lc * ndl * shadowContrib;\r\n\r\n diffuseTerm += li;\r\n specularTerm += li * fresnelTerm * D_Phong(g, ndh);\r\n }}\r\n#endif\r\n\r\n\r\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\r\n vec3 L = reflect(-V, N);\r\n L = vec3(L.x, L[NORMAL_UP_AXIS], L[NORMAL_FRONT_AXIS]);\r\n float rough2 = clamp(1.0 - g, 0.0, 1.0);\r\n // FIXME fixed maxMipmapLevel ?\r\n float bias2 = rough2 * 5.0;\r\n // One brdf lookup is enough\r\n vec2 brdfParam2 = texture2D(ambientCubemapLightBRDFLookup[0], vec2(rough2, ndv)).xy;\r\n vec3 envWeight2 = specFactor * brdfParam2.x + brdfParam2.y;\r\n vec3 envTexel2;\r\n for(int _idx_ = 0; _idx_ < AMBIENT_CUBEMAP_LIGHT_COUNT; _idx_++)\r\n {{\r\n envTexel2 = RGBMDecode(textureCubeLodEXT(ambientCubemapLightCubemap[_idx_], L, bias2), 8.12);\r\n // TODO mix ?\r\n specularTerm += ambientCubemapLightColor[_idx_] * envTexel2 * envWeight2 * ao;\r\n }}\r\n#endif\r\n\r\n gl_FragColor.rgb = albedoColor.rgb * diffuseTerm + specularTerm;\r\n gl_FragColor.a = albedoColor.a;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n#ifdef SRGB_ENCODE\r\n gl_FragColor = linearTosRGB(gl_FragColor);\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
 
 ;// ./src/util/shader/hatching.glsl.js
-/* harmony default export */ const hatching_glsl = ("@export ecgl.hatching.vertex\r\n\r\n@import ecgl.realistic.vertex\r\n\r\n@end\r\n\r\n\r\n@export ecgl.hatching.fragment\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform vec4 color : [0.0, 0.0, 0.0, 1.0];\r\nuniform vec4 paperColor : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nuniform sampler2D hatch1;\r\nuniform sampler2D hatch2;\r\nuniform sampler2D hatch3;\r\nuniform sampler2D hatch4;\r\nuniform sampler2D hatch5;\r\nuniform sampler2D hatch6;\r\n\r\n// https://github.com/spite/cross-hatching\r\n// http://gfx.cs.princeton.edu/proj/hatching/hatching.pdf\r\nfloat shade(in float tone) {\r\n vec4 c = vec4(1. ,1., 1., 1.);\r\n float step = 1. / 6.;\r\n vec2 uv = v_DetailTexcoord;\r\n if (tone <= step / 2.0) {\r\n c = mix(vec4(0.), texture2D(hatch6, uv), 12. * tone);\r\n }\r\n else if (tone <= step) {\r\n c = mix(texture2D(hatch6, uv), texture2D(hatch5, uv), 6. * tone);\r\n }\r\n if(tone > step && tone <= 2. * step){\r\n c = mix(texture2D(hatch5, uv), texture2D(hatch4, uv) , 6. * (tone - step));\r\n }\r\n if(tone > 2. * step && tone <= 3. * step){\r\n c = mix(texture2D(hatch4, uv), texture2D(hatch3, uv), 6. * (tone - 2. * step));\r\n }\r\n if(tone > 3. * step && tone <= 4. * step){\r\n c = mix(texture2D(hatch3, uv), texture2D(hatch2, uv), 6. * (tone - 3. * step));\r\n }\r\n if(tone > 4. * step && tone <= 5. * step){\r\n c = mix(texture2D(hatch2, uv), texture2D(hatch1, uv), 6. * (tone - 4. * step));\r\n }\r\n if(tone > 5. * step){\r\n c = mix(texture2D(hatch1, uv), vec4(1.), 6. * (tone - 5. * step));\r\n }\r\n\r\n return c.r;\r\n}\r\n\r\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n vec4 inkColor = sRGBToLinear(color);\r\n#else\r\n vec4 inkColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n inkColor *= sRGBToLinear(v_Color);\r\n #else\r\n inkColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n vec3 N = v_Normal;\r\n#ifdef DOUBLE_SIDED\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float tone = 0.0;\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\r\n {\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n tone += dot(ambientLightColor[i], w) * ambientFactor * ao;\r\n }\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n tone += dot(calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_], w) * ao;\r\n }}\r\n#endif\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\r\n {\r\n vec3 lightDirection = -directionalLightDirection[i];\r\n float lightTone = dot(directionalLightColor[i], w);\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[i];\r\n }\r\n#endif\r\n\r\n float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\r\n\r\n tone += lightTone * clamp(ndl, 0.0, 1.0);\r\n }\r\n#endif\r\n\r\n gl_FragColor = mix(inkColor, paperColor, shade(clamp(tone, 0.0, 1.0)));\r\n // gl_FragColor = vec4(vec3(clamp(tone, 0.0, 1.0)), 1.0);\r\n}\r\n@end\r\n");
+/* harmony default export */ var hatching_glsl = ("@export ecgl.hatching.vertex\r\n\r\n@import ecgl.realistic.vertex\r\n\r\n@end\r\n\r\n\r\n@export ecgl.hatching.fragment\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform vec4 color : [0.0, 0.0, 0.0, 1.0];\r\nuniform vec4 paperColor : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nuniform sampler2D hatch1;\r\nuniform sampler2D hatch2;\r\nuniform sampler2D hatch3;\r\nuniform sampler2D hatch4;\r\nuniform sampler2D hatch5;\r\nuniform sampler2D hatch6;\r\n\r\n// https://github.com/spite/cross-hatching\r\n// http://gfx.cs.princeton.edu/proj/hatching/hatching.pdf\r\nfloat shade(in float tone) {\r\n vec4 c = vec4(1. ,1., 1., 1.);\r\n float step = 1. / 6.;\r\n vec2 uv = v_DetailTexcoord;\r\n if (tone <= step / 2.0) {\r\n c = mix(vec4(0.), texture2D(hatch6, uv), 12. * tone);\r\n }\r\n else if (tone <= step) {\r\n c = mix(texture2D(hatch6, uv), texture2D(hatch5, uv), 6. * tone);\r\n }\r\n if(tone > step && tone <= 2. * step){\r\n c = mix(texture2D(hatch5, uv), texture2D(hatch4, uv) , 6. * (tone - step));\r\n }\r\n if(tone > 2. * step && tone <= 3. * step){\r\n c = mix(texture2D(hatch4, uv), texture2D(hatch3, uv), 6. * (tone - 2. * step));\r\n }\r\n if(tone > 3. * step && tone <= 4. * step){\r\n c = mix(texture2D(hatch3, uv), texture2D(hatch2, uv), 6. * (tone - 3. * step));\r\n }\r\n if(tone > 4. * step && tone <= 5. * step){\r\n c = mix(texture2D(hatch2, uv), texture2D(hatch1, uv), 6. * (tone - 4. * step));\r\n }\r\n if(tone > 5. * step){\r\n c = mix(texture2D(hatch1, uv), vec4(1.), 6. * (tone - 5. * step));\r\n }\r\n\r\n return c.r;\r\n}\r\n\r\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n vec4 inkColor = sRGBToLinear(color);\r\n#else\r\n vec4 inkColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n inkColor *= sRGBToLinear(v_Color);\r\n #else\r\n inkColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n vec3 N = v_Normal;\r\n#ifdef DOUBLE_SIDED\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float tone = 0.0;\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\r\n {\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n tone += dot(ambientLightColor[i], w) * ambientFactor * ao;\r\n }\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n tone += dot(calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_], w) * ao;\r\n }}\r\n#endif\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\r\n {\r\n vec3 lightDirection = -directionalLightDirection[i];\r\n float lightTone = dot(directionalLightColor[i], w);\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[i];\r\n }\r\n#endif\r\n\r\n float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\r\n\r\n tone += lightTone * clamp(ndl, 0.0, 1.0);\r\n }\r\n#endif\r\n\r\n gl_FragColor = mix(inkColor, paperColor, shade(clamp(tone, 0.0, 1.0)));\r\n // gl_FragColor = vec4(vec3(clamp(tone, 0.0, 1.0)), 1.0);\r\n}\r\n@end\r\n");
 
 ;// ./src/util/shader/shadow.glsl.js
-/* harmony default export */ const shadow_glsl = ("@export ecgl.sm.depth.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec3 position : POSITION;\r\nattribute vec2 texcoord : TEXCOORD_0;\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\nvarying vec4 v_ViewPosition;\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main(){\r\n\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n#else\r\n vec3 pos = position;\r\n#endif\r\n\r\n v_ViewPosition = worldViewProjection * vec4(pos, 1.0);\r\n gl_Position = v_ViewPosition;\r\n\r\n v_Texcoord = texcoord;\r\n\r\n}\r\n@end\r\n\r\n\r\n\r\n@export ecgl.sm.depth.fragment\r\n\r\n@import clay.sm.depth.fragment\r\n\r\n@end");
+/* harmony default export */ var shadow_glsl = ("@export ecgl.sm.depth.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec3 position : POSITION;\r\nattribute vec2 texcoord : TEXCOORD_0;\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\nvarying vec4 v_ViewPosition;\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main(){\r\n\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n#else\r\n vec3 pos = position;\r\n#endif\r\n\r\n v_ViewPosition = worldViewProjection * vec4(pos, 1.0);\r\n gl_Position = v_ViewPosition;\r\n\r\n v_Texcoord = texcoord;\r\n\r\n}\r\n@end\r\n\r\n\r\n\r\n@export ecgl.sm.depth.fragment\r\n\r\n@import clay.sm.depth.fragment\r\n\r\n@end");
 
 ;// ./src/util/graphicGL.js
 
@@ -26533,7 +26533,7 @@ graphicGL.updateVertexAnimation = function (
     }
 };
 
-/* harmony default export */ const util_graphicGL = (graphicGL);
+/* harmony default export */ var util_graphicGL = (graphicGL);
 
 ;// ./node_modules/zrender/lib/animation/requestAnimationFrame.js
 
@@ -26545,7 +26545,7 @@ requestAnimationFrame = (core_env.hasGlobalWindow
         || window.webkitRequestAnimationFrame)) || function (func) {
     return setTimeout(func, 16);
 };
-/* harmony default export */ const animation_requestAnimationFrame = (requestAnimationFrame);
+/* harmony default export */ var animation_requestAnimationFrame = (requestAnimationFrame);
 
 ;// ./src/core/LayerGL.js
 /**
@@ -27225,7 +27225,7 @@ LayerGL.prototype._dispatchToView = function (eventName, e) {
 
 Object.assign(LayerGL.prototype, mixin_notifier);
 
-/* harmony default export */ const core_LayerGL = (LayerGL);
+/* harmony default export */ var core_LayerGL = (LayerGL);
 ;// ./src/preprocessor/backwardCompat.js
 
 
@@ -27549,9 +27549,9 @@ external_echarts_.registerPostUpdate(function (ecModel, api) {
 external_echarts_.registerPreprocessor(backwardCompat);
 
 
-/* harmony default export */ const echarts_gl = (EChartsGL);
+/* harmony default export */ var echarts_gl = (EChartsGL);
 ;// ./src/component/common/componentViewControlMixin.js
-/* harmony default export */ const componentViewControlMixin = ({
+/* harmony default export */ var componentViewControlMixin = ({
     defaultOption: {
 
         viewControl: {
@@ -27630,7 +27630,7 @@ external_echarts_.registerPreprocessor(backwardCompat);
     }
 });
 ;// ./src/component/common/componentPostEffectMixin.js
-/* harmony default export */ const componentPostEffectMixin = ({
+/* harmony default export */ var componentPostEffectMixin = ({
     defaultOption: {
         // Post effect
         postEffect: {
@@ -27694,7 +27694,7 @@ external_echarts_.registerPreprocessor(backwardCompat);
     }
 });
 ;// ./src/component/common/componentLightMixin.js
-/* harmony default export */ const componentLightMixin = ({
+/* harmony default export */ var componentLightMixin = ({
     defaultOption: {
         // Light is available when material.shading is not color
         light: {
@@ -27872,7 +27872,7 @@ external_echarts_.util.merge(Grid3DModel.prototype, componentViewControlMixin);
 external_echarts_.util.merge(Grid3DModel.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(Grid3DModel.prototype, componentLightMixin);
 
-/* harmony default export */ const grid3D_Grid3DModel = (Grid3DModel);
+/* harmony default export */ var grid3D_Grid3DModel = (Grid3DModel);
 
 
 ;// ./node_modules/tslib/tslib.es6.js
@@ -28402,7 +28402,7 @@ var Point_Point = (function () {
     };
     return Point;
 }());
-/* harmony default export */ const core_Point = (Point_Point);
+/* harmony default export */ var core_Point = (Point_Point);
 
 ;// ./node_modules/zrender/lib/core/BoundingRect.js
 
@@ -28619,7 +28619,7 @@ var BoundingRect = (function () {
     };
     return BoundingRect;
 }());
-/* harmony default export */ const core_BoundingRect = (BoundingRect);
+/* harmony default export */ var core_BoundingRect = (BoundingRect);
 
 ;// ./node_modules/zrender/lib/contain/text.js
 
@@ -29537,7 +29537,7 @@ function copyTransform(target, source) {
         target[propName] = source[propName];
     }
 }
-/* harmony default export */ const core_Transformable = (Transformable);
+/* harmony default export */ var core_Transformable = (Transformable);
 
 ;// ./node_modules/zrender/lib/core/Eventful.js
 var Eventful = (function () {
@@ -29701,7 +29701,7 @@ var Eventful = (function () {
     };
     return Eventful;
 }());
-/* harmony default export */ const core_Eventful = (Eventful);
+/* harmony default export */ var core_Eventful = (Eventful);
 
 ;// ./node_modules/zrender/lib/config.js
 
@@ -30775,7 +30775,7 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
         animators.push(animator);
     }
 }
-/* harmony default export */ const lib_Element = (Element);
+/* harmony default export */ var lib_Element = (Element);
 
 ;// ./node_modules/zrender/lib/graphic/Displayable.js
 
@@ -31101,7 +31101,7 @@ function isDisplayableCulled(el, width, height) {
     viewRect.height = height;
     return !tmpRect.intersect(viewRect);
 }
-/* harmony default export */ const graphic_Displayable = (Displayable);
+/* harmony default export */ var graphic_Displayable = (Displayable);
 
 ;// ./node_modules/zrender/lib/core/bbox.js
 
@@ -31926,7 +31926,7 @@ var PathProxy = (function () {
     })();
     return PathProxy;
 }());
-/* harmony default export */ const core_PathProxy = (PathProxy);
+/* harmony default export */ var core_PathProxy = (PathProxy);
 
 ;// ./node_modules/zrender/lib/contain/line.js
 function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
@@ -32759,7 +32759,7 @@ var Path = (function (_super) {
     })();
     return Path;
 }(graphic_Displayable));
-/* harmony default export */ const graphic_Path = (Path);
+/* harmony default export */ var graphic_Path = (Path);
 
 ;// ./node_modules/zrender/lib/graphic/TSpan.js
 
@@ -32824,7 +32824,7 @@ var TSpan = (function (_super) {
     return TSpan;
 }(graphic_Displayable));
 TSpan.prototype.type = 'tspan';
-/* harmony default export */ const graphic_TSpan = (TSpan);
+/* harmony default export */ var graphic_TSpan = (TSpan);
 
 ;// ./node_modules/zrender/lib/graphic/Image.js
 
@@ -32899,7 +32899,7 @@ var ZRImage = (function (_super) {
     return ZRImage;
 }(graphic_Displayable));
 ZRImage.prototype.type = 'image';
-/* harmony default export */ const graphic_Image = (ZRImage);
+/* harmony default export */ var graphic_Image = (ZRImage);
 
 ;// ./node_modules/zrender/lib/graphic/helper/roundRect.js
 function buildPath(ctx, shape) {
@@ -33093,7 +33093,7 @@ var Rect = (function (_super) {
     return Rect;
 }(graphic_Path));
 Rect.prototype.type = 'rect';
-/* harmony default export */ const shape_Rect = (Rect);
+/* harmony default export */ var shape_Rect = (Rect);
 
 ;// ./node_modules/zrender/lib/graphic/Text.js
 
@@ -33646,7 +33646,7 @@ function needDrawBackground(style) {
         || style.lineHeight
         || (style.borderWidth && style.borderColor));
 }
-/* harmony default export */ const Text = (ZRText);
+/* harmony default export */ var Text = (ZRText);
 
 ;// ./node_modules/echarts/lib/util/number.js
 
@@ -37379,9 +37379,9 @@ Object.defineProperty(OrbitControl.prototype, 'autoRotate', {
 });
 
 
-/* harmony default export */ const util_OrbitControl = (OrbitControl);
+/* harmony default export */ var util_OrbitControl = (OrbitControl);
 ;// ./src/util/geometry/dynamicConvertMixin.js
-/* harmony default export */ const dynamicConvertMixin = ({
+/* harmony default export */ var dynamicConvertMixin = ({
     convertToDynamicArray: function (clear) {
         if (clear) {
             this.resetOffset();
@@ -37459,7 +37459,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
 
 
-/* harmony default export */ const glmatrix = ({
+/* harmony default export */ var glmatrix = ({
     vec2: glmatrix_vec2,
     vec3: glmatrix_vec3,
     vec4: glmatrix_vec4,
@@ -37474,7 +37474,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 // DEPRECATED
 
 
-/* harmony default export */ const dep_glmatrix = (glmatrix);
+/* harmony default export */ var dep_glmatrix = (glmatrix);
 
 ;// ./src/util/geometry/Lines3D.js
 /**
@@ -37940,7 +37940,7 @@ var LinesGeometry = src_Geometry.extend(function () {
 
 external_echarts_.util.defaults(LinesGeometry.prototype, dynamicConvertMixin);
 
-/* harmony default export */ const Lines3D = (LinesGeometry);
+/* harmony default export */ var Lines3D = (LinesGeometry);
 ;// ./src/util/ZRTextureAtlasSurface.js
 /**
  * Texture Atlas for the sprites.
@@ -38307,7 +38307,7 @@ ZRTextureAtlasSurface.prototype = {
     }
 };
 
-/* harmony default export */ const util_ZRTextureAtlasSurface = (ZRTextureAtlasSurface);
+/* harmony default export */ var util_ZRTextureAtlasSurface = (ZRTextureAtlasSurface);
 ;// ./src/component/common/SceneHelper.js
 
 
@@ -38491,7 +38491,7 @@ SceneHelper.prototype = {
     }
 };
 
-/* harmony default export */ const common_SceneHelper = (SceneHelper);
+/* harmony default export */ var common_SceneHelper = (SceneHelper);
 ;// ./src/util/geometry/Quads.js
 /**
  * @module echarts-gl/util/geometry/QuadsGeometry
@@ -38600,7 +38600,7 @@ var QuadsGeometry = src_Geometry.extend(function () {
 
 external_echarts_.util.defaults(QuadsGeometry.prototype, dynamicConvertMixin);
 
-/* harmony default export */ const Quads = (QuadsGeometry);
+/* harmony default export */ var Quads = (QuadsGeometry);
 ;// ./src/component/grid3D/Grid3DFace.js
 
 
@@ -38795,7 +38795,7 @@ Grid3DFace.prototype._udpateSplitAreas = function (geometry, axes, grid3DModel, 
     });
 };
 
-/* harmony default export */ const grid3D_Grid3DFace = (Grid3DFace);
+/* harmony default export */ var grid3D_Grid3DFace = (Grid3DFace);
 ;// ./src/util/geometry/Sprites.js
 /**
  * Geometry collecting sprites
@@ -38934,9 +38934,9 @@ var SpritesGeometry = src_Geometry.extend(function () {
 
 external_echarts_.util.defaults(SpritesGeometry.prototype, dynamicConvertMixin);
 
-/* harmony default export */ const Sprites = (SpritesGeometry);
+/* harmony default export */ var Sprites = (SpritesGeometry);
 ;// ./src/util/shader/labels.glsl.js
-/* harmony default export */ const labels_glsl = ("@export ecgl.labels.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec3 position: POSITION;\r\nattribute vec2 texcoord: TEXCOORD_0;\r\nattribute vec2 offset;\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main()\r\n{\r\n vec4 proj = worldViewProjection * vec4(position, 1.0);\r\n\r\n vec2 screen = (proj.xy / abs(proj.w) + 1.0) * 0.5 * viewport.zw;\r\n\r\n screen += offset;\r\n\r\n proj.xy = (screen / viewport.zw - 0.5) * 2.0 * abs(proj.w);\r\n gl_Position = proj;\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n v_Texcoord = texcoord;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.labels.fragment\r\n\r\nuniform vec3 color : [1.0, 1.0, 1.0];\r\nuniform float alpha : 1.0;\r\nuniform sampler2D textureAtlas;\r\nuniform vec2 uvScale: [1.0, 1.0];\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\nvarying float v_Miter;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = vec4(color, alpha) * texture2D(textureAtlas, v_Texcoord * uvScale);\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n#endif\r\n}\r\n\r\n@end");
+/* harmony default export */ var labels_glsl = ("@export ecgl.labels.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec3 position: POSITION;\r\nattribute vec2 texcoord: TEXCOORD_0;\r\nattribute vec2 offset;\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main()\r\n{\r\n vec4 proj = worldViewProjection * vec4(position, 1.0);\r\n\r\n vec2 screen = (proj.xy / abs(proj.w) + 1.0) * 0.5 * viewport.zw;\r\n\r\n screen += offset;\r\n\r\n proj.xy = (screen / viewport.zw - 0.5) * 2.0 * abs(proj.w);\r\n gl_Position = proj;\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n v_Texcoord = texcoord;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.labels.fragment\r\n\r\nuniform vec3 color : [1.0, 1.0, 1.0];\r\nuniform float alpha : 1.0;\r\nuniform sampler2D textureAtlas;\r\nuniform vec2 uvScale: [1.0, 1.0];\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\nvarying float v_Miter;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = vec4(color, alpha) * texture2D(textureAtlas, v_Texcoord * uvScale);\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n#endif\r\n}\r\n\r\n@end");
 
 ;// ./src/util/mesh/LabelsMesh.js
 
@@ -38945,7 +38945,7 @@ external_echarts_.util.defaults(SpritesGeometry.prototype, dynamicConvertMixin);
 
 util_graphicGL.Shader.import(labels_glsl);
 
-/* harmony default export */ const LabelsMesh = (util_graphicGL.Mesh.extend(function () {
+/* harmony default export */ var LabelsMesh = (util_graphicGL.Mesh.extend(function () {
     var geometry = new Sprites({
         dynamic: true
     });
@@ -39186,9 +39186,9 @@ Grid3DAxis.prototype.setSpriteAlign = function (textAlign, textVerticalAlign, ap
     this.textVerticalAlign = textVerticalAlign;
 };
 
-/* harmony default export */ const grid3D_Grid3DAxis = (Grid3DAxis);
+/* harmony default export */ var grid3D_Grid3DAxis = (Grid3DAxis);
 ;// ./src/util/shader/lines3D.glsl.js
-/* harmony default export */ const lines3D_glsl = ("@export ecgl.lines3D.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec3 position: POSITION;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n v_Color = a_Color;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines3D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n}\r\n@end\r\n\r\n\r\n\r\n@export ecgl.lines3D.clipNear\r\n\r\nvec4 clipNear(vec4 p1, vec4 p2) {\r\n float n = (p1.w - near) / (p1.w - p2.w);\r\n // PENDING\r\n return vec4(mix(p1.xy, p2.xy, n), -near, near);\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines3D.expandLine\r\n#ifdef VERTEX_ANIMATION\r\n vec4 prevProj = worldViewProjection * vec4(mix(prevPositionPrev, positionPrev, percent), 1.0);\r\n vec4 currProj = worldViewProjection * vec4(mix(prevPosition, position, percent), 1.0);\r\n vec4 nextProj = worldViewProjection * vec4(mix(prevPositionNext, positionNext, percent), 1.0);\r\n#else\r\n vec4 prevProj = worldViewProjection * vec4(positionPrev, 1.0);\r\n vec4 currProj = worldViewProjection * vec4(position, 1.0);\r\n vec4 nextProj = worldViewProjection * vec4(positionNext, 1.0);\r\n#endif\r\n\r\n if (currProj.w < 0.0) {\r\n if (nextProj.w > 0.0) {\r\n currProj = clipNear(currProj, nextProj);\r\n }\r\n else if (prevProj.w > 0.0) {\r\n currProj = clipNear(currProj, prevProj);\r\n }\r\n }\r\n\r\n vec2 prevScreen = (prevProj.xy / abs(prevProj.w) + 1.0) * 0.5 * viewport.zw;\r\n vec2 currScreen = (currProj.xy / abs(currProj.w) + 1.0) * 0.5 * viewport.zw;\r\n vec2 nextScreen = (nextProj.xy / abs(nextProj.w) + 1.0) * 0.5 * viewport.zw;\r\n\r\n vec2 dir;\r\n float len = offset;\r\n // Start point\r\n if (position == positionPrev) {\r\n dir = normalize(nextScreen - currScreen);\r\n }\r\n // End point\r\n else if (position == positionNext) {\r\n dir = normalize(currScreen - prevScreen);\r\n }\r\n else {\r\n vec2 dirA = normalize(currScreen - prevScreen);\r\n vec2 dirB = normalize(nextScreen - currScreen);\r\n\r\n vec2 tanget = normalize(dirA + dirB);\r\n\r\n // TODO, simple miterLimit\r\n float miter = 1.0 / max(dot(tanget, dirA), 0.5);\r\n len *= miter;\r\n dir = tanget;\r\n }\r\n\r\n dir = vec2(-dir.y, dir.x) * len;\r\n currScreen += dir;\r\n\r\n currProj.xy = (currScreen / viewport.zw - 0.5) * 2.0 * abs(currProj.w);\r\n@end\r\n\r\n\r\n@export ecgl.meshLines3D.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec3 position: POSITION;\r\nattribute vec3 positionPrev;\r\nattribute vec3 positionNext;\r\nattribute float offset;\r\nattribute vec4 a_Color : COLOR;\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute vec3 prevPositionPrev;\r\nattribute vec3 prevPositionNext;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\nuniform float near : NEAR;\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n@import ecgl.lines3D.clipNear\r\n\r\nvoid main()\r\n{\r\n @import ecgl.lines3D.expandLine\r\n\r\n gl_Position = currProj;\r\n\r\n v_Color = a_Color;\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines3D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
+/* harmony default export */ var lines3D_glsl = ("@export ecgl.lines3D.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec3 position: POSITION;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n v_Color = a_Color;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines3D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n}\r\n@end\r\n\r\n\r\n\r\n@export ecgl.lines3D.clipNear\r\n\r\nvec4 clipNear(vec4 p1, vec4 p2) {\r\n float n = (p1.w - near) / (p1.w - p2.w);\r\n // PENDING\r\n return vec4(mix(p1.xy, p2.xy, n), -near, near);\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines3D.expandLine\r\n#ifdef VERTEX_ANIMATION\r\n vec4 prevProj = worldViewProjection * vec4(mix(prevPositionPrev, positionPrev, percent), 1.0);\r\n vec4 currProj = worldViewProjection * vec4(mix(prevPosition, position, percent), 1.0);\r\n vec4 nextProj = worldViewProjection * vec4(mix(prevPositionNext, positionNext, percent), 1.0);\r\n#else\r\n vec4 prevProj = worldViewProjection * vec4(positionPrev, 1.0);\r\n vec4 currProj = worldViewProjection * vec4(position, 1.0);\r\n vec4 nextProj = worldViewProjection * vec4(positionNext, 1.0);\r\n#endif\r\n\r\n if (currProj.w < 0.0) {\r\n if (nextProj.w > 0.0) {\r\n currProj = clipNear(currProj, nextProj);\r\n }\r\n else if (prevProj.w > 0.0) {\r\n currProj = clipNear(currProj, prevProj);\r\n }\r\n }\r\n\r\n vec2 prevScreen = (prevProj.xy / abs(prevProj.w) + 1.0) * 0.5 * viewport.zw;\r\n vec2 currScreen = (currProj.xy / abs(currProj.w) + 1.0) * 0.5 * viewport.zw;\r\n vec2 nextScreen = (nextProj.xy / abs(nextProj.w) + 1.0) * 0.5 * viewport.zw;\r\n\r\n vec2 dir;\r\n float len = offset;\r\n // Start point\r\n if (position == positionPrev) {\r\n dir = normalize(nextScreen - currScreen);\r\n }\r\n // End point\r\n else if (position == positionNext) {\r\n dir = normalize(currScreen - prevScreen);\r\n }\r\n else {\r\n vec2 dirA = normalize(currScreen - prevScreen);\r\n vec2 dirB = normalize(nextScreen - currScreen);\r\n\r\n vec2 tanget = normalize(dirA + dirB);\r\n\r\n // TODO, simple miterLimit\r\n float miter = 1.0 / max(dot(tanget, dirA), 0.5);\r\n len *= miter;\r\n dir = tanget;\r\n }\r\n\r\n dir = vec2(-dir.y, dir.x) * len;\r\n currScreen += dir;\r\n\r\n currProj.xy = (currScreen / viewport.zw - 0.5) * 2.0 * abs(currProj.w);\r\n@end\r\n\r\n\r\n@export ecgl.meshLines3D.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec3 position: POSITION;\r\nattribute vec3 positionPrev;\r\nattribute vec3 positionNext;\r\nattribute float offset;\r\nattribute vec4 a_Color : COLOR;\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute vec3 prevPositionPrev;\r\nattribute vec3 prevPositionNext;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\nuniform float near : NEAR;\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n@import ecgl.lines3D.clipNear\r\n\r\nvoid main()\r\n{\r\n @import ecgl.lines3D.expandLine\r\n\r\n gl_Position = currProj;\r\n\r\n v_Color = a_Color;\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines3D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
 
 ;// ./src/component/grid3D/Grid3DView.js
 // TODO orthographic camera
@@ -39218,7 +39218,7 @@ var Grid3DView_dimIndicesMap = {
     z: 1
 };
 
-/* harmony default export */ const Grid3DView = (external_echarts_.ComponentView.extend({
+/* harmony default export */ var Grid3DView = (external_echarts_.ComponentView.extend({
 
     type: 'grid3D',
 
@@ -39852,7 +39852,7 @@ var Cartesian = /** @class */function () {
   return Cartesian;
 }();
 ;
-/* harmony default export */ const cartesian_Cartesian = (Cartesian);
+/* harmony default export */ var cartesian_Cartesian = (Cartesian);
 ;// ./src/coord/grid3D/Cartesian3D.js
 
 
@@ -39906,7 +39906,7 @@ Cartesian3D.prototype = {
 
 external_echarts_.util.inherits(Cartesian3D, cartesian_Cartesian);
 
-/* harmony default export */ const grid3D_Cartesian3D = (Cartesian3D);
+/* harmony default export */ var grid3D_Cartesian3D = (Cartesian3D);
 ;// ./src/coord/grid3D/Axis3D.js
 
 
@@ -39936,7 +39936,7 @@ Axis3D.prototype = {
 
 external_echarts_.util.inherits(Axis3D, external_echarts_.Axis);
 
-/* harmony default export */ const grid3D_Axis3D = (Axis3D);
+/* harmony default export */ var grid3D_Axis3D = (Axis3D);
 ;// ./node_modules/zrender/lib/core/fourPointsTransform.js
 var LN2 = Math.log(2);
 function determinant(rows, rank, rowStart, rowMask, colMask, detCache) {
@@ -40617,7 +40617,7 @@ var TextStyleMixin = /** @class */function () {
   return TextStyleMixin;
 }();
 ;
-/* harmony default export */ const textStyle = (TextStyleMixin);
+/* harmony default export */ var textStyle = (TextStyleMixin);
 ;// ./node_modules/echarts/lib/model/mixin/lineStyle.js
 
 /*
@@ -40913,7 +40913,7 @@ mixin(Model, LineStyleMixin);
 mixin(Model, ItemStyleMixin);
 mixin(Model, AreaStyleMixin);
 mixin(Model, textStyle);
-/* harmony default export */ const model_Model = (Model);
+/* harmony default export */ var model_Model = (Model);
 ;// ./node_modules/echarts/lib/i18n/langEN.js
 
 /*
@@ -40961,7 +40961,7 @@ mixin(Model, textStyle);
 /**
  * Language: English.
  */
-/* harmony default export */ const langEN = ({
+/* harmony default export */ var langEN = ({
   time: {
     month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     monthAbbr: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -41116,7 +41116,7 @@ mixin(Model, textStyle);
  * specific language governing permissions and limitations
  * under the License.
  */
-/* harmony default export */ const langZH = ({
+/* harmony default export */ var langZH = ({
   time: {
     month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
     monthAbbr: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
@@ -42450,10 +42450,10 @@ function TexturePool_isPowerOfTwo(width, height) {
             (height & (height-1)) === 0;
 }
 
-/* harmony default export */ const compositor_TexturePool = (TexturePool);
+/* harmony default export */ var compositor_TexturePool = (TexturePool);
 
 ;// ./node_modules/claygl/src/shader/source/shadowmap.glsl.js
-/* harmony default export */ const shadowmap_glsl = ("@export clay.sm.depth.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nuniform vec2 uvRepeat = vec2(1.0, 1.0);\nuniform vec2 uvOffset = vec2(0.0, 0.0);\n@import clay.chunk.skinning_header\n@import clay.chunk.instancing_header\nvarying vec4 v_ViewPosition;\nvarying vec2 v_Texcoord;\nvoid main(){\n vec4 P = vec4(position, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n v_ViewPosition = worldViewProjection * P;\n gl_Position = v_ViewPosition;\n v_Texcoord = texcoord * uvRepeat + uvOffset;\n}\n@end\n@export clay.sm.depth.fragment\nvarying vec4 v_ViewPosition;\nvarying vec2 v_Texcoord;\nuniform float bias : 0.001;\nuniform float slopeScale : 1.0;\nuniform sampler2D alphaMap;\nuniform float alphaCutoff: 0.0;\n@import clay.util.encode_float\nvoid main(){\n float depth = v_ViewPosition.z / v_ViewPosition.w;\n if (alphaCutoff > 0.0) {\n if (texture2D(alphaMap, v_Texcoord).a <= alphaCutoff) {\n discard;\n }\n }\n#ifdef USE_VSM\n depth = depth * 0.5 + 0.5;\n float moment1 = depth;\n float moment2 = depth * depth;\n #ifdef SUPPORT_STANDARD_DERIVATIVES\n float dx = dFdx(depth);\n float dy = dFdy(depth);\n moment2 += 0.25*(dx*dx+dy*dy);\n #endif\n gl_FragColor = vec4(moment1, moment2, 0.0, 1.0);\n#else\n #ifdef SUPPORT_STANDARD_DERIVATIVES\n float dx = dFdx(depth);\n float dy = dFdy(depth);\n depth += sqrt(dx*dx + dy*dy) * slopeScale + bias;\n #else\n depth += bias;\n #endif\n gl_FragColor = encodeFloat(depth * 0.5 + 0.5);\n#endif\n}\n@end\n@export clay.sm.debug_depth\nuniform sampler2D depthMap;\nvarying vec2 v_Texcoord;\n@import clay.util.decode_float\nvoid main() {\n vec4 tex = texture2D(depthMap, v_Texcoord);\n#ifdef USE_VSM\n gl_FragColor = vec4(tex.rgb, 1.0);\n#else\n float depth = decodeFloat(tex);\n gl_FragColor = vec4(depth, depth, depth, 1.0);\n#endif\n}\n@end\n@export clay.sm.distance.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform mat4 world : WORLD;\nattribute vec3 position : POSITION;\n@import clay.chunk.skinning_header\nvarying vec3 v_WorldPosition;\nvoid main (){\n vec4 P = vec4(position, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n gl_Position = worldViewProjection * P;\n v_WorldPosition = (world * P).xyz;\n}\n@end\n@export clay.sm.distance.fragment\nuniform vec3 lightPosition;\nuniform float range : 100;\nvarying vec3 v_WorldPosition;\n@import clay.util.encode_float\nvoid main(){\n float dist = distance(lightPosition, v_WorldPosition);\n#ifdef USE_VSM\n gl_FragColor = vec4(dist, dist * dist, 0.0, 0.0);\n#else\n dist = dist / range;\n gl_FragColor = encodeFloat(dist);\n#endif\n}\n@end\n@export clay.plugin.shadow_map_common\n@import clay.util.decode_float\nfloat tapShadowMap(sampler2D map, vec2 uv, float z){\n vec4 tex = texture2D(map, uv);\n return step(z, decodeFloat(tex) * 2.0 - 1.0);\n}\nfloat pcf(sampler2D map, vec2 uv, float z, float textureSize, vec2 scale) {\n float shadowContrib = tapShadowMap(map, uv, z);\n vec2 offset = vec2(1.0 / textureSize) * scale;\n#ifdef PCF_KERNEL_SIZE\n for (int _idx_ = 0; _idx_ < PCF_KERNEL_SIZE; _idx_++) {{\n shadowContrib += tapShadowMap(map, uv + offset * pcfKernel[_idx_], z);\n }}\n return shadowContrib / float(PCF_KERNEL_SIZE + 1);\n#else\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, 0.0), z);\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(0.0, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, 0.0), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, -offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, -offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(0.0, -offset.y), z);\n return shadowContrib / 9.0;\n#endif\n}\nfloat pcf(sampler2D map, vec2 uv, float z, float textureSize) {\n return pcf(map, uv, z, textureSize, vec2(1.0));\n}\nfloat chebyshevUpperBound(vec2 moments, float z){\n float p = 0.0;\n z = z * 0.5 + 0.5;\n if (z <= moments.x) {\n p = 1.0;\n }\n float variance = moments.y - moments.x * moments.x;\n variance = max(variance, 0.0000001);\n float mD = moments.x - z;\n float pMax = variance / (variance + mD * mD);\n pMax = clamp((pMax-0.4)/(1.0-0.4), 0.0, 1.0);\n return max(p, pMax);\n}\nfloat computeShadowContrib(\n sampler2D map, mat4 lightVPM, vec3 position, float textureSize, vec2 scale, vec2 offset\n) {\n vec4 posInLightSpace = lightVPM * vec4(position, 1.0);\n posInLightSpace.xyz /= posInLightSpace.w;\n float z = posInLightSpace.z;\n if(all(greaterThan(posInLightSpace.xyz, vec3(-0.99, -0.99, -1.0))) &&\n all(lessThan(posInLightSpace.xyz, vec3(0.99, 0.99, 1.0)))){\n vec2 uv = (posInLightSpace.xy+1.0) / 2.0;\n #ifdef USE_VSM\n vec2 moments = texture2D(map, uv * scale + offset).xy;\n return chebyshevUpperBound(moments, z);\n #else\n return pcf(map, uv * scale + offset, z, textureSize, scale);\n #endif\n }\n return 1.0;\n}\nfloat computeShadowContrib(sampler2D map, mat4 lightVPM, vec3 position, float textureSize) {\n return computeShadowContrib(map, lightVPM, position, textureSize, vec2(1.0), vec2(0.0));\n}\nfloat computeShadowContribOmni(samplerCube map, vec3 direction, float range)\n{\n float dist = length(direction);\n vec4 shadowTex = textureCube(map, direction);\n#ifdef USE_VSM\n vec2 moments = shadowTex.xy;\n float variance = moments.y - moments.x * moments.x;\n float mD = moments.x - dist;\n float p = variance / (variance + mD * mD);\n if(moments.x + 0.001 < dist){\n return clamp(p, 0.0, 1.0);\n }else{\n return 1.0;\n }\n#else\n return step(dist, (decodeFloat(shadowTex) + 0.0002) * range);\n#endif\n}\n@end\n@export clay.plugin.compute_shadow_map\n#if defined(SPOT_LIGHT_SHADOWMAP_COUNT) || defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT) || defined(POINT_LIGHT_SHADOWMAP_COUNT)\n#ifdef SPOT_LIGHT_SHADOWMAP_COUNT\nuniform sampler2D spotLightShadowMaps[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform mat4 spotLightMatrices[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform float spotLightShadowMapSizes[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\n#ifdef DIRECTIONAL_LIGHT_SHADOWMAP_COUNT\n#if defined(SHADOW_CASCADE)\nuniform sampler2D directionalLightShadowMaps[1]:unconfigurable;\nuniform mat4 directionalLightMatrices[SHADOW_CASCADE]:unconfigurable;\nuniform float directionalLightShadowMapSizes[1]:unconfigurable;\nuniform float shadowCascadeClipsNear[SHADOW_CASCADE]:unconfigurable;\nuniform float shadowCascadeClipsFar[SHADOW_CASCADE]:unconfigurable;\n#else\nuniform sampler2D directionalLightShadowMaps[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform mat4 directionalLightMatrices[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform float directionalLightShadowMapSizes[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\n#endif\n#ifdef POINT_LIGHT_SHADOWMAP_COUNT\nuniform samplerCube pointLightShadowMaps[POINT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\nuniform bool shadowEnabled : true;\n#ifdef PCF_KERNEL_SIZE\nuniform vec2 pcfKernel[PCF_KERNEL_SIZE];\n#endif\n@import clay.plugin.shadow_map_common\n#if defined(SPOT_LIGHT_SHADOWMAP_COUNT)\nvoid computeShadowOfSpotLights(vec3 position, inout float shadowContribs[SPOT_LIGHT_COUNT] ) {\n float shadowContrib;\n for(int _idx_ = 0; _idx_ < SPOT_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n shadowContrib = computeShadowContrib(\n spotLightShadowMaps[_idx_], spotLightMatrices[_idx_], position,\n spotLightShadowMapSizes[_idx_]\n );\n shadowContribs[_idx_] = shadowContrib;\n }}\n for(int _idx_ = SPOT_LIGHT_SHADOWMAP_COUNT; _idx_ < SPOT_LIGHT_COUNT; _idx_++){{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n#ifdef SHADOW_CASCADE\nvoid computeShadowOfDirectionalLights(vec3 position, inout float shadowContribs[DIRECTIONAL_LIGHT_COUNT]){\n float depth = (2.0 * gl_FragCoord.z - gl_DepthRange.near - gl_DepthRange.far)\n / (gl_DepthRange.far - gl_DepthRange.near);\n float shadowContrib;\n shadowContribs[0] = 1.0;\n for (int _idx_ = 0; _idx_ < SHADOW_CASCADE; _idx_++) {{\n if (\n depth >= shadowCascadeClipsNear[_idx_] &&\n depth <= shadowCascadeClipsFar[_idx_]\n ) {\n shadowContrib = computeShadowContrib(\n directionalLightShadowMaps[0], directionalLightMatrices[_idx_], position,\n directionalLightShadowMapSizes[0],\n vec2(1.0 / float(SHADOW_CASCADE), 1.0),\n vec2(float(_idx_) / float(SHADOW_CASCADE), 0.0)\n );\n shadowContribs[0] = shadowContrib;\n }\n }}\n for(int _idx_ = DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#else\nvoid computeShadowOfDirectionalLights(vec3 position, inout float shadowContribs[DIRECTIONAL_LIGHT_COUNT]){\n float shadowContrib;\n for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n shadowContrib = computeShadowContrib(\n directionalLightShadowMaps[_idx_], directionalLightMatrices[_idx_], position,\n directionalLightShadowMapSizes[_idx_]\n );\n shadowContribs[_idx_] = shadowContrib;\n }}\n for(int _idx_ = DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#endif\n#if defined(POINT_LIGHT_SHADOWMAP_COUNT)\nvoid computeShadowOfPointLights(vec3 position, inout float shadowContribs[POINT_LIGHT_COUNT] ){\n vec3 lightPosition;\n vec3 direction;\n for(int _idx_ = 0; _idx_ < POINT_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n lightPosition = pointLightPosition[_idx_];\n direction = position - lightPosition;\n shadowContribs[_idx_] = computeShadowContribOmni(pointLightShadowMaps[_idx_], direction, pointLightRange[_idx_]);\n }}\n for(int _idx_ = POINT_LIGHT_SHADOWMAP_COUNT; _idx_ < POINT_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#endif\n@end");
+/* harmony default export */ var shadowmap_glsl = ("@export clay.sm.depth.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nuniform vec2 uvRepeat = vec2(1.0, 1.0);\nuniform vec2 uvOffset = vec2(0.0, 0.0);\n@import clay.chunk.skinning_header\n@import clay.chunk.instancing_header\nvarying vec4 v_ViewPosition;\nvarying vec2 v_Texcoord;\nvoid main(){\n vec4 P = vec4(position, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n v_ViewPosition = worldViewProjection * P;\n gl_Position = v_ViewPosition;\n v_Texcoord = texcoord * uvRepeat + uvOffset;\n}\n@end\n@export clay.sm.depth.fragment\nvarying vec4 v_ViewPosition;\nvarying vec2 v_Texcoord;\nuniform float bias : 0.001;\nuniform float slopeScale : 1.0;\nuniform sampler2D alphaMap;\nuniform float alphaCutoff: 0.0;\n@import clay.util.encode_float\nvoid main(){\n float depth = v_ViewPosition.z / v_ViewPosition.w;\n if (alphaCutoff > 0.0) {\n if (texture2D(alphaMap, v_Texcoord).a <= alphaCutoff) {\n discard;\n }\n }\n#ifdef USE_VSM\n depth = depth * 0.5 + 0.5;\n float moment1 = depth;\n float moment2 = depth * depth;\n #ifdef SUPPORT_STANDARD_DERIVATIVES\n float dx = dFdx(depth);\n float dy = dFdy(depth);\n moment2 += 0.25*(dx*dx+dy*dy);\n #endif\n gl_FragColor = vec4(moment1, moment2, 0.0, 1.0);\n#else\n #ifdef SUPPORT_STANDARD_DERIVATIVES\n float dx = dFdx(depth);\n float dy = dFdy(depth);\n depth += sqrt(dx*dx + dy*dy) * slopeScale + bias;\n #else\n depth += bias;\n #endif\n gl_FragColor = encodeFloat(depth * 0.5 + 0.5);\n#endif\n}\n@end\n@export clay.sm.debug_depth\nuniform sampler2D depthMap;\nvarying vec2 v_Texcoord;\n@import clay.util.decode_float\nvoid main() {\n vec4 tex = texture2D(depthMap, v_Texcoord);\n#ifdef USE_VSM\n gl_FragColor = vec4(tex.rgb, 1.0);\n#else\n float depth = decodeFloat(tex);\n gl_FragColor = vec4(depth, depth, depth, 1.0);\n#endif\n}\n@end\n@export clay.sm.distance.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform mat4 world : WORLD;\nattribute vec3 position : POSITION;\n@import clay.chunk.skinning_header\nvarying vec3 v_WorldPosition;\nvoid main (){\n vec4 P = vec4(position, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n gl_Position = worldViewProjection * P;\n v_WorldPosition = (world * P).xyz;\n}\n@end\n@export clay.sm.distance.fragment\nuniform vec3 lightPosition;\nuniform float range : 100;\nvarying vec3 v_WorldPosition;\n@import clay.util.encode_float\nvoid main(){\n float dist = distance(lightPosition, v_WorldPosition);\n#ifdef USE_VSM\n gl_FragColor = vec4(dist, dist * dist, 0.0, 0.0);\n#else\n dist = dist / range;\n gl_FragColor = encodeFloat(dist);\n#endif\n}\n@end\n@export clay.plugin.shadow_map_common\n@import clay.util.decode_float\nfloat tapShadowMap(sampler2D map, vec2 uv, float z){\n vec4 tex = texture2D(map, uv);\n return step(z, decodeFloat(tex) * 2.0 - 1.0);\n}\nfloat pcf(sampler2D map, vec2 uv, float z, float textureSize, vec2 scale) {\n float shadowContrib = tapShadowMap(map, uv, z);\n vec2 offset = vec2(1.0 / textureSize) * scale;\n#ifdef PCF_KERNEL_SIZE\n for (int _idx_ = 0; _idx_ < PCF_KERNEL_SIZE; _idx_++) {{\n shadowContrib += tapShadowMap(map, uv + offset * pcfKernel[_idx_], z);\n }}\n return shadowContrib / float(PCF_KERNEL_SIZE + 1);\n#else\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, 0.0), z);\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(0.0, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, 0.0), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, -offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, -offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(0.0, -offset.y), z);\n return shadowContrib / 9.0;\n#endif\n}\nfloat pcf(sampler2D map, vec2 uv, float z, float textureSize) {\n return pcf(map, uv, z, textureSize, vec2(1.0));\n}\nfloat chebyshevUpperBound(vec2 moments, float z){\n float p = 0.0;\n z = z * 0.5 + 0.5;\n if (z <= moments.x) {\n p = 1.0;\n }\n float variance = moments.y - moments.x * moments.x;\n variance = max(variance, 0.0000001);\n float mD = moments.x - z;\n float pMax = variance / (variance + mD * mD);\n pMax = clamp((pMax-0.4)/(1.0-0.4), 0.0, 1.0);\n return max(p, pMax);\n}\nfloat computeShadowContrib(\n sampler2D map, mat4 lightVPM, vec3 position, float textureSize, vec2 scale, vec2 offset\n) {\n vec4 posInLightSpace = lightVPM * vec4(position, 1.0);\n posInLightSpace.xyz /= posInLightSpace.w;\n float z = posInLightSpace.z;\n if(all(greaterThan(posInLightSpace.xyz, vec3(-0.99, -0.99, -1.0))) &&\n all(lessThan(posInLightSpace.xyz, vec3(0.99, 0.99, 1.0)))){\n vec2 uv = (posInLightSpace.xy+1.0) / 2.0;\n #ifdef USE_VSM\n vec2 moments = texture2D(map, uv * scale + offset).xy;\n return chebyshevUpperBound(moments, z);\n #else\n return pcf(map, uv * scale + offset, z, textureSize, scale);\n #endif\n }\n return 1.0;\n}\nfloat computeShadowContrib(sampler2D map, mat4 lightVPM, vec3 position, float textureSize) {\n return computeShadowContrib(map, lightVPM, position, textureSize, vec2(1.0), vec2(0.0));\n}\nfloat computeShadowContribOmni(samplerCube map, vec3 direction, float range)\n{\n float dist = length(direction);\n vec4 shadowTex = textureCube(map, direction);\n#ifdef USE_VSM\n vec2 moments = shadowTex.xy;\n float variance = moments.y - moments.x * moments.x;\n float mD = moments.x - dist;\n float p = variance / (variance + mD * mD);\n if(moments.x + 0.001 < dist){\n return clamp(p, 0.0, 1.0);\n }else{\n return 1.0;\n }\n#else\n return step(dist, (decodeFloat(shadowTex) + 0.0002) * range);\n#endif\n}\n@end\n@export clay.plugin.compute_shadow_map\n#if defined(SPOT_LIGHT_SHADOWMAP_COUNT) || defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT) || defined(POINT_LIGHT_SHADOWMAP_COUNT)\n#ifdef SPOT_LIGHT_SHADOWMAP_COUNT\nuniform sampler2D spotLightShadowMaps[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform mat4 spotLightMatrices[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform float spotLightShadowMapSizes[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\n#ifdef DIRECTIONAL_LIGHT_SHADOWMAP_COUNT\n#if defined(SHADOW_CASCADE)\nuniform sampler2D directionalLightShadowMaps[1]:unconfigurable;\nuniform mat4 directionalLightMatrices[SHADOW_CASCADE]:unconfigurable;\nuniform float directionalLightShadowMapSizes[1]:unconfigurable;\nuniform float shadowCascadeClipsNear[SHADOW_CASCADE]:unconfigurable;\nuniform float shadowCascadeClipsFar[SHADOW_CASCADE]:unconfigurable;\n#else\nuniform sampler2D directionalLightShadowMaps[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform mat4 directionalLightMatrices[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform float directionalLightShadowMapSizes[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\n#endif\n#ifdef POINT_LIGHT_SHADOWMAP_COUNT\nuniform samplerCube pointLightShadowMaps[POINT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\nuniform bool shadowEnabled : true;\n#ifdef PCF_KERNEL_SIZE\nuniform vec2 pcfKernel[PCF_KERNEL_SIZE];\n#endif\n@import clay.plugin.shadow_map_common\n#if defined(SPOT_LIGHT_SHADOWMAP_COUNT)\nvoid computeShadowOfSpotLights(vec3 position, inout float shadowContribs[SPOT_LIGHT_COUNT] ) {\n float shadowContrib;\n for(int _idx_ = 0; _idx_ < SPOT_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n shadowContrib = computeShadowContrib(\n spotLightShadowMaps[_idx_], spotLightMatrices[_idx_], position,\n spotLightShadowMapSizes[_idx_]\n );\n shadowContribs[_idx_] = shadowContrib;\n }}\n for(int _idx_ = SPOT_LIGHT_SHADOWMAP_COUNT; _idx_ < SPOT_LIGHT_COUNT; _idx_++){{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n#ifdef SHADOW_CASCADE\nvoid computeShadowOfDirectionalLights(vec3 position, inout float shadowContribs[DIRECTIONAL_LIGHT_COUNT]){\n float depth = (2.0 * gl_FragCoord.z - gl_DepthRange.near - gl_DepthRange.far)\n / (gl_DepthRange.far - gl_DepthRange.near);\n float shadowContrib;\n shadowContribs[0] = 1.0;\n for (int _idx_ = 0; _idx_ < SHADOW_CASCADE; _idx_++) {{\n if (\n depth >= shadowCascadeClipsNear[_idx_] &&\n depth <= shadowCascadeClipsFar[_idx_]\n ) {\n shadowContrib = computeShadowContrib(\n directionalLightShadowMaps[0], directionalLightMatrices[_idx_], position,\n directionalLightShadowMapSizes[0],\n vec2(1.0 / float(SHADOW_CASCADE), 1.0),\n vec2(float(_idx_) / float(SHADOW_CASCADE), 0.0)\n );\n shadowContribs[0] = shadowContrib;\n }\n }}\n for(int _idx_ = DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#else\nvoid computeShadowOfDirectionalLights(vec3 position, inout float shadowContribs[DIRECTIONAL_LIGHT_COUNT]){\n float shadowContrib;\n for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n shadowContrib = computeShadowContrib(\n directionalLightShadowMaps[_idx_], directionalLightMatrices[_idx_], position,\n directionalLightShadowMapSizes[_idx_]\n );\n shadowContribs[_idx_] = shadowContrib;\n }}\n for(int _idx_ = DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#endif\n#if defined(POINT_LIGHT_SHADOWMAP_COUNT)\nvoid computeShadowOfPointLights(vec3 position, inout float shadowContribs[POINT_LIGHT_COUNT] ){\n vec3 lightPosition;\n vec3 direction;\n for(int _idx_ = 0; _idx_ < POINT_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n lightPosition = pointLightPosition[_idx_];\n direction = position - lightPosition;\n shadowContribs[_idx_] = computeShadowContribOmni(pointLightShadowMaps[_idx_], direction, pointLightRange[_idx_]);\n }}\n for(int _idx_ = POINT_LIGHT_SHADOWMAP_COUNT; _idx_ < POINT_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#endif\n@end");
 
 ;// ./node_modules/claygl/src/prePass/ShadowMap.js
 
@@ -43358,7 +43358,7 @@ ShadowMapPass.VSM = 1;
  */
 ShadowMapPass.PCF = 2;
 
-/* harmony default export */ const ShadowMap = (ShadowMapPass);
+/* harmony default export */ var ShadowMap = (ShadowMapPass);
 
 ;// ./node_modules/claygl/src/compositor/CompositorNode.js
 
@@ -43606,7 +43606,7 @@ var CompositorNode = core_Base.extend(function () {
     }
 });
 
-/* harmony default export */ const compositor_CompositorNode = (CompositorNode);
+/* harmony default export */ var compositor_CompositorNode = (CompositorNode);
 
 ;// ./node_modules/claygl/src/compositor/Graph.js
 
@@ -43748,7 +43748,7 @@ var Graph = core_Base.extend(function () {
     }
 });
 
-/* harmony default export */ const compositor_Graph = (Graph);
+/* harmony default export */ var compositor_Graph = (Graph);
 
 ;// ./node_modules/claygl/src/compositor/Compositor.js
 
@@ -43836,7 +43836,7 @@ var Compositor = compositor_Graph.extend(function() {
     }
 });
 
-/* harmony default export */ const compositor_Compositor = (Compositor);
+/* harmony default export */ var compositor_Compositor = (Compositor);
 
 ;// ./node_modules/claygl/src/compositor/SceneNode.js
 
@@ -43933,7 +43933,7 @@ var SceneNode = compositor_CompositorNode.extend(
     }
 });
 
-/* harmony default export */ const compositor_SceneNode = (SceneNode);
+/* harmony default export */ var compositor_SceneNode = (SceneNode);
 
 ;// ./node_modules/claygl/src/compositor/TextureNode.js
 
@@ -43966,7 +43966,7 @@ var TextureNode = compositor_CompositorNode.extend(function() {
     afterFrame: function () {}
 });
 
-/* harmony default export */ const compositor_TextureNode = (TextureNode);
+/* harmony default export */ var compositor_TextureNode = (TextureNode);
 
 ;// ./node_modules/claygl/src/compositor/FilterNode.js
 // TODO Shader library
@@ -44273,46 +44273,46 @@ var FilterNode = compositor_CompositorNode.extend(function () {
     }
 });
 
-/* harmony default export */ const compositor_FilterNode = (FilterNode);
+/* harmony default export */ var compositor_FilterNode = (FilterNode);
 
 ;// ./node_modules/claygl/src/shader/source/compositor/coloradjust.glsl.js
-/* harmony default export */ const coloradjust_glsl = ("@export clay.compositor.coloradjust\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float brightness : 0.0;\nuniform float contrast : 1.0;\nuniform float exposure : 0.0;\nuniform float gamma : 1.0;\nuniform float saturation : 1.0;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = clamp(tex.rgb + vec3(brightness), 0.0, 1.0);\n color = clamp( (color-vec3(0.5))*contrast+vec3(0.5), 0.0, 1.0);\n color = clamp( color * pow(2.0, exposure), 0.0, 1.0);\n color = clamp( pow(color, vec3(gamma)), 0.0, 1.0);\n float luminance = dot( color, w );\n color = mix(vec3(luminance), color, saturation);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.brightness\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float brightness : 0.0;\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = tex.rgb + vec3(brightness);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.contrast\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float contrast : 1.0;\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = (tex.rgb-vec3(0.5))*contrast+vec3(0.5);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.exposure\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float exposure : 0.0;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = tex.rgb * pow(2.0, exposure);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.gamma\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float gamma : 1.0;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = pow(tex.rgb, vec3(gamma));\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.saturation\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float saturation : 1.0;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = tex.rgb;\n float luminance = dot(color, w);\n color = mix(vec3(luminance), color, saturation);\n gl_FragColor = vec4(color, tex.a);\n}\n@end");
+/* harmony default export */ var coloradjust_glsl = ("@export clay.compositor.coloradjust\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float brightness : 0.0;\nuniform float contrast : 1.0;\nuniform float exposure : 0.0;\nuniform float gamma : 1.0;\nuniform float saturation : 1.0;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = clamp(tex.rgb + vec3(brightness), 0.0, 1.0);\n color = clamp( (color-vec3(0.5))*contrast+vec3(0.5), 0.0, 1.0);\n color = clamp( color * pow(2.0, exposure), 0.0, 1.0);\n color = clamp( pow(color, vec3(gamma)), 0.0, 1.0);\n float luminance = dot( color, w );\n color = mix(vec3(luminance), color, saturation);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.brightness\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float brightness : 0.0;\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = tex.rgb + vec3(brightness);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.contrast\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float contrast : 1.0;\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = (tex.rgb-vec3(0.5))*contrast+vec3(0.5);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.exposure\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float exposure : 0.0;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = tex.rgb * pow(2.0, exposure);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.gamma\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float gamma : 1.0;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = pow(tex.rgb, vec3(gamma));\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.saturation\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float saturation : 1.0;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = tex.rgb;\n float luminance = dot(color, w);\n color = mix(vec3(luminance), color, saturation);\n gl_FragColor = vec4(color, tex.a);\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/blur.glsl.js
-/* harmony default export */ const blur_glsl = ("@export clay.compositor.kernel.gaussian_9\nfloat gaussianKernel[9];\ngaussianKernel[0] = 0.07;\ngaussianKernel[1] = 0.09;\ngaussianKernel[2] = 0.12;\ngaussianKernel[3] = 0.14;\ngaussianKernel[4] = 0.16;\ngaussianKernel[5] = 0.14;\ngaussianKernel[6] = 0.12;\ngaussianKernel[7] = 0.09;\ngaussianKernel[8] = 0.07;\n@end\n@export clay.compositor.kernel.gaussian_13\nfloat gaussianKernel[13];\ngaussianKernel[0] = 0.02;\ngaussianKernel[1] = 0.03;\ngaussianKernel[2] = 0.06;\ngaussianKernel[3] = 0.08;\ngaussianKernel[4] = 0.11;\ngaussianKernel[5] = 0.13;\ngaussianKernel[6] = 0.14;\ngaussianKernel[7] = 0.13;\ngaussianKernel[8] = 0.11;\ngaussianKernel[9] = 0.08;\ngaussianKernel[10] = 0.06;\ngaussianKernel[11] = 0.03;\ngaussianKernel[12] = 0.02;\n@end\n@export clay.compositor.gaussian_blur\n#define SHADER_NAME gaussian_blur\nuniform sampler2D texture;varying vec2 v_Texcoord;\nuniform float blurSize : 2.0;\nuniform vec2 textureSize : [512.0, 512.0];\nuniform float blurDir : 0.0;\n@import clay.util.rgbm\n@import clay.util.clamp_sample\nvoid main (void)\n{\n @import clay.compositor.kernel.gaussian_9\n vec2 off = blurSize / textureSize;\n off *= vec2(1.0 - blurDir, blurDir);\n vec4 sum = vec4(0.0);\n float weightAll = 0.0;\n for (int i = 0; i < 9; i++) {\n float w = gaussianKernel[i];\n vec4 texel = decodeHDR(clampSample(texture, v_Texcoord + float(i - 4) * off));\n sum += texel * w;\n weightAll += w;\n }\n gl_FragColor = encodeHDR(sum / max(weightAll, 0.01));\n}\n@end\n");
+/* harmony default export */ var blur_glsl = ("@export clay.compositor.kernel.gaussian_9\nfloat gaussianKernel[9];\ngaussianKernel[0] = 0.07;\ngaussianKernel[1] = 0.09;\ngaussianKernel[2] = 0.12;\ngaussianKernel[3] = 0.14;\ngaussianKernel[4] = 0.16;\ngaussianKernel[5] = 0.14;\ngaussianKernel[6] = 0.12;\ngaussianKernel[7] = 0.09;\ngaussianKernel[8] = 0.07;\n@end\n@export clay.compositor.kernel.gaussian_13\nfloat gaussianKernel[13];\ngaussianKernel[0] = 0.02;\ngaussianKernel[1] = 0.03;\ngaussianKernel[2] = 0.06;\ngaussianKernel[3] = 0.08;\ngaussianKernel[4] = 0.11;\ngaussianKernel[5] = 0.13;\ngaussianKernel[6] = 0.14;\ngaussianKernel[7] = 0.13;\ngaussianKernel[8] = 0.11;\ngaussianKernel[9] = 0.08;\ngaussianKernel[10] = 0.06;\ngaussianKernel[11] = 0.03;\ngaussianKernel[12] = 0.02;\n@end\n@export clay.compositor.gaussian_blur\n#define SHADER_NAME gaussian_blur\nuniform sampler2D texture;varying vec2 v_Texcoord;\nuniform float blurSize : 2.0;\nuniform vec2 textureSize : [512.0, 512.0];\nuniform float blurDir : 0.0;\n@import clay.util.rgbm\n@import clay.util.clamp_sample\nvoid main (void)\n{\n @import clay.compositor.kernel.gaussian_9\n vec2 off = blurSize / textureSize;\n off *= vec2(1.0 - blurDir, blurDir);\n vec4 sum = vec4(0.0);\n float weightAll = 0.0;\n for (int i = 0; i < 9; i++) {\n float w = gaussianKernel[i];\n vec4 texel = decodeHDR(clampSample(texture, v_Texcoord + float(i - 4) * off));\n sum += texel * w;\n weightAll += w;\n }\n gl_FragColor = encodeHDR(sum / max(weightAll, 0.01));\n}\n@end\n");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/lum.glsl.js
-/* harmony default export */ const lum_glsl = ("@export clay.compositor.hdr.log_lum\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = decodeHDR(texture2D(texture, v_Texcoord));\n float luminance = dot(tex.rgb, w);\n luminance = log(luminance + 0.001);\n gl_FragColor = encodeHDR(vec4(vec3(luminance), 1.0));\n}\n@end\n@export clay.compositor.hdr.lum_adaption\nvarying vec2 v_Texcoord;\nuniform sampler2D adaptedLum;\nuniform sampler2D currentLum;\nuniform float frameTime : 0.02;\n@import clay.util.rgbm\nvoid main()\n{\n float fAdaptedLum = decodeHDR(texture2D(adaptedLum, vec2(0.5, 0.5))).r;\n float fCurrentLum = exp(encodeHDR(texture2D(currentLum, vec2(0.5, 0.5))).r);\n fAdaptedLum += (fCurrentLum - fAdaptedLum) * (1.0 - pow(0.98, 30.0 * frameTime));\n gl_FragColor = encodeHDR(vec4(vec3(fAdaptedLum), 1.0));\n}\n@end\n@export clay.compositor.lum\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord );\n float luminance = dot(tex.rgb, w);\n gl_FragColor = vec4(vec3(luminance), 1.0);\n}\n@end");
+/* harmony default export */ var lum_glsl = ("@export clay.compositor.hdr.log_lum\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = decodeHDR(texture2D(texture, v_Texcoord));\n float luminance = dot(tex.rgb, w);\n luminance = log(luminance + 0.001);\n gl_FragColor = encodeHDR(vec4(vec3(luminance), 1.0));\n}\n@end\n@export clay.compositor.hdr.lum_adaption\nvarying vec2 v_Texcoord;\nuniform sampler2D adaptedLum;\nuniform sampler2D currentLum;\nuniform float frameTime : 0.02;\n@import clay.util.rgbm\nvoid main()\n{\n float fAdaptedLum = decodeHDR(texture2D(adaptedLum, vec2(0.5, 0.5))).r;\n float fCurrentLum = exp(encodeHDR(texture2D(currentLum, vec2(0.5, 0.5))).r);\n fAdaptedLum += (fCurrentLum - fAdaptedLum) * (1.0 - pow(0.98, 30.0 * frameTime));\n gl_FragColor = encodeHDR(vec4(vec3(fAdaptedLum), 1.0));\n}\n@end\n@export clay.compositor.lum\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord );\n float luminance = dot(tex.rgb, w);\n gl_FragColor = vec4(vec3(luminance), 1.0);\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/lut.glsl.js
-/* harmony default export */ const lut_glsl = ("\n@export clay.compositor.lut\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform sampler2D lookup;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n float blueColor = tex.b * 63.0;\n vec2 quad1;\n quad1.y = floor(floor(blueColor) / 8.0);\n quad1.x = floor(blueColor) - (quad1.y * 8.0);\n vec2 quad2;\n quad2.y = floor(ceil(blueColor) / 8.0);\n quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n vec2 texPos1;\n texPos1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.r);\n texPos1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.g);\n vec2 texPos2;\n texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.r);\n texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.g);\n vec4 newColor1 = texture2D(lookup, texPos1);\n vec4 newColor2 = texture2D(lookup, texPos2);\n vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n gl_FragColor = vec4(newColor.rgb, tex.w);\n}\n@end");
+/* harmony default export */ var lut_glsl = ("\n@export clay.compositor.lut\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform sampler2D lookup;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n float blueColor = tex.b * 63.0;\n vec2 quad1;\n quad1.y = floor(floor(blueColor) / 8.0);\n quad1.x = floor(blueColor) - (quad1.y * 8.0);\n vec2 quad2;\n quad2.y = floor(ceil(blueColor) / 8.0);\n quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n vec2 texPos1;\n texPos1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.r);\n texPos1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.g);\n vec2 texPos2;\n texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.r);\n texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.g);\n vec4 newColor1 = texture2D(lookup, texPos1);\n vec4 newColor2 = texture2D(lookup, texPos2);\n vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n gl_FragColor = vec4(newColor.rgb, tex.w);\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/vignette.glsl.js
-/* harmony default export */ const vignette_glsl = ("@export clay.compositor.vignette\n#define OUTPUT_ALPHA\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float darkness: 1;\nuniform float offset: 1;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 texel = decodeHDR(texture2D(texture, v_Texcoord));\n gl_FragColor.rgb = texel.rgb;\n vec2 uv = (v_Texcoord - vec2(0.5)) * vec2(offset);\n gl_FragColor = encodeHDR(vec4(mix(texel.rgb, vec3(1.0 - darkness), dot(uv, uv)), texel.a));\n}\n@end");
+/* harmony default export */ var vignette_glsl = ("@export clay.compositor.vignette\n#define OUTPUT_ALPHA\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float darkness: 1;\nuniform float offset: 1;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 texel = decodeHDR(texture2D(texture, v_Texcoord));\n gl_FragColor.rgb = texel.rgb;\n vec2 uv = (v_Texcoord - vec2(0.5)) * vec2(offset);\n gl_FragColor = encodeHDR(vec4(mix(texel.rgb, vec3(1.0 - darkness), dot(uv, uv)), texel.a));\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/output.glsl.js
-/* harmony default export */ const output_glsl = ("@export clay.compositor.output\n#define OUTPUT_ALPHA\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = decodeHDR(texture2D(texture, v_Texcoord));\n gl_FragColor.rgb = tex.rgb;\n#ifdef OUTPUT_ALPHA\n gl_FragColor.a = tex.a;\n#else\n gl_FragColor.a = 1.0;\n#endif\n gl_FragColor = encodeHDR(gl_FragColor);\n#ifdef PREMULTIPLY_ALPHA\n gl_FragColor.rgb *= gl_FragColor.a;\n#endif\n}\n@end");
+/* harmony default export */ var output_glsl = ("@export clay.compositor.output\n#define OUTPUT_ALPHA\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = decodeHDR(texture2D(texture, v_Texcoord));\n gl_FragColor.rgb = tex.rgb;\n#ifdef OUTPUT_ALPHA\n gl_FragColor.a = tex.a;\n#else\n gl_FragColor.a = 1.0;\n#endif\n gl_FragColor = encodeHDR(gl_FragColor);\n#ifdef PREMULTIPLY_ALPHA\n gl_FragColor.rgb *= gl_FragColor.a;\n#endif\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/bright.glsl.js
-/* harmony default export */ const bright_glsl = ("@export clay.compositor.bright\nuniform sampler2D texture;\nuniform float threshold : 1;\nuniform float scale : 1.0;\nuniform vec2 textureSize: [512, 512];\nvarying vec2 v_Texcoord;\nconst vec3 lumWeight = vec3(0.2125, 0.7154, 0.0721);\n@import clay.util.rgbm\nvec4 median(vec4 a, vec4 b, vec4 c)\n{\n return a + b + c - min(min(a, b), c) - max(max(a, b), c);\n}\nvoid main()\n{\n vec4 texel = decodeHDR(texture2D(texture, v_Texcoord));\n#ifdef ANTI_FLICKER\n vec3 d = 1.0 / textureSize.xyx * vec3(1.0, 1.0, 0.0);\n vec4 s1 = decodeHDR(texture2D(texture, v_Texcoord - d.xz));\n vec4 s2 = decodeHDR(texture2D(texture, v_Texcoord + d.xz));\n vec4 s3 = decodeHDR(texture2D(texture, v_Texcoord - d.zy));\n vec4 s4 = decodeHDR(texture2D(texture, v_Texcoord + d.zy));\n texel = median(median(texel, s1, s2), s3, s4);\n#endif\n float lum = dot(texel.rgb , lumWeight);\n vec4 color;\n if (lum > threshold && texel.a > 0.0)\n {\n color = vec4(texel.rgb * scale, texel.a * scale);\n }\n else\n {\n color = vec4(0.0);\n }\n gl_FragColor = encodeHDR(color);\n}\n@end\n");
+/* harmony default export */ var bright_glsl = ("@export clay.compositor.bright\nuniform sampler2D texture;\nuniform float threshold : 1;\nuniform float scale : 1.0;\nuniform vec2 textureSize: [512, 512];\nvarying vec2 v_Texcoord;\nconst vec3 lumWeight = vec3(0.2125, 0.7154, 0.0721);\n@import clay.util.rgbm\nvec4 median(vec4 a, vec4 b, vec4 c)\n{\n return a + b + c - min(min(a, b), c) - max(max(a, b), c);\n}\nvoid main()\n{\n vec4 texel = decodeHDR(texture2D(texture, v_Texcoord));\n#ifdef ANTI_FLICKER\n vec3 d = 1.0 / textureSize.xyx * vec3(1.0, 1.0, 0.0);\n vec4 s1 = decodeHDR(texture2D(texture, v_Texcoord - d.xz));\n vec4 s2 = decodeHDR(texture2D(texture, v_Texcoord + d.xz));\n vec4 s3 = decodeHDR(texture2D(texture, v_Texcoord - d.zy));\n vec4 s4 = decodeHDR(texture2D(texture, v_Texcoord + d.zy));\n texel = median(median(texel, s1, s2), s3, s4);\n#endif\n float lum = dot(texel.rgb , lumWeight);\n vec4 color;\n if (lum > threshold && texel.a > 0.0)\n {\n color = vec4(texel.rgb * scale, texel.a * scale);\n }\n else\n {\n color = vec4(0.0);\n }\n gl_FragColor = encodeHDR(color);\n}\n@end\n");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/downsample.glsl.js
-/* harmony default export */ const downsample_glsl = ("@export clay.compositor.downsample\nuniform sampler2D texture;\nuniform vec2 textureSize : [512, 512];\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nfloat brightness(vec3 c)\n{\n return max(max(c.r, c.g), c.b);\n}\n@import clay.util.clamp_sample\nvoid main()\n{\n vec4 d = vec4(-1.0, -1.0, 1.0, 1.0) / textureSize.xyxy;\n#ifdef ANTI_FLICKER\n vec3 s1 = decodeHDR(clampSample(texture, v_Texcoord + d.xy)).rgb;\n vec3 s2 = decodeHDR(clampSample(texture, v_Texcoord + d.zy)).rgb;\n vec3 s3 = decodeHDR(clampSample(texture, v_Texcoord + d.xw)).rgb;\n vec3 s4 = decodeHDR(clampSample(texture, v_Texcoord + d.zw)).rgb;\n float s1w = 1.0 / (brightness(s1) + 1.0);\n float s2w = 1.0 / (brightness(s2) + 1.0);\n float s3w = 1.0 / (brightness(s3) + 1.0);\n float s4w = 1.0 / (brightness(s4) + 1.0);\n float oneDivideSum = 1.0 / (s1w + s2w + s3w + s4w);\n vec4 color = vec4(\n (s1 * s1w + s2 * s2w + s3 * s3w + s4 * s4w) * oneDivideSum,\n 1.0\n );\n#else\n vec4 color = decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.xw));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.zw));\n color *= 0.25;\n#endif\n gl_FragColor = encodeHDR(color);\n}\n@end");
+/* harmony default export */ var downsample_glsl = ("@export clay.compositor.downsample\nuniform sampler2D texture;\nuniform vec2 textureSize : [512, 512];\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nfloat brightness(vec3 c)\n{\n return max(max(c.r, c.g), c.b);\n}\n@import clay.util.clamp_sample\nvoid main()\n{\n vec4 d = vec4(-1.0, -1.0, 1.0, 1.0) / textureSize.xyxy;\n#ifdef ANTI_FLICKER\n vec3 s1 = decodeHDR(clampSample(texture, v_Texcoord + d.xy)).rgb;\n vec3 s2 = decodeHDR(clampSample(texture, v_Texcoord + d.zy)).rgb;\n vec3 s3 = decodeHDR(clampSample(texture, v_Texcoord + d.xw)).rgb;\n vec3 s4 = decodeHDR(clampSample(texture, v_Texcoord + d.zw)).rgb;\n float s1w = 1.0 / (brightness(s1) + 1.0);\n float s2w = 1.0 / (brightness(s2) + 1.0);\n float s3w = 1.0 / (brightness(s3) + 1.0);\n float s4w = 1.0 / (brightness(s4) + 1.0);\n float oneDivideSum = 1.0 / (s1w + s2w + s3w + s4w);\n vec4 color = vec4(\n (s1 * s1w + s2 * s2w + s3 * s3w + s4 * s4w) * oneDivideSum,\n 1.0\n );\n#else\n vec4 color = decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.xw));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.zw));\n color *= 0.25;\n#endif\n gl_FragColor = encodeHDR(color);\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/upsample.glsl.js
-/* harmony default export */ const upsample_glsl = ("\n@export clay.compositor.upsample\n#define HIGH_QUALITY\nuniform sampler2D texture;\nuniform vec2 textureSize : [512, 512];\nuniform float sampleScale: 0.5;\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\n@import clay.util.clamp_sample\nvoid main()\n{\n#ifdef HIGH_QUALITY\n vec4 d = vec4(1.0, 1.0, -1.0, 0.0) / textureSize.xyxy * sampleScale;\n vec4 s;\n s = decodeHDR(clampSample(texture, v_Texcoord - d.xy));\n s += decodeHDR(clampSample(texture, v_Texcoord - d.wy)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord - d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zw)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord )) * 4.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xw)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.wy)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n gl_FragColor = encodeHDR(s / 16.0);\n#else\n vec4 d = vec4(-1.0, -1.0, +1.0, +1.0) / textureSize.xyxy;\n vec4 s;\n s = decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xw));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zw));\n gl_FragColor = encodeHDR(s / 4.0);\n#endif\n}\n@end");
+/* harmony default export */ var upsample_glsl = ("\n@export clay.compositor.upsample\n#define HIGH_QUALITY\nuniform sampler2D texture;\nuniform vec2 textureSize : [512, 512];\nuniform float sampleScale: 0.5;\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\n@import clay.util.clamp_sample\nvoid main()\n{\n#ifdef HIGH_QUALITY\n vec4 d = vec4(1.0, 1.0, -1.0, 0.0) / textureSize.xyxy * sampleScale;\n vec4 s;\n s = decodeHDR(clampSample(texture, v_Texcoord - d.xy));\n s += decodeHDR(clampSample(texture, v_Texcoord - d.wy)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord - d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zw)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord )) * 4.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xw)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.wy)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n gl_FragColor = encodeHDR(s / 16.0);\n#else\n vec4 d = vec4(-1.0, -1.0, +1.0, +1.0) / textureSize.xyxy;\n vec4 s;\n s = decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xw));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zw));\n gl_FragColor = encodeHDR(s / 4.0);\n#endif\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/hdr.glsl.js
-/* harmony default export */ const hdr_glsl = ("@export clay.compositor.hdr.composite\n#define TONEMAPPING\nuniform sampler2D texture;\n#ifdef BLOOM_ENABLED\nuniform sampler2D bloom;\n#endif\n#ifdef LENSFLARE_ENABLED\nuniform sampler2D lensflare;\nuniform sampler2D lensdirt;\n#endif\n#ifdef LUM_ENABLED\nuniform sampler2D lum;\n#endif\n#ifdef LUT_ENABLED\nuniform sampler2D lut;\n#endif\n#ifdef COLOR_CORRECTION\nuniform float brightness : 0.0;\nuniform float contrast : 1.0;\nuniform float saturation : 1.0;\n#endif\n#ifdef VIGNETTE\nuniform float vignetteDarkness: 1.0;\nuniform float vignetteOffset: 1.0;\n#endif\nuniform float exposure : 1.0;\nuniform float bloomIntensity : 0.25;\nuniform float lensflareIntensity : 1;\nvarying vec2 v_Texcoord;\n@import clay.util.srgb\nvec3 ACESToneMapping(vec3 color)\n{\n const float A = 2.51;\n const float B = 0.03;\n const float C = 2.43;\n const float D = 0.59;\n const float E = 0.14;\n return (color * (A * color + B)) / (color * (C * color + D) + E);\n}\nfloat eyeAdaption(float fLum)\n{\n return mix(0.2, fLum, 0.5);\n}\n#ifdef LUT_ENABLED\nvec3 lutTransform(vec3 color) {\n float blueColor = color.b * 63.0;\n vec2 quad1;\n quad1.y = floor(floor(blueColor) / 8.0);\n quad1.x = floor(blueColor) - (quad1.y * 8.0);\n vec2 quad2;\n quad2.y = floor(ceil(blueColor) / 8.0);\n quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n vec2 texPos1;\n texPos1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.r);\n texPos1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.g);\n vec2 texPos2;\n texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.r);\n texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.g);\n vec4 newColor1 = texture2D(lut, texPos1);\n vec4 newColor2 = texture2D(lut, texPos2);\n vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n return newColor.rgb;\n}\n#endif\n@import clay.util.rgbm\nvoid main()\n{\n vec4 texel = vec4(0.0);\n vec4 originalTexel = vec4(0.0);\n#ifdef TEXTURE_ENABLED\n texel = decodeHDR(texture2D(texture, v_Texcoord));\n originalTexel = texel;\n#endif\n#ifdef BLOOM_ENABLED\n vec4 bloomTexel = decodeHDR(texture2D(bloom, v_Texcoord));\n texel.rgb += bloomTexel.rgb * bloomIntensity;\n texel.a += bloomTexel.a * bloomIntensity;\n#endif\n#ifdef LENSFLARE_ENABLED\n texel += decodeHDR(texture2D(lensflare, v_Texcoord)) * texture2D(lensdirt, v_Texcoord) * lensflareIntensity;\n#endif\n texel.a = min(texel.a, 1.0);\n#ifdef LUM_ENABLED\n float fLum = texture2D(lum, vec2(0.5, 0.5)).r;\n float adaptedLumDest = 3.0 / (max(0.1, 1.0 + 10.0*eyeAdaption(fLum)));\n float exposureBias = adaptedLumDest * exposure;\n#else\n float exposureBias = exposure;\n#endif\n#ifdef TONEMAPPING\n texel.rgb *= exposureBias;\n texel.rgb = ACESToneMapping(texel.rgb);\n#endif\n texel = linearTosRGB(texel);\n#ifdef LUT_ENABLED\n texel.rgb = lutTransform(clamp(texel.rgb,vec3(0.0),vec3(1.0)));\n#endif\n#ifdef COLOR_CORRECTION\n texel.rgb = clamp(texel.rgb + vec3(brightness), 0.0, 1.0);\n texel.rgb = clamp((texel.rgb - vec3(0.5))*contrast+vec3(0.5), 0.0, 1.0);\n float lum = dot(texel.rgb, vec3(0.2125, 0.7154, 0.0721));\n texel.rgb = mix(vec3(lum), texel.rgb, saturation);\n#endif\n#ifdef VIGNETTE\n vec2 uv = (v_Texcoord - vec2(0.5)) * vec2(vignetteOffset);\n texel.rgb = mix(texel.rgb, vec3(1.0 - vignetteDarkness), dot(uv, uv));\n#endif\n gl_FragColor = encodeHDR(texel);\n#ifdef DEBUG\n #if DEBUG == 1\n gl_FragColor = encodeHDR(decodeHDR(texture2D(texture, v_Texcoord)));\n #elif DEBUG == 2\n gl_FragColor = encodeHDR(decodeHDR(texture2D(bloom, v_Texcoord)) * bloomIntensity);\n #elif DEBUG == 3\n gl_FragColor = encodeHDR(decodeHDR(texture2D(lensflare, v_Texcoord) * lensflareIntensity));\n #endif\n#endif\n if (originalTexel.a <= 0.01 && gl_FragColor.a > 1e-5) {\n gl_FragColor.a = dot(gl_FragColor.rgb, vec3(0.2125, 0.7154, 0.0721));\n }\n#ifdef PREMULTIPLY_ALPHA\n gl_FragColor.rgb *= gl_FragColor.a;\n#endif\n}\n@end");
+/* harmony default export */ var hdr_glsl = ("@export clay.compositor.hdr.composite\n#define TONEMAPPING\nuniform sampler2D texture;\n#ifdef BLOOM_ENABLED\nuniform sampler2D bloom;\n#endif\n#ifdef LENSFLARE_ENABLED\nuniform sampler2D lensflare;\nuniform sampler2D lensdirt;\n#endif\n#ifdef LUM_ENABLED\nuniform sampler2D lum;\n#endif\n#ifdef LUT_ENABLED\nuniform sampler2D lut;\n#endif\n#ifdef COLOR_CORRECTION\nuniform float brightness : 0.0;\nuniform float contrast : 1.0;\nuniform float saturation : 1.0;\n#endif\n#ifdef VIGNETTE\nuniform float vignetteDarkness: 1.0;\nuniform float vignetteOffset: 1.0;\n#endif\nuniform float exposure : 1.0;\nuniform float bloomIntensity : 0.25;\nuniform float lensflareIntensity : 1;\nvarying vec2 v_Texcoord;\n@import clay.util.srgb\nvec3 ACESToneMapping(vec3 color)\n{\n const float A = 2.51;\n const float B = 0.03;\n const float C = 2.43;\n const float D = 0.59;\n const float E = 0.14;\n return (color * (A * color + B)) / (color * (C * color + D) + E);\n}\nfloat eyeAdaption(float fLum)\n{\n return mix(0.2, fLum, 0.5);\n}\n#ifdef LUT_ENABLED\nvec3 lutTransform(vec3 color) {\n float blueColor = color.b * 63.0;\n vec2 quad1;\n quad1.y = floor(floor(blueColor) / 8.0);\n quad1.x = floor(blueColor) - (quad1.y * 8.0);\n vec2 quad2;\n quad2.y = floor(ceil(blueColor) / 8.0);\n quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n vec2 texPos1;\n texPos1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.r);\n texPos1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.g);\n vec2 texPos2;\n texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.r);\n texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.g);\n vec4 newColor1 = texture2D(lut, texPos1);\n vec4 newColor2 = texture2D(lut, texPos2);\n vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n return newColor.rgb;\n}\n#endif\n@import clay.util.rgbm\nvoid main()\n{\n vec4 texel = vec4(0.0);\n vec4 originalTexel = vec4(0.0);\n#ifdef TEXTURE_ENABLED\n texel = decodeHDR(texture2D(texture, v_Texcoord));\n originalTexel = texel;\n#endif\n#ifdef BLOOM_ENABLED\n vec4 bloomTexel = decodeHDR(texture2D(bloom, v_Texcoord));\n texel.rgb += bloomTexel.rgb * bloomIntensity;\n texel.a += bloomTexel.a * bloomIntensity;\n#endif\n#ifdef LENSFLARE_ENABLED\n texel += decodeHDR(texture2D(lensflare, v_Texcoord)) * texture2D(lensdirt, v_Texcoord) * lensflareIntensity;\n#endif\n texel.a = min(texel.a, 1.0);\n#ifdef LUM_ENABLED\n float fLum = texture2D(lum, vec2(0.5, 0.5)).r;\n float adaptedLumDest = 3.0 / (max(0.1, 1.0 + 10.0*eyeAdaption(fLum)));\n float exposureBias = adaptedLumDest * exposure;\n#else\n float exposureBias = exposure;\n#endif\n#ifdef TONEMAPPING\n texel.rgb *= exposureBias;\n texel.rgb = ACESToneMapping(texel.rgb);\n#endif\n texel = linearTosRGB(texel);\n#ifdef LUT_ENABLED\n texel.rgb = lutTransform(clamp(texel.rgb,vec3(0.0),vec3(1.0)));\n#endif\n#ifdef COLOR_CORRECTION\n texel.rgb = clamp(texel.rgb + vec3(brightness), 0.0, 1.0);\n texel.rgb = clamp((texel.rgb - vec3(0.5))*contrast+vec3(0.5), 0.0, 1.0);\n float lum = dot(texel.rgb, vec3(0.2125, 0.7154, 0.0721));\n texel.rgb = mix(vec3(lum), texel.rgb, saturation);\n#endif\n#ifdef VIGNETTE\n vec2 uv = (v_Texcoord - vec2(0.5)) * vec2(vignetteOffset);\n texel.rgb = mix(texel.rgb, vec3(1.0 - vignetteDarkness), dot(uv, uv));\n#endif\n gl_FragColor = encodeHDR(texel);\n#ifdef DEBUG\n #if DEBUG == 1\n gl_FragColor = encodeHDR(decodeHDR(texture2D(texture, v_Texcoord)));\n #elif DEBUG == 2\n gl_FragColor = encodeHDR(decodeHDR(texture2D(bloom, v_Texcoord)) * bloomIntensity);\n #elif DEBUG == 3\n gl_FragColor = encodeHDR(decodeHDR(texture2D(lensflare, v_Texcoord) * lensflareIntensity));\n #endif\n#endif\n if (originalTexel.a <= 0.01 && gl_FragColor.a > 1e-5) {\n gl_FragColor.a = dot(gl_FragColor.rgb, vec3(0.2125, 0.7154, 0.0721));\n }\n#ifdef PREMULTIPLY_ALPHA\n gl_FragColor.rgb *= gl_FragColor.a;\n#endif\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/lensflare.glsl.js
-/* harmony default export */ const lensflare_glsl = ("@export clay.compositor.lensflare\n#define SAMPLE_NUMBER 8\nuniform sampler2D texture;\nuniform sampler2D lenscolor;\nuniform vec2 textureSize : [512, 512];\nuniform float dispersal : 0.3;\nuniform float haloWidth : 0.4;\nuniform float distortion : 1.0;\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nvec4 textureDistorted(\n in vec2 texcoord,\n in vec2 direction,\n in vec3 distortion\n) {\n return vec4(\n decodeHDR(texture2D(texture, texcoord + direction * distortion.r)).r,\n decodeHDR(texture2D(texture, texcoord + direction * distortion.g)).g,\n decodeHDR(texture2D(texture, texcoord + direction * distortion.b)).b,\n 1.0\n );\n}\nvoid main()\n{\n vec2 texcoord = -v_Texcoord + vec2(1.0); vec2 textureOffset = 1.0 / textureSize;\n vec2 ghostVec = (vec2(0.5) - texcoord) * dispersal;\n vec2 haloVec = normalize(ghostVec) * haloWidth;\n vec3 distortion = vec3(-textureOffset.x * distortion, 0.0, textureOffset.x * distortion);\n vec4 result = vec4(0.0);\n for (int i = 0; i < SAMPLE_NUMBER; i++)\n {\n vec2 offset = fract(texcoord + ghostVec * float(i));\n float weight = length(vec2(0.5) - offset) / length(vec2(0.5));\n weight = pow(1.0 - weight, 10.0);\n result += textureDistorted(offset, normalize(ghostVec), distortion) * weight;\n }\n result *= texture2D(lenscolor, vec2(length(vec2(0.5) - texcoord)) / length(vec2(0.5)));\n float weight = length(vec2(0.5) - fract(texcoord + haloVec)) / length(vec2(0.5));\n weight = pow(1.0 - weight, 10.0);\n vec2 offset = fract(texcoord + haloVec);\n result += textureDistorted(offset, normalize(ghostVec), distortion) * weight;\n gl_FragColor = result;\n}\n@end");
+/* harmony default export */ var lensflare_glsl = ("@export clay.compositor.lensflare\n#define SAMPLE_NUMBER 8\nuniform sampler2D texture;\nuniform sampler2D lenscolor;\nuniform vec2 textureSize : [512, 512];\nuniform float dispersal : 0.3;\nuniform float haloWidth : 0.4;\nuniform float distortion : 1.0;\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nvec4 textureDistorted(\n in vec2 texcoord,\n in vec2 direction,\n in vec3 distortion\n) {\n return vec4(\n decodeHDR(texture2D(texture, texcoord + direction * distortion.r)).r,\n decodeHDR(texture2D(texture, texcoord + direction * distortion.g)).g,\n decodeHDR(texture2D(texture, texcoord + direction * distortion.b)).b,\n 1.0\n );\n}\nvoid main()\n{\n vec2 texcoord = -v_Texcoord + vec2(1.0); vec2 textureOffset = 1.0 / textureSize;\n vec2 ghostVec = (vec2(0.5) - texcoord) * dispersal;\n vec2 haloVec = normalize(ghostVec) * haloWidth;\n vec3 distortion = vec3(-textureOffset.x * distortion, 0.0, textureOffset.x * distortion);\n vec4 result = vec4(0.0);\n for (int i = 0; i < SAMPLE_NUMBER; i++)\n {\n vec2 offset = fract(texcoord + ghostVec * float(i));\n float weight = length(vec2(0.5) - offset) / length(vec2(0.5));\n weight = pow(1.0 - weight, 10.0);\n result += textureDistorted(offset, normalize(ghostVec), distortion) * weight;\n }\n result *= texture2D(lenscolor, vec2(length(vec2(0.5) - texcoord)) / length(vec2(0.5)));\n float weight = length(vec2(0.5) - fract(texcoord + haloVec)) / length(vec2(0.5));\n weight = pow(1.0 - weight, 10.0);\n vec2 offset = fract(texcoord + haloVec);\n result += textureDistorted(offset, normalize(ghostVec), distortion) * weight;\n gl_FragColor = result;\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/blend.glsl.js
-/* harmony default export */ const blend_glsl = ("@export clay.compositor.blend\n#define SHADER_NAME blend\n#ifdef TEXTURE1_ENABLED\nuniform sampler2D texture1;\nuniform float weight1 : 1.0;\n#endif\n#ifdef TEXTURE2_ENABLED\nuniform sampler2D texture2;\nuniform float weight2 : 1.0;\n#endif\n#ifdef TEXTURE3_ENABLED\nuniform sampler2D texture3;\nuniform float weight3 : 1.0;\n#endif\n#ifdef TEXTURE4_ENABLED\nuniform sampler2D texture4;\nuniform float weight4 : 1.0;\n#endif\n#ifdef TEXTURE5_ENABLED\nuniform sampler2D texture5;\nuniform float weight5 : 1.0;\n#endif\n#ifdef TEXTURE6_ENABLED\nuniform sampler2D texture6;\nuniform float weight6 : 1.0;\n#endif\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = vec4(0.0);\n#ifdef TEXTURE1_ENABLED\n tex += decodeHDR(texture2D(texture1, v_Texcoord)) * weight1;\n#endif\n#ifdef TEXTURE2_ENABLED\n tex += decodeHDR(texture2D(texture2, v_Texcoord)) * weight2;\n#endif\n#ifdef TEXTURE3_ENABLED\n tex += decodeHDR(texture2D(texture3, v_Texcoord)) * weight3;\n#endif\n#ifdef TEXTURE4_ENABLED\n tex += decodeHDR(texture2D(texture4, v_Texcoord)) * weight4;\n#endif\n#ifdef TEXTURE5_ENABLED\n tex += decodeHDR(texture2D(texture5, v_Texcoord)) * weight5;\n#endif\n#ifdef TEXTURE6_ENABLED\n tex += decodeHDR(texture2D(texture6, v_Texcoord)) * weight6;\n#endif\n gl_FragColor = encodeHDR(tex);\n}\n@end");
+/* harmony default export */ var blend_glsl = ("@export clay.compositor.blend\n#define SHADER_NAME blend\n#ifdef TEXTURE1_ENABLED\nuniform sampler2D texture1;\nuniform float weight1 : 1.0;\n#endif\n#ifdef TEXTURE2_ENABLED\nuniform sampler2D texture2;\nuniform float weight2 : 1.0;\n#endif\n#ifdef TEXTURE3_ENABLED\nuniform sampler2D texture3;\nuniform float weight3 : 1.0;\n#endif\n#ifdef TEXTURE4_ENABLED\nuniform sampler2D texture4;\nuniform float weight4 : 1.0;\n#endif\n#ifdef TEXTURE5_ENABLED\nuniform sampler2D texture5;\nuniform float weight5 : 1.0;\n#endif\n#ifdef TEXTURE6_ENABLED\nuniform sampler2D texture6;\nuniform float weight6 : 1.0;\n#endif\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = vec4(0.0);\n#ifdef TEXTURE1_ENABLED\n tex += decodeHDR(texture2D(texture1, v_Texcoord)) * weight1;\n#endif\n#ifdef TEXTURE2_ENABLED\n tex += decodeHDR(texture2D(texture2, v_Texcoord)) * weight2;\n#endif\n#ifdef TEXTURE3_ENABLED\n tex += decodeHDR(texture2D(texture3, v_Texcoord)) * weight3;\n#endif\n#ifdef TEXTURE4_ENABLED\n tex += decodeHDR(texture2D(texture4, v_Texcoord)) * weight4;\n#endif\n#ifdef TEXTURE5_ENABLED\n tex += decodeHDR(texture2D(texture5, v_Texcoord)) * weight5;\n#endif\n#ifdef TEXTURE6_ENABLED\n tex += decodeHDR(texture2D(texture6, v_Texcoord)) * weight6;\n#endif\n gl_FragColor = encodeHDR(tex);\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/source/compositor/fxaa.glsl.js
-/* harmony default export */ const fxaa_glsl = ("@export clay.compositor.fxaa\nuniform sampler2D texture;\nuniform vec4 viewport : VIEWPORT;\nvarying vec2 v_Texcoord;\n#define FXAA_REDUCE_MIN (1.0/128.0)\n#define FXAA_REDUCE_MUL (1.0/8.0)\n#define FXAA_SPAN_MAX 8.0\n@import clay.util.rgbm\nvoid main()\n{\n vec2 resolution = 1.0 / viewport.zw;\n vec3 rgbNW = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( -1.0, -1.0 ) ) * resolution ) ).xyz;\n vec3 rgbNE = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( 1.0, -1.0 ) ) * resolution ) ).xyz;\n vec3 rgbSW = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( -1.0, 1.0 ) ) * resolution ) ).xyz;\n vec3 rgbSE = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( 1.0, 1.0 ) ) * resolution ) ).xyz;\n vec4 rgbaM = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution ) );\n vec3 rgbM = rgbaM.xyz;\n float opacity = rgbaM.w;\n vec3 luma = vec3( 0.299, 0.587, 0.114 );\n float lumaNW = dot( rgbNW, luma );\n float lumaNE = dot( rgbNE, luma );\n float lumaSW = dot( rgbSW, luma );\n float lumaSE = dot( rgbSE, luma );\n float lumaM = dot( rgbM, luma );\n float lumaMin = min( lumaM, min( min( lumaNW, lumaNE ), min( lumaSW, lumaSE ) ) );\n float lumaMax = max( lumaM, max( max( lumaNW, lumaNE) , max( lumaSW, lumaSE ) ) );\n vec2 dir;\n dir.x = -((lumaNW + lumaNE) - (lumaSW + lumaSE));\n dir.y = ((lumaNW + lumaSW) - (lumaNE + lumaSE));\n float dirReduce = max( ( lumaNW + lumaNE + lumaSW + lumaSE ) * ( 0.25 * FXAA_REDUCE_MUL ), FXAA_REDUCE_MIN );\n float rcpDirMin = 1.0 / ( min( abs( dir.x ), abs( dir.y ) ) + dirReduce );\n dir = min( vec2( FXAA_SPAN_MAX, FXAA_SPAN_MAX),\n max( vec2(-FXAA_SPAN_MAX, -FXAA_SPAN_MAX),\n dir * rcpDirMin)) * resolution;\n vec3 rgbA = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * ( 1.0 / 3.0 - 0.5 ) ) ).xyz;\n rgbA += decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * ( 2.0 / 3.0 - 0.5 ) ) ).xyz;\n rgbA *= 0.5;\n vec3 rgbB = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * -0.5 ) ).xyz;\n rgbB += decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * 0.5 ) ).xyz;\n rgbB *= 0.25;\n rgbB += rgbA * 0.5;\n float lumaB = dot( rgbB, luma );\n if ( ( lumaB < lumaMin ) || ( lumaB > lumaMax ) )\n {\n gl_FragColor = vec4( rgbA, opacity );\n }\n else {\n gl_FragColor = vec4( rgbB, opacity );\n }\n}\n@end");
+/* harmony default export */ var fxaa_glsl = ("@export clay.compositor.fxaa\nuniform sampler2D texture;\nuniform vec4 viewport : VIEWPORT;\nvarying vec2 v_Texcoord;\n#define FXAA_REDUCE_MIN (1.0/128.0)\n#define FXAA_REDUCE_MUL (1.0/8.0)\n#define FXAA_SPAN_MAX 8.0\n@import clay.util.rgbm\nvoid main()\n{\n vec2 resolution = 1.0 / viewport.zw;\n vec3 rgbNW = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( -1.0, -1.0 ) ) * resolution ) ).xyz;\n vec3 rgbNE = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( 1.0, -1.0 ) ) * resolution ) ).xyz;\n vec3 rgbSW = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( -1.0, 1.0 ) ) * resolution ) ).xyz;\n vec3 rgbSE = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( 1.0, 1.0 ) ) * resolution ) ).xyz;\n vec4 rgbaM = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution ) );\n vec3 rgbM = rgbaM.xyz;\n float opacity = rgbaM.w;\n vec3 luma = vec3( 0.299, 0.587, 0.114 );\n float lumaNW = dot( rgbNW, luma );\n float lumaNE = dot( rgbNE, luma );\n float lumaSW = dot( rgbSW, luma );\n float lumaSE = dot( rgbSE, luma );\n float lumaM = dot( rgbM, luma );\n float lumaMin = min( lumaM, min( min( lumaNW, lumaNE ), min( lumaSW, lumaSE ) ) );\n float lumaMax = max( lumaM, max( max( lumaNW, lumaNE) , max( lumaSW, lumaSE ) ) );\n vec2 dir;\n dir.x = -((lumaNW + lumaNE) - (lumaSW + lumaSE));\n dir.y = ((lumaNW + lumaSW) - (lumaNE + lumaSE));\n float dirReduce = max( ( lumaNW + lumaNE + lumaSW + lumaSE ) * ( 0.25 * FXAA_REDUCE_MUL ), FXAA_REDUCE_MIN );\n float rcpDirMin = 1.0 / ( min( abs( dir.x ), abs( dir.y ) ) + dirReduce );\n dir = min( vec2( FXAA_SPAN_MAX, FXAA_SPAN_MAX),\n max( vec2(-FXAA_SPAN_MAX, -FXAA_SPAN_MAX),\n dir * rcpDirMin)) * resolution;\n vec3 rgbA = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * ( 1.0 / 3.0 - 0.5 ) ) ).xyz;\n rgbA += decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * ( 2.0 / 3.0 - 0.5 ) ) ).xyz;\n rgbA *= 0.5;\n vec3 rgbB = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * -0.5 ) ).xyz;\n rgbB += decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * 0.5 ) ).xyz;\n rgbB *= 0.25;\n rgbB += rgbA * 0.5;\n float lumaB = dot( rgbB, luma );\n if ( ( lumaB < lumaMin ) || ( lumaB > lumaMax ) )\n {\n gl_FragColor = vec4( rgbA, opacity );\n }\n else {\n gl_FragColor = vec4( rgbB, opacity );\n }\n}\n@end");
 
 ;// ./node_modules/claygl/src/shader/registerBuiltinCompositor.js
 
@@ -44658,12 +44658,12 @@ function tryConvertExpr(string) {
     }
 }
 
-/* harmony default export */ const src_createCompositor = (createCompositor);
+/* harmony default export */ var src_createCompositor = (createCompositor);
 
 ;// ./node_modules/claygl/src/compositor/createCompositor.js
 // DEPRECATED
 
-/* harmony default export */ const compositor_createCompositor = (src_createCompositor);
+/* harmony default export */ var compositor_createCompositor = (src_createCompositor);
 ;// ./src/effect/halton.js
 
 // Generate halton sequence
@@ -44682,9 +44682,9 @@ function halton(index, base) {
 }
 
 
-/* harmony default export */ const effect_halton = (halton);
+/* harmony default export */ var effect_halton = (halton);
 ;// ./src/effect/SSAO.glsl.js
-/* harmony default export */ const SSAO_glsl = ("@export ecgl.ssao.estimate\r\n\r\nuniform sampler2D depthTex;\r\n\r\nuniform sampler2D normalTex;\r\n\r\nuniform sampler2D noiseTex;\r\n\r\nuniform vec2 depthTexSize;\r\n\r\nuniform vec2 noiseTexSize;\r\n\r\nuniform mat4 projection;\r\n\r\nuniform mat4 projectionInv;\r\n\r\nuniform mat4 viewInverseTranspose;\r\n\r\nuniform vec3 kernel[KERNEL_SIZE];\r\n\r\nuniform float radius : 1;\r\n\r\n// PENDING\r\nuniform float power : 1;\r\n\r\nuniform float bias: 1e-2;\r\n\r\nuniform float intensity: 1.0;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nfloat ssaoEstimator(in vec3 originPos, in mat3 kernelBasis) {\r\n float occlusion = 0.0;\r\n\r\n for (int i = 0; i < KERNEL_SIZE; i++) {\r\n vec3 samplePos = kernel[i];\r\n#ifdef NORMALTEX_ENABLED\r\n samplePos = kernelBasis * samplePos;\r\n#endif\r\n samplePos = samplePos * radius + originPos;\r\n\r\n vec4 texCoord = projection * vec4(samplePos, 1.0);\r\n texCoord.xy /= texCoord.w;\r\n\r\n vec4 depthTexel = texture2D(depthTex, texCoord.xy * 0.5 + 0.5);\r\n\r\n float sampleDepth = depthTexel.r * 2.0 - 1.0;\r\n if (projection[3][3] == 0.0) {\r\n // Perspective\r\n sampleDepth = projection[3][2] / (sampleDepth * projection[2][3] - projection[2][2]);\r\n }\r\n else {\r\n // Symmetrical orthographic\r\n // PENDING\r\n sampleDepth = (sampleDepth - projection[3][2]) / projection[2][2];\r\n }\r\n // Consider orthographic projection\r\n // vec4 projectedPos = vec4(texCoord.xy, sampleDepth, 1.0);\r\n // vec4 p4 = projectionInv * projectedPos;\r\n // sampleDepth = p4.z / p4.w;\r\n\r\n float rangeCheck = smoothstep(0.0, 1.0, radius / abs(originPos.z - sampleDepth));\r\n occlusion += rangeCheck * step(samplePos.z, sampleDepth - bias);\r\n }\r\n#ifdef NORMALTEX_ENABLED\r\n occlusion = 1.0 - occlusion / float(KERNEL_SIZE);\r\n#else\r\n occlusion = 1.0 - clamp((occlusion / float(KERNEL_SIZE) - 0.6) * 2.5, 0.0, 1.0);\r\n#endif\r\n return pow(occlusion, power);\r\n}\r\n\r\nvoid main()\r\n{\r\n\r\n vec4 depthTexel = texture2D(depthTex, v_Texcoord);\r\n\r\n#ifdef NORMALTEX_ENABLED\r\n vec4 tex = texture2D(normalTex, v_Texcoord);\r\n // Is empty\r\n if (dot(tex.rgb, tex.rgb) == 0.0) {\r\n gl_FragColor = vec4(1.0);\r\n return;\r\n }\r\n vec3 N = tex.rgb * 2.0 - 1.0;\r\n N = (viewInverseTranspose * vec4(N, 0.0)).xyz;\r\n\r\n vec2 noiseTexCoord = depthTexSize / vec2(noiseTexSize) * v_Texcoord;\r\n vec3 rvec = texture2D(noiseTex, noiseTexCoord).rgb * 2.0 - 1.0;\r\n // Tangent\r\n vec3 T = normalize(rvec - N * dot(rvec, N));\r\n // Bitangent\r\n vec3 BT = normalize(cross(N, T));\r\n mat3 kernelBasis = mat3(T, BT, N);\r\n#else\r\n if (depthTexel.r > 0.99999) {\r\n gl_FragColor = vec4(1.0);\r\n return;\r\n }\r\n mat3 kernelBasis;\r\n#endif\r\n\r\n float z = depthTexel.r * 2.0 - 1.0;\r\n\r\n vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\r\n vec4 p4 = projectionInv * projectedPos;\r\n\r\n vec3 position = p4.xyz / p4.w;\r\n\r\n float ao = ssaoEstimator(position, kernelBasis);\r\n ao = clamp(1.0 - (1.0 - ao) * intensity, 0.0, 1.0);\r\n gl_FragColor = vec4(vec3(ao), 1.0);\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.ssao.blur\r\n#define SHADER_NAME SSAO_BLUR\r\n\r\nuniform sampler2D ssaoTexture;\r\n\r\n#ifdef NORMALTEX_ENABLED\r\nuniform sampler2D normalTex;\r\n#endif\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform vec2 textureSize;\r\nuniform float blurSize : 1.0;\r\n\r\n// 0 horizontal, 1 vertical\r\nuniform int direction: 0.0;\r\n\r\n#ifdef DEPTHTEX_ENABLED\r\nuniform sampler2D depthTex;\r\nuniform mat4 projection;\r\nuniform float depthRange : 0.5;\r\n\r\nfloat getLinearDepth(vec2 coord)\r\n{\r\n float depth = texture2D(depthTex, coord).r * 2.0 - 1.0;\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n}\r\n#endif\r\n\r\nvoid main()\r\n{\r\n float kernel[5];\r\n kernel[0] = 0.122581;\r\n kernel[1] = 0.233062;\r\n kernel[2] = 0.288713;\r\n kernel[3] = 0.233062;\r\n kernel[4] = 0.122581;\r\n\r\n vec2 off = vec2(0.0);\r\n if (direction == 0) {\r\n off[0] = blurSize / textureSize.x;\r\n }\r\n else {\r\n off[1] = blurSize / textureSize.y;\r\n }\r\n\r\n vec2 coord = v_Texcoord;\r\n\r\n float sum = 0.0;\r\n float weightAll = 0.0;\r\n\r\n#ifdef NORMALTEX_ENABLED\r\n vec3 centerNormal = texture2D(normalTex, v_Texcoord).rgb * 2.0 - 1.0;\r\n#endif\r\n#if defined(DEPTHTEX_ENABLED)\r\n float centerDepth = getLinearDepth(v_Texcoord);\r\n#endif\r\n\r\n for (int i = 0; i < 5; i++) {\r\n vec2 coord = clamp(v_Texcoord + vec2(float(i) - 2.0) * off, vec2(0.0), vec2(1.0));\r\n\r\n float w = kernel[i];\r\n#ifdef NORMALTEX_ENABLED\r\n vec3 normal = texture2D(normalTex, coord).rgb * 2.0 - 1.0;\r\n w *= clamp(dot(normal, centerNormal), 0.0, 1.0);\r\n#endif\r\n#ifdef DEPTHTEX_ENABLED\r\n float d = getLinearDepth(coord);\r\n // PENDING Better equation?\r\n w *= (1.0 - smoothstep(abs(centerDepth - d) / depthRange, 0.0, 1.0));\r\n#endif\r\n\r\n weightAll += w;\r\n sum += texture2D(ssaoTexture, coord).r * w;\r\n }\r\n\r\n gl_FragColor = vec4(vec3(sum / weightAll), 1.0);\r\n// gl_FragColor = texture2D(ssaoTexture, v_Texcoord);\r\n}\r\n\r\n@end\r\n");
+/* harmony default export */ var SSAO_glsl = ("@export ecgl.ssao.estimate\r\n\r\nuniform sampler2D depthTex;\r\n\r\nuniform sampler2D normalTex;\r\n\r\nuniform sampler2D noiseTex;\r\n\r\nuniform vec2 depthTexSize;\r\n\r\nuniform vec2 noiseTexSize;\r\n\r\nuniform mat4 projection;\r\n\r\nuniform mat4 projectionInv;\r\n\r\nuniform mat4 viewInverseTranspose;\r\n\r\nuniform vec3 kernel[KERNEL_SIZE];\r\n\r\nuniform float radius : 1;\r\n\r\n// PENDING\r\nuniform float power : 1;\r\n\r\nuniform float bias: 1e-2;\r\n\r\nuniform float intensity: 1.0;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nfloat ssaoEstimator(in vec3 originPos, in mat3 kernelBasis) {\r\n float occlusion = 0.0;\r\n\r\n for (int i = 0; i < KERNEL_SIZE; i++) {\r\n vec3 samplePos = kernel[i];\r\n#ifdef NORMALTEX_ENABLED\r\n samplePos = kernelBasis * samplePos;\r\n#endif\r\n samplePos = samplePos * radius + originPos;\r\n\r\n vec4 texCoord = projection * vec4(samplePos, 1.0);\r\n texCoord.xy /= texCoord.w;\r\n\r\n vec4 depthTexel = texture2D(depthTex, texCoord.xy * 0.5 + 0.5);\r\n\r\n float sampleDepth = depthTexel.r * 2.0 - 1.0;\r\n if (projection[3][3] == 0.0) {\r\n // Perspective\r\n sampleDepth = projection[3][2] / (sampleDepth * projection[2][3] - projection[2][2]);\r\n }\r\n else {\r\n // Symmetrical orthographic\r\n // PENDING\r\n sampleDepth = (sampleDepth - projection[3][2]) / projection[2][2];\r\n }\r\n // Consider orthographic projection\r\n // vec4 projectedPos = vec4(texCoord.xy, sampleDepth, 1.0);\r\n // vec4 p4 = projectionInv * projectedPos;\r\n // sampleDepth = p4.z / p4.w;\r\n\r\n float rangeCheck = smoothstep(0.0, 1.0, radius / abs(originPos.z - sampleDepth));\r\n occlusion += rangeCheck * step(samplePos.z, sampleDepth - bias);\r\n }\r\n#ifdef NORMALTEX_ENABLED\r\n occlusion = 1.0 - occlusion / float(KERNEL_SIZE);\r\n#else\r\n occlusion = 1.0 - clamp((occlusion / float(KERNEL_SIZE) - 0.6) * 2.5, 0.0, 1.0);\r\n#endif\r\n return pow(occlusion, power);\r\n}\r\n\r\nvoid main()\r\n{\r\n\r\n vec4 depthTexel = texture2D(depthTex, v_Texcoord);\r\n\r\n#ifdef NORMALTEX_ENABLED\r\n vec4 tex = texture2D(normalTex, v_Texcoord);\r\n // Is empty\r\n if (dot(tex.rgb, tex.rgb) == 0.0) {\r\n gl_FragColor = vec4(1.0);\r\n return;\r\n }\r\n vec3 N = tex.rgb * 2.0 - 1.0;\r\n N = (viewInverseTranspose * vec4(N, 0.0)).xyz;\r\n\r\n vec2 noiseTexCoord = depthTexSize / vec2(noiseTexSize) * v_Texcoord;\r\n vec3 rvec = texture2D(noiseTex, noiseTexCoord).rgb * 2.0 - 1.0;\r\n // Tangent\r\n vec3 T = normalize(rvec - N * dot(rvec, N));\r\n // Bitangent\r\n vec3 BT = normalize(cross(N, T));\r\n mat3 kernelBasis = mat3(T, BT, N);\r\n#else\r\n if (depthTexel.r > 0.99999) {\r\n gl_FragColor = vec4(1.0);\r\n return;\r\n }\r\n mat3 kernelBasis;\r\n#endif\r\n\r\n float z = depthTexel.r * 2.0 - 1.0;\r\n\r\n vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\r\n vec4 p4 = projectionInv * projectedPos;\r\n\r\n vec3 position = p4.xyz / p4.w;\r\n\r\n float ao = ssaoEstimator(position, kernelBasis);\r\n ao = clamp(1.0 - (1.0 - ao) * intensity, 0.0, 1.0);\r\n gl_FragColor = vec4(vec3(ao), 1.0);\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.ssao.blur\r\n#define SHADER_NAME SSAO_BLUR\r\n\r\nuniform sampler2D ssaoTexture;\r\n\r\n#ifdef NORMALTEX_ENABLED\r\nuniform sampler2D normalTex;\r\n#endif\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform vec2 textureSize;\r\nuniform float blurSize : 1.0;\r\n\r\n// 0 horizontal, 1 vertical\r\nuniform int direction: 0.0;\r\n\r\n#ifdef DEPTHTEX_ENABLED\r\nuniform sampler2D depthTex;\r\nuniform mat4 projection;\r\nuniform float depthRange : 0.5;\r\n\r\nfloat getLinearDepth(vec2 coord)\r\n{\r\n float depth = texture2D(depthTex, coord).r * 2.0 - 1.0;\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n}\r\n#endif\r\n\r\nvoid main()\r\n{\r\n float kernel[5];\r\n kernel[0] = 0.122581;\r\n kernel[1] = 0.233062;\r\n kernel[2] = 0.288713;\r\n kernel[3] = 0.233062;\r\n kernel[4] = 0.122581;\r\n\r\n vec2 off = vec2(0.0);\r\n if (direction == 0) {\r\n off[0] = blurSize / textureSize.x;\r\n }\r\n else {\r\n off[1] = blurSize / textureSize.y;\r\n }\r\n\r\n vec2 coord = v_Texcoord;\r\n\r\n float sum = 0.0;\r\n float weightAll = 0.0;\r\n\r\n#ifdef NORMALTEX_ENABLED\r\n vec3 centerNormal = texture2D(normalTex, v_Texcoord).rgb * 2.0 - 1.0;\r\n#endif\r\n#if defined(DEPTHTEX_ENABLED)\r\n float centerDepth = getLinearDepth(v_Texcoord);\r\n#endif\r\n\r\n for (int i = 0; i < 5; i++) {\r\n vec2 coord = clamp(v_Texcoord + vec2(float(i) - 2.0) * off, vec2(0.0), vec2(1.0));\r\n\r\n float w = kernel[i];\r\n#ifdef NORMALTEX_ENABLED\r\n vec3 normal = texture2D(normalTex, coord).rgb * 2.0 - 1.0;\r\n w *= clamp(dot(normal, centerNormal), 0.0, 1.0);\r\n#endif\r\n#ifdef DEPTHTEX_ENABLED\r\n float d = getLinearDepth(coord);\r\n // PENDING Better equation?\r\n w *= (1.0 - smoothstep(abs(centerDepth - d) / depthRange, 0.0, 1.0));\r\n#endif\r\n\r\n weightAll += w;\r\n sum += texture2D(ssaoTexture, coord).r * w;\r\n }\r\n\r\n gl_FragColor = vec4(vec3(sum / weightAll), 1.0);\r\n// gl_FragColor = texture2D(ssaoTexture, v_Texcoord);\r\n}\r\n\r\n@end\r\n");
 
 ;// ./src/effect/SSAOPass.js
 
@@ -44914,9 +44914,9 @@ SSAOPass.prototype.dispose = function (renderer) {
     this._blurTexture2.dispose(renderer);
 };
 
-/* harmony default export */ const effect_SSAOPass = (SSAOPass);
+/* harmony default export */ var effect_SSAOPass = (SSAOPass);
 ;// ./src/effect/SSR.glsl.js
-/* harmony default export */ const SSR_glsl = ("// http://www.kode80.com/blog/2015/03/11/screen-space-reflections-in-unity-5/\r\n// http://casual-effects.blogspot.jp/2014/08/screen-space-ray-tracing.html\r\n@export ecgl.ssr.main\r\n\r\n#define SHADER_NAME SSR\r\n#define MAX_ITERATION 20;\r\n#define SAMPLE_PER_FRAME 5;\r\n#define TOTAL_SAMPLES 128;\r\n\r\nuniform sampler2D sourceTexture;\r\nuniform sampler2D gBufferTexture1;\r\nuniform sampler2D gBufferTexture2;\r\nuniform sampler2D gBufferTexture3;\r\nuniform samplerCube specularCubemap;\r\nuniform float specularIntensity: 1;\r\n\r\nuniform mat4 projection;\r\nuniform mat4 projectionInv;\r\nuniform mat4 toViewSpace;\r\nuniform mat4 toWorldSpace;\r\n\r\nuniform float maxRayDistance: 200;\r\n\r\nuniform float pixelStride: 16;\r\nuniform float pixelStrideZCutoff: 50; // ray origin Z at this distance will have a pixel stride of 1.0\r\n\r\nuniform float screenEdgeFadeStart: 0.9; // distance to screen edge that ray hits will start to fade (0.0 -> 1.0)\r\n\r\nuniform float eyeFadeStart : 0.2; // ray direction's Z that ray hits will start to fade (0.0 -> 1.0)\r\nuniform float eyeFadeEnd: 0.8; // ray direction's Z that ray hits will be cut (0.0 -> 1.0)\r\n\r\nuniform float minGlossiness: 0.2; // Object larger than minGlossiness will have ssr effect\r\nuniform float zThicknessThreshold: 1;\r\n\r\nuniform float nearZ;\r\nuniform vec2 viewportSize : VIEWPORT_SIZE;\r\n\r\nuniform float jitterOffset: 0;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n#ifdef DEPTH_DECODE\r\n@import clay.util.decode_float\r\n#endif\r\n\r\n#ifdef PHYSICALLY_CORRECT\r\n// uniform vec3 lambertNormals[SAMPLE_PER_FRAME];\r\nuniform sampler2D normalDistribution;\r\nuniform float sampleOffset: 0;\r\nuniform vec2 normalDistributionSize;\r\n\r\nvec3 transformNormal(vec3 H, vec3 N) {\r\n vec3 upVector = N.y > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\r\n vec3 tangentX = normalize(cross(N, upVector));\r\n vec3 tangentZ = cross(N, tangentX);\r\n // Tangent to world space\r\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\r\n}\r\nvec3 importanceSampleNormalGGX(float i, float roughness, vec3 N) {\r\n float p = fract((i + sampleOffset) / float(TOTAL_SAMPLES));\r\n vec3 H = texture2D(normalDistribution,vec2(roughness, p)).rgb;\r\n return transformNormal(H, N);\r\n}\r\nfloat G_Smith(float g, float ndv, float ndl) {\r\n float roughness = 1.0 - g;\r\n float k = roughness * roughness / 2.0;\r\n float G1V = ndv / (ndv * (1.0 - k) + k);\r\n float G1L = ndl / (ndl * (1.0 - k) + k);\r\n return G1L * G1V;\r\n}\r\nvec3 F_Schlick(float ndv, vec3 spec) {\r\n return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\r\n}\r\n#endif\r\n\r\nfloat fetchDepth(sampler2D depthTexture, vec2 uv)\r\n{\r\n vec4 depthTexel = texture2D(depthTexture, uv);\r\n return depthTexel.r * 2.0 - 1.0;\r\n}\r\n\r\nfloat linearDepth(float depth)\r\n{\r\n if (projection[3][3] == 0.0) {\r\n // Perspective\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n }\r\n else {\r\n // Symmetrical orthographic\r\n // PENDING\r\n return (depth - projection[3][2]) / projection[2][2];\r\n }\r\n}\r\n\r\nbool rayIntersectDepth(float rayZNear, float rayZFar, vec2 hitPixel)\r\n{\r\n // Swap if bigger\r\n if (rayZFar > rayZNear)\r\n {\r\n float t = rayZFar; rayZFar = rayZNear; rayZNear = t;\r\n }\r\n float cameraZ = linearDepth(fetchDepth(gBufferTexture2, hitPixel));\r\n // Cross z\r\n return rayZFar <= cameraZ && rayZNear >= cameraZ - zThicknessThreshold;\r\n}\r\n\r\n// Trace a ray in screenspace from rayOrigin (in camera space) pointing in rayDir (in camera space)\r\n//\r\n// With perspective correct interpolation\r\n//\r\n// Returns true if the ray hits a pixel in the depth buffer\r\n// and outputs the hitPixel (in UV space), the hitPoint (in camera space) and the number\r\n// of iterations it took to get there.\r\n//\r\n// Based on Morgan McGuire & Mike Mara's GLSL implementation:\r\n// http://casual-effects.blogspot.com/2014/08/screen-space-ray-tracing.html\r\n\r\nbool traceScreenSpaceRay(\r\n vec3 rayOrigin, vec3 rayDir, float jitter,\r\n out vec2 hitPixel, out vec3 hitPoint, out float iterationCount\r\n)\r\n{\r\n // Clip to the near plane\r\n float rayLength = ((rayOrigin.z + rayDir.z * maxRayDistance) > -nearZ)\r\n ? (-nearZ - rayOrigin.z) / rayDir.z : maxRayDistance;\r\n\r\n vec3 rayEnd = rayOrigin + rayDir * rayLength;\r\n\r\n // Project into homogeneous clip space\r\n vec4 H0 = projection * vec4(rayOrigin, 1.0);\r\n vec4 H1 = projection * vec4(rayEnd, 1.0);\r\n\r\n float k0 = 1.0 / H0.w, k1 = 1.0 / H1.w;\r\n\r\n // The interpolated homogeneous version of the camera space points\r\n vec3 Q0 = rayOrigin * k0, Q1 = rayEnd * k1;\r\n\r\n // Screen space endpoints\r\n // PENDING viewportSize ?\r\n vec2 P0 = (H0.xy * k0 * 0.5 + 0.5) * viewportSize;\r\n vec2 P1 = (H1.xy * k1 * 0.5 + 0.5) * viewportSize;\r\n\r\n // If the line is degenerate, make it cover at least one pixel to avoid handling\r\n // zero-pixel extent as a special case later\r\n P1 += dot(P1 - P0, P1 - P0) < 0.0001 ? 0.01 : 0.0;\r\n vec2 delta = P1 - P0;\r\n\r\n // Permute so that the primary iteration is in x to collapse\r\n // all quadrant-specific DDA case later\r\n bool permute = false;\r\n if (abs(delta.x) < abs(delta.y)) {\r\n // More vertical line\r\n permute = true;\r\n delta = delta.yx;\r\n P0 = P0.yx;\r\n P1 = P1.yx;\r\n }\r\n float stepDir = sign(delta.x);\r\n float invdx = stepDir / delta.x;\r\n\r\n // Track the derivatives of Q and K\r\n vec3 dQ = (Q1 - Q0) * invdx;\r\n float dk = (k1 - k0) * invdx;\r\n\r\n vec2 dP = vec2(stepDir, delta.y * invdx);\r\n\r\n // Calculate pixel stride based on distance of ray origin from camera.\r\n // Since perspective means distant objects will be smaller in screen space\r\n // we can use this to have higher quality reflections for far away objects\r\n // while still using a large pixel stride for near objects (and increase performance)\r\n // this also helps mitigate artifacts on distant reflections when we use a large\r\n // pixel stride.\r\n float strideScaler = 1.0 - min(1.0, -rayOrigin.z / pixelStrideZCutoff);\r\n float pixStride = 1.0 + strideScaler * pixelStride;\r\n\r\n // Scale derivatives by the desired pixel stride and the offset the starting values by the jitter fraction\r\n dP *= pixStride; dQ *= pixStride; dk *= pixStride;\r\n\r\n // Track ray step and derivatives in a vec4 to parallelize\r\n vec4 pqk = vec4(P0, Q0.z, k0);\r\n vec4 dPQK = vec4(dP, dQ.z, dk);\r\n\r\n pqk += dPQK * jitter;\r\n float rayZFar = (dPQK.z * 0.5 + pqk.z) / (dPQK.w * 0.5 + pqk.w);\r\n float rayZNear;\r\n\r\n bool intersect = false;\r\n\r\n vec2 texelSize = 1.0 / viewportSize;\r\n\r\n iterationCount = 0.0;\r\n\r\n for (int i = 0; i < MAX_ITERATION; i++)\r\n {\r\n pqk += dPQK;\r\n\r\n rayZNear = rayZFar;\r\n rayZFar = (dPQK.z * 0.5 + pqk.z) / (dPQK.w * 0.5 + pqk.w);\r\n\r\n hitPixel = permute ? pqk.yx : pqk.xy;\r\n hitPixel *= texelSize;\r\n\r\n intersect = rayIntersectDepth(rayZNear, rayZFar, hitPixel);\r\n\r\n iterationCount += 1.0;\r\n\r\n dPQK *= 1.2;\r\n\r\n // PENDING Right on all platforms?\r\n if (intersect) {\r\n break;\r\n }\r\n }\r\n\r\n Q0.xy += dQ.xy * iterationCount;\r\n Q0.z = pqk.z;\r\n hitPoint = Q0 / pqk.w;\r\n\r\n return intersect;\r\n}\r\n\r\nfloat calculateAlpha(\r\n float iterationCount, float reflectivity,\r\n vec2 hitPixel, vec3 hitPoint, float dist, vec3 rayDir\r\n)\r\n{\r\n float alpha = clamp(reflectivity, 0.0, 1.0);\r\n // Fade ray hits that approach the maximum iterations\r\n alpha *= 1.0 - (iterationCount / float(MAX_ITERATION));\r\n // Fade ray hits that approach the screen edge\r\n vec2 hitPixelNDC = hitPixel * 2.0 - 1.0;\r\n float maxDimension = min(1.0, max(abs(hitPixelNDC.x), abs(hitPixelNDC.y)));\r\n alpha *= 1.0 - max(0.0, maxDimension - screenEdgeFadeStart) / (1.0 - screenEdgeFadeStart);\r\n\r\n // Fade ray hits base on how much they face the camera\r\n float _eyeFadeStart = eyeFadeStart;\r\n float _eyeFadeEnd = eyeFadeEnd;\r\n if (_eyeFadeStart > _eyeFadeEnd) {\r\n float tmp = _eyeFadeEnd;\r\n _eyeFadeEnd = _eyeFadeStart;\r\n _eyeFadeStart = tmp;\r\n }\r\n\r\n float eyeDir = clamp(rayDir.z, _eyeFadeStart, _eyeFadeEnd);\r\n alpha *= 1.0 - (eyeDir - _eyeFadeStart) / (_eyeFadeEnd - _eyeFadeStart);\r\n\r\n // Fade ray hits based on distance from ray origin\r\n alpha *= 1.0 - clamp(dist / maxRayDistance, 0.0, 1.0);\r\n\r\n return alpha;\r\n}\r\n\r\n@import clay.util.rand\r\n\r\n@import clay.util.rgbm\r\n\r\nvoid main()\r\n{\r\n vec4 normalAndGloss = texture2D(gBufferTexture1, v_Texcoord);\r\n\r\n // Is empty\r\n if (dot(normalAndGloss.rgb, vec3(1.0)) == 0.0) {\r\n discard;\r\n }\r\n\r\n float g = normalAndGloss.a;\r\n#if !defined(PHYSICALLY_CORRECT)\r\n if (g <= minGlossiness) {\r\n discard;\r\n }\r\n#endif\r\n\r\n float reflectivity = (g - minGlossiness) / (1.0 - minGlossiness);\r\n\r\n vec3 N = normalize(normalAndGloss.rgb * 2.0 - 1.0);\r\n N = normalize((toViewSpace * vec4(N, 0.0)).xyz);\r\n\r\n // Position in view\r\n vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, fetchDepth(gBufferTexture2, v_Texcoord), 1.0);\r\n vec4 pos = projectionInv * projectedPos;\r\n vec3 rayOrigin = pos.xyz / pos.w;\r\n vec3 V = -normalize(rayOrigin);\r\n\r\n float ndv = clamp(dot(N, V), 0.0, 1.0);\r\n float iterationCount;\r\n float jitter = rand(fract(v_Texcoord + jitterOffset));\r\n\r\n#ifdef PHYSICALLY_CORRECT\r\n vec4 color = vec4(vec3(0.0), 1.0);\r\n vec4 albedoMetalness = texture2D(gBufferTexture3, v_Texcoord);\r\n vec3 albedo = albedoMetalness.rgb;\r\n float m = albedoMetalness.a;\r\n vec3 diffuseColor = albedo * (1.0 - m);\r\n vec3 spec = mix(vec3(0.04), albedo, m);\r\n\r\n // PENDING Add noise?\r\n float jitter2 = rand(fract(v_Texcoord)) * float(TOTAL_SAMPLES);\r\n\r\n for (int i = 0; i < SAMPLE_PER_FRAME; i++) {\r\n vec3 H = importanceSampleNormalGGX(float(i) + jitter2, 1.0 - g, N);\r\n // TODO Normal\r\n // vec3 H = transformNormal(lambertNormals[i], N);\r\n // vec3 rayDir = H;\r\n vec3 rayDir = normalize(reflect(-V, H));\r\n#else\r\n vec3 rayDir = normalize(reflect(-V, N));\r\n#endif\r\n vec2 hitPixel;\r\n vec3 hitPoint;\r\n\r\n bool intersect = traceScreenSpaceRay(rayOrigin, rayDir, jitter, hitPixel, hitPoint, iterationCount);\r\n\r\n float dist = distance(rayOrigin, hitPoint);\r\n\r\n vec3 hitNormal = texture2D(gBufferTexture1, hitPixel).rgb * 2.0 - 1.0;\r\n hitNormal = normalize((toViewSpace * vec4(hitNormal, 0.0)).xyz);\r\n#ifdef PHYSICALLY_CORRECT\r\n float ndl = clamp(dot(N, rayDir), 0.0, 1.0);\r\n float vdh = clamp(dot(V, H), 0.0, 1.0);\r\n float ndh = clamp(dot(N, H), 0.0, 1.0);\r\n vec3 litTexel = vec3(0.0);\r\n if (dot(hitNormal, rayDir) < 0.0 && intersect) {\r\n litTexel = texture2D(sourceTexture, hitPixel).rgb;\r\n // PENDING\r\n litTexel *= pow(clamp(1.0 - dist / 200.0, 0.0, 1.0), 3.0);\r\n\r\n // color.rgb += ndl * litTexel * fade * diffuseColor;\r\n }\r\n else {\r\n // Fetch from environment\r\n#ifdef SPECULARCUBEMAP_ENABLED\r\n vec3 rayDirW = normalize(toWorldSpace * vec4(rayDir, 0.0)).rgb;\r\n litTexel = RGBMDecode(textureCubeLodEXT(specularCubemap, rayDirW, 0.0), 8.12).rgb * specularIntensity;\r\n#endif\r\n }\r\n color.rgb += ndl * litTexel * (\r\n F_Schlick(ndl, spec) * G_Smith(g, ndv, ndl) * vdh / (ndh * ndv + 0.001)\r\n );\r\n }\r\n color.rgb /= float(SAMPLE_PER_FRAME);\r\n#else\r\n // Ignore the pixel not face the ray\r\n // TODO fadeout ?\r\n // PENDING Can be configured?\r\n#if !defined(SPECULARCUBEMAP_ENABLED)\r\n if (dot(hitNormal, rayDir) >= 0.0) {\r\n discard;\r\n }\r\n if (!intersect) {\r\n discard;\r\n }\r\n#endif\r\n float alpha = clamp(calculateAlpha(iterationCount, reflectivity, hitPixel, hitPoint, dist, rayDir), 0.0, 1.0);\r\n vec4 color = texture2D(sourceTexture, hitPixel);\r\n color.rgb *= alpha;\r\n\r\n#ifdef SPECULARCUBEMAP_ENABLED\r\n vec3 rayDirW = normalize(toWorldSpace * vec4(rayDir, 0.0)).rgb;\r\n alpha = alpha * (intersect ? 1.0 : 0.0);\r\n float bias = (1.0 -g) * 5.0;\r\n color.rgb += (1.0 - alpha)\r\n * RGBMDecode(textureCubeLodEXT(specularCubemap, rayDirW, bias), 8.12).rgb\r\n * specularIntensity;\r\n#endif\r\n\r\n#endif\r\n\r\n gl_FragColor = encodeHDR(color);\r\n}\r\n@end\r\n\r\n// https://bartwronski.com/2014/03/23/gdc-follow-up-screenspace-reflections-filtering-and-up-sampling/\r\n@export ecgl.ssr.blur\r\n\r\nuniform sampler2D texture;\r\nuniform sampler2D gBufferTexture1;\r\nuniform sampler2D gBufferTexture2;\r\nuniform mat4 projection;\r\nuniform float depthRange : 0.05;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform vec2 textureSize;\r\nuniform float blurSize : 1.0;\r\n\r\n#ifdef BLEND\r\n #ifdef SSAOTEX_ENABLED\r\nuniform sampler2D ssaoTex;\r\n #endif\r\nuniform sampler2D sourceTexture;\r\n#endif\r\n\r\nfloat getLinearDepth(vec2 coord)\r\n{\r\n float depth = texture2D(gBufferTexture2, coord).r * 2.0 - 1.0;\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n}\r\n\r\n@import clay.util.rgbm\r\n\r\n\r\nvoid main()\r\n{\r\n @import clay.compositor.kernel.gaussian_9\r\n\r\n vec4 centerNTexel = texture2D(gBufferTexture1, v_Texcoord);\r\n float g = centerNTexel.a;\r\n float maxBlurSize = clamp(1.0 - g, 0.0, 1.0) * blurSize;\r\n#ifdef VERTICAL\r\n vec2 off = vec2(0.0, maxBlurSize / textureSize.y);\r\n#else\r\n vec2 off = vec2(maxBlurSize / textureSize.x, 0.0);\r\n#endif\r\n\r\n vec2 coord = v_Texcoord;\r\n\r\n vec4 sum = vec4(0.0);\r\n float weightAll = 0.0;\r\n\r\n vec3 cN = centerNTexel.rgb * 2.0 - 1.0;\r\n float cD = getLinearDepth(v_Texcoord);\r\n for (int i = 0; i < 9; i++) {\r\n vec2 coord = clamp((float(i) - 4.0) * off + v_Texcoord, vec2(0.0), vec2(1.0));\r\n float w = gaussianKernel[i]\r\n * clamp(dot(cN, texture2D(gBufferTexture1, coord).rgb * 2.0 - 1.0), 0.0, 1.0);\r\n float d = getLinearDepth(coord);\r\n w *= (1.0 - smoothstep(abs(cD - d) / depthRange, 0.0, 1.0));\r\n\r\n weightAll += w;\r\n sum += decodeHDR(texture2D(texture, coord)) * w;\r\n }\r\n\r\n#ifdef BLEND\r\n float aoFactor = 1.0;\r\n #ifdef SSAOTEX_ENABLED\r\n aoFactor = texture2D(ssaoTex, v_Texcoord).r;\r\n #endif\r\n gl_FragColor = encodeHDR(\r\n sum / weightAll * aoFactor + decodeHDR(texture2D(sourceTexture, v_Texcoord))\r\n );\r\n#else\r\n gl_FragColor = encodeHDR(sum / weightAll);\r\n#endif\r\n}\r\n\r\n@end");
+/* harmony default export */ var SSR_glsl = ("// http://www.kode80.com/blog/2015/03/11/screen-space-reflections-in-unity-5/\r\n// http://casual-effects.blogspot.jp/2014/08/screen-space-ray-tracing.html\r\n@export ecgl.ssr.main\r\n\r\n#define SHADER_NAME SSR\r\n#define MAX_ITERATION 20;\r\n#define SAMPLE_PER_FRAME 5;\r\n#define TOTAL_SAMPLES 128;\r\n\r\nuniform sampler2D sourceTexture;\r\nuniform sampler2D gBufferTexture1;\r\nuniform sampler2D gBufferTexture2;\r\nuniform sampler2D gBufferTexture3;\r\nuniform samplerCube specularCubemap;\r\nuniform float specularIntensity: 1;\r\n\r\nuniform mat4 projection;\r\nuniform mat4 projectionInv;\r\nuniform mat4 toViewSpace;\r\nuniform mat4 toWorldSpace;\r\n\r\nuniform float maxRayDistance: 200;\r\n\r\nuniform float pixelStride: 16;\r\nuniform float pixelStrideZCutoff: 50; // ray origin Z at this distance will have a pixel stride of 1.0\r\n\r\nuniform float screenEdgeFadeStart: 0.9; // distance to screen edge that ray hits will start to fade (0.0 -> 1.0)\r\n\r\nuniform float eyeFadeStart : 0.2; // ray direction's Z that ray hits will start to fade (0.0 -> 1.0)\r\nuniform float eyeFadeEnd: 0.8; // ray direction's Z that ray hits will be cut (0.0 -> 1.0)\r\n\r\nuniform float minGlossiness: 0.2; // Object larger than minGlossiness will have ssr effect\r\nuniform float zThicknessThreshold: 1;\r\n\r\nuniform float nearZ;\r\nuniform vec2 viewportSize : VIEWPORT_SIZE;\r\n\r\nuniform float jitterOffset: 0;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n#ifdef DEPTH_DECODE\r\n@import clay.util.decode_float\r\n#endif\r\n\r\n#ifdef PHYSICALLY_CORRECT\r\n// uniform vec3 lambertNormals[SAMPLE_PER_FRAME];\r\nuniform sampler2D normalDistribution;\r\nuniform float sampleOffset: 0;\r\nuniform vec2 normalDistributionSize;\r\n\r\nvec3 transformNormal(vec3 H, vec3 N) {\r\n vec3 upVector = N.y > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\r\n vec3 tangentX = normalize(cross(N, upVector));\r\n vec3 tangentZ = cross(N, tangentX);\r\n // Tangent to world space\r\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\r\n}\r\nvec3 importanceSampleNormalGGX(float i, float roughness, vec3 N) {\r\n float p = fract((i + sampleOffset) / float(TOTAL_SAMPLES));\r\n vec3 H = texture2D(normalDistribution,vec2(roughness, p)).rgb;\r\n return transformNormal(H, N);\r\n}\r\nfloat G_Smith(float g, float ndv, float ndl) {\r\n float roughness = 1.0 - g;\r\n float k = roughness * roughness / 2.0;\r\n float G1V = ndv / (ndv * (1.0 - k) + k);\r\n float G1L = ndl / (ndl * (1.0 - k) + k);\r\n return G1L * G1V;\r\n}\r\nvec3 F_Schlick(float ndv, vec3 spec) {\r\n return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\r\n}\r\n#endif\r\n\r\nfloat fetchDepth(sampler2D depthTexture, vec2 uv)\r\n{\r\n vec4 depthTexel = texture2D(depthTexture, uv);\r\n return depthTexel.r * 2.0 - 1.0;\r\n}\r\n\r\nfloat linearDepth(float depth)\r\n{\r\n if (projection[3][3] == 0.0) {\r\n // Perspective\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n }\r\n else {\r\n // Symmetrical orthographic\r\n // PENDING\r\n return (depth - projection[3][2]) / projection[2][2];\r\n }\r\n}\r\n\r\nbool rayIntersectDepth(float rayZNear, float rayZFar, vec2 hitPixel)\r\n{\r\n // Swap if bigger\r\n if (rayZFar > rayZNear)\r\n {\r\n float t = rayZFar; rayZFar = rayZNear; rayZNear = t;\r\n }\r\n float cameraZ = linearDepth(fetchDepth(gBufferTexture2, hitPixel));\r\n // Cross z\r\n return rayZFar <= cameraZ && rayZNear >= cameraZ - zThicknessThreshold;\r\n}\r\n\r\n// Trace a ray in screenspace from rayOrigin (in camera space) pointing in rayDir (in camera space)\r\n//\r\n// With perspective correct interpolation\r\n//\r\n// Returns true if the ray hits a pixel in the depth buffer\r\n// and outputs the hitPixel (in UV space), the hitPoint (in camera space) and the number\r\n// of iterations it took to get there.\r\n//\r\n// Based on Morgan McGuire & Mike Mara's GLSL implementation:\r\n// http://casual-effects.blogspot.com/2014/08/screen-space-ray-tracing.html\r\n\r\nbool traceScreenSpaceRay(\r\n vec3 rayOrigin, vec3 rayDir, float jitter,\r\n out vec2 hitPixel, out vec3 hitPoint, out float iterationCount\r\n)\r\n{\r\n // Clip to the near plane\r\n float rayLength = ((rayOrigin.z + rayDir.z * maxRayDistance) > -nearZ)\r\n ? (-nearZ - rayOrigin.z) / rayDir.z : maxRayDistance;\r\n\r\n vec3 rayEnd = rayOrigin + rayDir * rayLength;\r\n\r\n // Project into homogeneous clip space\r\n vec4 H0 = projection * vec4(rayOrigin, 1.0);\r\n vec4 H1 = projection * vec4(rayEnd, 1.0);\r\n\r\n float k0 = 1.0 / H0.w, k1 = 1.0 / H1.w;\r\n\r\n // The interpolated homogeneous version of the camera space points\r\n vec3 Q0 = rayOrigin * k0, Q1 = rayEnd * k1;\r\n\r\n // Screen space endpoints\r\n // PENDING viewportSize ?\r\n vec2 P0 = (H0.xy * k0 * 0.5 + 0.5) * viewportSize;\r\n vec2 P1 = (H1.xy * k1 * 0.5 + 0.5) * viewportSize;\r\n\r\n // If the line is degenerate, make it cover at least one pixel to avoid handling\r\n // zero-pixel extent as a special case later\r\n P1 += dot(P1 - P0, P1 - P0) < 0.0001 ? 0.01 : 0.0;\r\n vec2 delta = P1 - P0;\r\n\r\n // Permute so that the primary iteration is in x to collapse\r\n // all quadrant-specific DDA case later\r\n bool permute = false;\r\n if (abs(delta.x) < abs(delta.y)) {\r\n // More vertical line\r\n permute = true;\r\n delta = delta.yx;\r\n P0 = P0.yx;\r\n P1 = P1.yx;\r\n }\r\n float stepDir = sign(delta.x);\r\n float invdx = stepDir / delta.x;\r\n\r\n // Track the derivatives of Q and K\r\n vec3 dQ = (Q1 - Q0) * invdx;\r\n float dk = (k1 - k0) * invdx;\r\n\r\n vec2 dP = vec2(stepDir, delta.y * invdx);\r\n\r\n // Calculate pixel stride based on distance of ray origin from camera.\r\n // Since perspective means distant objects will be smaller in screen space\r\n // we can use this to have higher quality reflections for far away objects\r\n // while still using a large pixel stride for near objects (and increase performance)\r\n // this also helps mitigate artifacts on distant reflections when we use a large\r\n // pixel stride.\r\n float strideScaler = 1.0 - min(1.0, -rayOrigin.z / pixelStrideZCutoff);\r\n float pixStride = 1.0 + strideScaler * pixelStride;\r\n\r\n // Scale derivatives by the desired pixel stride and the offset the starting values by the jitter fraction\r\n dP *= pixStride; dQ *= pixStride; dk *= pixStride;\r\n\r\n // Track ray step and derivatives in a vec4 to parallelize\r\n vec4 pqk = vec4(P0, Q0.z, k0);\r\n vec4 dPQK = vec4(dP, dQ.z, dk);\r\n\r\n pqk += dPQK * jitter;\r\n float rayZFar = (dPQK.z * 0.5 + pqk.z) / (dPQK.w * 0.5 + pqk.w);\r\n float rayZNear;\r\n\r\n bool intersect = false;\r\n\r\n vec2 texelSize = 1.0 / viewportSize;\r\n\r\n iterationCount = 0.0;\r\n\r\n for (int i = 0; i < MAX_ITERATION; i++)\r\n {\r\n pqk += dPQK;\r\n\r\n rayZNear = rayZFar;\r\n rayZFar = (dPQK.z * 0.5 + pqk.z) / (dPQK.w * 0.5 + pqk.w);\r\n\r\n hitPixel = permute ? pqk.yx : pqk.xy;\r\n hitPixel *= texelSize;\r\n\r\n intersect = rayIntersectDepth(rayZNear, rayZFar, hitPixel);\r\n\r\n iterationCount += 1.0;\r\n\r\n dPQK *= 1.2;\r\n\r\n // PENDING Right on all platforms?\r\n if (intersect) {\r\n break;\r\n }\r\n }\r\n\r\n Q0.xy += dQ.xy * iterationCount;\r\n Q0.z = pqk.z;\r\n hitPoint = Q0 / pqk.w;\r\n\r\n return intersect;\r\n}\r\n\r\nfloat calculateAlpha(\r\n float iterationCount, float reflectivity,\r\n vec2 hitPixel, vec3 hitPoint, float dist, vec3 rayDir\r\n)\r\n{\r\n float alpha = clamp(reflectivity, 0.0, 1.0);\r\n // Fade ray hits that approach the maximum iterations\r\n alpha *= 1.0 - (iterationCount / float(MAX_ITERATION));\r\n // Fade ray hits that approach the screen edge\r\n vec2 hitPixelNDC = hitPixel * 2.0 - 1.0;\r\n float maxDimension = min(1.0, max(abs(hitPixelNDC.x), abs(hitPixelNDC.y)));\r\n alpha *= 1.0 - max(0.0, maxDimension - screenEdgeFadeStart) / (1.0 - screenEdgeFadeStart);\r\n\r\n // Fade ray hits base on how much they face the camera\r\n float _eyeFadeStart = eyeFadeStart;\r\n float _eyeFadeEnd = eyeFadeEnd;\r\n if (_eyeFadeStart > _eyeFadeEnd) {\r\n float tmp = _eyeFadeEnd;\r\n _eyeFadeEnd = _eyeFadeStart;\r\n _eyeFadeStart = tmp;\r\n }\r\n\r\n float eyeDir = clamp(rayDir.z, _eyeFadeStart, _eyeFadeEnd);\r\n alpha *= 1.0 - (eyeDir - _eyeFadeStart) / (_eyeFadeEnd - _eyeFadeStart);\r\n\r\n // Fade ray hits based on distance from ray origin\r\n alpha *= 1.0 - clamp(dist / maxRayDistance, 0.0, 1.0);\r\n\r\n return alpha;\r\n}\r\n\r\n@import clay.util.rand\r\n\r\n@import clay.util.rgbm\r\n\r\nvoid main()\r\n{\r\n vec4 normalAndGloss = texture2D(gBufferTexture1, v_Texcoord);\r\n\r\n // Is empty\r\n if (dot(normalAndGloss.rgb, vec3(1.0)) == 0.0) {\r\n discard;\r\n }\r\n\r\n float g = normalAndGloss.a;\r\n#if !defined(PHYSICALLY_CORRECT)\r\n if (g <= minGlossiness) {\r\n discard;\r\n }\r\n#endif\r\n\r\n float reflectivity = (g - minGlossiness) / (1.0 - minGlossiness);\r\n\r\n vec3 N = normalize(normalAndGloss.rgb * 2.0 - 1.0);\r\n N = normalize((toViewSpace * vec4(N, 0.0)).xyz);\r\n\r\n // Position in view\r\n vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, fetchDepth(gBufferTexture2, v_Texcoord), 1.0);\r\n vec4 pos = projectionInv * projectedPos;\r\n vec3 rayOrigin = pos.xyz / pos.w;\r\n vec3 V = -normalize(rayOrigin);\r\n\r\n float ndv = clamp(dot(N, V), 0.0, 1.0);\r\n float iterationCount;\r\n float jitter = rand(fract(v_Texcoord + jitterOffset));\r\n\r\n#ifdef PHYSICALLY_CORRECT\r\n vec4 color = vec4(vec3(0.0), 1.0);\r\n vec4 albedoMetalness = texture2D(gBufferTexture3, v_Texcoord);\r\n vec3 albedo = albedoMetalness.rgb;\r\n float m = albedoMetalness.a;\r\n vec3 diffuseColor = albedo * (1.0 - m);\r\n vec3 spec = mix(vec3(0.04), albedo, m);\r\n\r\n // PENDING Add noise?\r\n float jitter2 = rand(fract(v_Texcoord)) * float(TOTAL_SAMPLES);\r\n\r\n for (int i = 0; i < SAMPLE_PER_FRAME; i++) {\r\n vec3 H = importanceSampleNormalGGX(float(i) + jitter2, 1.0 - g, N);\r\n // TODO Normal\r\n // vec3 H = transformNormal(lambertNormals[i], N);\r\n // vec3 rayDir = H;\r\n vec3 rayDir = normalize(reflect(-V, H));\r\n#else\r\n vec3 rayDir = normalize(reflect(-V, N));\r\n#endif\r\n vec2 hitPixel;\r\n vec3 hitPoint;\r\n\r\n bool intersect = traceScreenSpaceRay(rayOrigin, rayDir, jitter, hitPixel, hitPoint, iterationCount);\r\n\r\n float dist = distance(rayOrigin, hitPoint);\r\n\r\n vec3 hitNormal = texture2D(gBufferTexture1, hitPixel).rgb * 2.0 - 1.0;\r\n hitNormal = normalize((toViewSpace * vec4(hitNormal, 0.0)).xyz);\r\n#ifdef PHYSICALLY_CORRECT\r\n float ndl = clamp(dot(N, rayDir), 0.0, 1.0);\r\n float vdh = clamp(dot(V, H), 0.0, 1.0);\r\n float ndh = clamp(dot(N, H), 0.0, 1.0);\r\n vec3 litTexel = vec3(0.0);\r\n if (dot(hitNormal, rayDir) < 0.0 && intersect) {\r\n litTexel = texture2D(sourceTexture, hitPixel).rgb;\r\n // PENDING\r\n litTexel *= pow(clamp(1.0 - dist / 200.0, 0.0, 1.0), 3.0);\r\n\r\n // color.rgb += ndl * litTexel * fade * diffuseColor;\r\n }\r\n else {\r\n // Fetch from environment\r\n#ifdef SPECULARCUBEMAP_ENABLED\r\n vec3 rayDirW = normalize(toWorldSpace * vec4(rayDir, 0.0)).rgb;\r\n litTexel = RGBMDecode(textureCubeLodEXT(specularCubemap, rayDirW, 0.0), 8.12).rgb * specularIntensity;\r\n#endif\r\n }\r\n color.rgb += ndl * litTexel * (\r\n F_Schlick(ndl, spec) * G_Smith(g, ndv, ndl) * vdh / (ndh * ndv + 0.001)\r\n );\r\n }\r\n color.rgb /= float(SAMPLE_PER_FRAME);\r\n#else\r\n // Ignore the pixel not face the ray\r\n // TODO fadeout ?\r\n // PENDING Can be configured?\r\n#if !defined(SPECULARCUBEMAP_ENABLED)\r\n if (dot(hitNormal, rayDir) >= 0.0) {\r\n discard;\r\n }\r\n if (!intersect) {\r\n discard;\r\n }\r\n#endif\r\n float alpha = clamp(calculateAlpha(iterationCount, reflectivity, hitPixel, hitPoint, dist, rayDir), 0.0, 1.0);\r\n vec4 color = texture2D(sourceTexture, hitPixel);\r\n color.rgb *= alpha;\r\n\r\n#ifdef SPECULARCUBEMAP_ENABLED\r\n vec3 rayDirW = normalize(toWorldSpace * vec4(rayDir, 0.0)).rgb;\r\n alpha = alpha * (intersect ? 1.0 : 0.0);\r\n float bias = (1.0 -g) * 5.0;\r\n color.rgb += (1.0 - alpha)\r\n * RGBMDecode(textureCubeLodEXT(specularCubemap, rayDirW, bias), 8.12).rgb\r\n * specularIntensity;\r\n#endif\r\n\r\n#endif\r\n\r\n gl_FragColor = encodeHDR(color);\r\n}\r\n@end\r\n\r\n// https://bartwronski.com/2014/03/23/gdc-follow-up-screenspace-reflections-filtering-and-up-sampling/\r\n@export ecgl.ssr.blur\r\n\r\nuniform sampler2D texture;\r\nuniform sampler2D gBufferTexture1;\r\nuniform sampler2D gBufferTexture2;\r\nuniform mat4 projection;\r\nuniform float depthRange : 0.05;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform vec2 textureSize;\r\nuniform float blurSize : 1.0;\r\n\r\n#ifdef BLEND\r\n #ifdef SSAOTEX_ENABLED\r\nuniform sampler2D ssaoTex;\r\n #endif\r\nuniform sampler2D sourceTexture;\r\n#endif\r\n\r\nfloat getLinearDepth(vec2 coord)\r\n{\r\n float depth = texture2D(gBufferTexture2, coord).r * 2.0 - 1.0;\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n}\r\n\r\n@import clay.util.rgbm\r\n\r\n\r\nvoid main()\r\n{\r\n @import clay.compositor.kernel.gaussian_9\r\n\r\n vec4 centerNTexel = texture2D(gBufferTexture1, v_Texcoord);\r\n float g = centerNTexel.a;\r\n float maxBlurSize = clamp(1.0 - g, 0.0, 1.0) * blurSize;\r\n#ifdef VERTICAL\r\n vec2 off = vec2(0.0, maxBlurSize / textureSize.y);\r\n#else\r\n vec2 off = vec2(maxBlurSize / textureSize.x, 0.0);\r\n#endif\r\n\r\n vec2 coord = v_Texcoord;\r\n\r\n vec4 sum = vec4(0.0);\r\n float weightAll = 0.0;\r\n\r\n vec3 cN = centerNTexel.rgb * 2.0 - 1.0;\r\n float cD = getLinearDepth(v_Texcoord);\r\n for (int i = 0; i < 9; i++) {\r\n vec2 coord = clamp((float(i) - 4.0) * off + v_Texcoord, vec2(0.0), vec2(1.0));\r\n float w = gaussianKernel[i]\r\n * clamp(dot(cN, texture2D(gBufferTexture1, coord).rgb * 2.0 - 1.0), 0.0, 1.0);\r\n float d = getLinearDepth(coord);\r\n w *= (1.0 - smoothstep(abs(cD - d) / depthRange, 0.0, 1.0));\r\n\r\n weightAll += w;\r\n sum += decodeHDR(texture2D(texture, coord)) * w;\r\n }\r\n\r\n#ifdef BLEND\r\n float aoFactor = 1.0;\r\n #ifdef SSAOTEX_ENABLED\r\n aoFactor = texture2D(ssaoTex, v_Texcoord).r;\r\n #endif\r\n gl_FragColor = encodeHDR(\r\n sum / weightAll * aoFactor + decodeHDR(texture2D(sourceTexture, v_Texcoord))\r\n );\r\n#else\r\n gl_FragColor = encodeHDR(sum / weightAll);\r\n#endif\r\n}\r\n\r\n@end");
 
 ;// ./src/effect/SSRPass.js
 
@@ -45139,11 +45139,11 @@ SSRPass.prototype.dispose = function (renderer) {
     this._frameBuffer.dispose(renderer);
 };
 
-/* harmony default export */ const effect_SSRPass = (SSRPass);
+/* harmony default export */ var effect_SSRPass = (SSRPass);
 ;// ./src/effect/poissonKernel.js
 // Based on https://bl.ocks.org/mbostock/19168c663618b707158
 
-/* harmony default export */ const poissonKernel = ([
+/* harmony default export */ var poissonKernel = ([
 0.0, 0.0,
 -0.321585265978, -0.154972575841,
 0.458126042375, 0.188473391593,
@@ -45178,7 +45178,7 @@ SSRPass.prototype.dispose = function (renderer) {
 0.617074219636, 0.779817204925
 ]);
 ;// ./src/util/shader/normal.glsl.js
-/* harmony default export */ const normal_glsl = ("@export ecgl.normal.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n@import ecgl.common.normalMap.vertexHeader\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\nvoid main()\r\n{\r\n\r\n // TODO Animation\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n @import ecgl.common.uv.main\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n @import ecgl.common.normalMap.vertexMain\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n}\r\n\r\n\r\n@end\r\n\r\n\r\n@export ecgl.normal.fragment\r\n\r\n#define ROUGHNESS_CHANEL 0\r\n\r\nuniform bool useBumpMap;\r\nuniform bool useRoughnessMap;\r\nuniform bool doubleSide;\r\nuniform float roughness;\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n@import ecgl.common.normalMap.fragmentHeader\r\n@import ecgl.common.bumpMap.header\r\n\r\nuniform sampler2D roughnessMap;\r\n\r\nvoid main()\r\n{\r\n vec3 N = v_Normal;\r\n \r\n bool flipNormal = false;\r\n if (doubleSide) {\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n flipNormal = true;\r\n }\r\n }\r\n\r\n @import ecgl.common.normalMap.fragmentMain\r\n\r\n if (useBumpMap) {\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n }\r\n\r\n float g = 1.0 - roughness;\r\n\r\n if (useRoughnessMap) {\r\n float g2 = 1.0 - texture2D(roughnessMap, v_DetailTexcoord)[ROUGHNESS_CHANEL];\r\n // Adjust the brightness\r\n g = clamp(g2 + (g - 0.5) * 2.0, 0.0, 1.0);\r\n }\r\n\r\n if (flipNormal) {\r\n N = -N;\r\n }\r\n\r\n gl_FragColor.rgb = (N.xyz + 1.0) * 0.5;\r\n gl_FragColor.a = g;\r\n}\r\n@end");
+/* harmony default export */ var normal_glsl = ("@export ecgl.normal.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n@import ecgl.common.normalMap.vertexHeader\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\nvoid main()\r\n{\r\n\r\n // TODO Animation\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n @import ecgl.common.uv.main\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n @import ecgl.common.normalMap.vertexMain\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n}\r\n\r\n\r\n@end\r\n\r\n\r\n@export ecgl.normal.fragment\r\n\r\n#define ROUGHNESS_CHANEL 0\r\n\r\nuniform bool useBumpMap;\r\nuniform bool useRoughnessMap;\r\nuniform bool doubleSide;\r\nuniform float roughness;\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n@import ecgl.common.normalMap.fragmentHeader\r\n@import ecgl.common.bumpMap.header\r\n\r\nuniform sampler2D roughnessMap;\r\n\r\nvoid main()\r\n{\r\n vec3 N = v_Normal;\r\n \r\n bool flipNormal = false;\r\n if (doubleSide) {\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n flipNormal = true;\r\n }\r\n }\r\n\r\n @import ecgl.common.normalMap.fragmentMain\r\n\r\n if (useBumpMap) {\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n }\r\n\r\n float g = 1.0 - roughness;\r\n\r\n if (useRoughnessMap) {\r\n float g2 = 1.0 - texture2D(roughnessMap, v_DetailTexcoord)[ROUGHNESS_CHANEL];\r\n // Adjust the brightness\r\n g = clamp(g2 + (g - 0.5) * 2.0, 0.0, 1.0);\r\n }\r\n\r\n if (flipNormal) {\r\n N = -N;\r\n }\r\n\r\n gl_FragColor.rgb = (N.xyz + 1.0) * 0.5;\r\n gl_FragColor.a = g;\r\n}\r\n@end");
 
 ;// ./src/effect/NormalPass.js
 // NormalPass will generate normal and depth data.
@@ -45387,7 +45387,7 @@ NormalPass.prototype.dispose = function (renderer) {
     this._normalTex.dispose(renderer);
 }
 
-/* harmony default export */ const effect_NormalPass = (NormalPass);
+/* harmony default export */ var effect_NormalPass = (NormalPass);
 ;// ./src/effect/EdgePass.js
 
 
@@ -45445,9 +45445,9 @@ EdgePass.prototype.dispose = function (renderer) {
     this._frameBuffer.dispose(renderer);
 };
 
-/* harmony default export */ const effect_EdgePass = (EdgePass);
+/* harmony default export */ var effect_EdgePass = (EdgePass);
 ;// ./src/effect/composite.js
-/* harmony default export */ const composite = ({
+/* harmony default export */ var composite = ({
     'type' : 'compositor',
     'nodes' : [
         {
@@ -46026,10 +46026,10 @@ EdgePass.prototype.dispose = function (renderer) {
     ]
 });
 ;// ./src/effect/DOF.glsl.js
-/* harmony default export */ const DOF_glsl = ("@export ecgl.dof.coc\r\n\r\nuniform sampler2D depth;\r\n\r\nuniform float zNear: 0.1;\r\nuniform float zFar: 2000;\r\n\r\nuniform float focalDistance: 3;\r\n// Object in range are perfectly in focus\r\nuniform float focalRange: 1;\r\n// 30mm\r\nuniform float focalLength: 30;\r\n// f/2.8\r\nuniform float fstop: 2.8;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n@import clay.util.encode_float\r\n\r\nvoid main()\r\n{\r\n float z = texture2D(depth, v_Texcoord).r * 2.0 - 1.0;\r\n\r\n float dist = 2.0 * zNear * zFar / (zFar + zNear - z * (zFar - zNear));\r\n\r\n float aperture = focalLength / fstop;\r\n\r\n float coc;\r\n\r\n float uppper = focalDistance + focalRange;\r\n float lower = focalDistance - focalRange;\r\n if (dist <= uppper && dist >= lower) {\r\n // Object in range are perfectly in focus\r\n coc = 0.5;\r\n }\r\n else {\r\n // Adjust focalDistance\r\n float focalAdjusted = dist > uppper ? uppper : lower;\r\n\r\n // GPU Gems Depth of Field: A Survey of Techniques\r\n coc = abs(aperture * (focalLength * (dist - focalAdjusted)) / (dist * (focalAdjusted - focalLength)));\r\n // Clamp on the near focus plane and far focus plane\r\n // PENDING\r\n // Float value can only be [0.0 - 1.0)\r\n coc = clamp(coc, 0.0, 2.0) / 2.00001;\r\n\r\n // Near field\r\n if (dist < lower) {\r\n coc = -coc;\r\n }\r\n coc = coc * 0.5 + 0.5;\r\n }\r\n\r\n // R: coc, < 0.5 is near field, > 0.5 is far field\r\n gl_FragColor = encodeFloat(coc);\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.dof.composite\r\n\r\n#define DEBUG 0\r\n\r\nuniform sampler2D original;\r\nuniform sampler2D blurred;\r\nuniform sampler2D nearfield;\r\nuniform sampler2D coc;\r\nuniform sampler2D nearcoc;\r\nvarying vec2 v_Texcoord;\r\n\r\n@import clay.util.rgbm\r\n@import clay.util.float\r\n\r\nvoid main()\r\n{\r\n vec4 blurredColor = texture2D(blurred, v_Texcoord);\r\n vec4 originalColor = texture2D(original, v_Texcoord);\r\n\r\n float fCoc = decodeFloat(texture2D(coc, v_Texcoord));\r\n\r\n // FIXME blur after premultiply will have white edge\r\n // blurredColor.rgb /= max(fCoc, 0.1);\r\n fCoc = abs(fCoc * 2.0 - 1.0);\r\n\r\n float weight = smoothstep(0.0, 1.0, fCoc);\r\n // float weight = fCoc;\r\n\r\n#ifdef NEARFIELD_ENABLED\r\n vec4 nearfieldColor = texture2D(nearfield, v_Texcoord);\r\n float fNearCoc = decodeFloat(texture2D(nearcoc, v_Texcoord));\r\n fNearCoc = abs(fNearCoc * 2.0 - 1.0);\r\n\r\n // FIXME\r\n gl_FragColor = encodeHDR(\r\n mix(\r\n nearfieldColor, mix(originalColor, blurredColor, weight),\r\n // near field blur is too unobvious if use linear blending\r\n pow(1.0 - fNearCoc, 4.0)\r\n )\r\n );\r\n#else\r\n gl_FragColor = encodeHDR(mix(originalColor, blurredColor, weight));\r\n#endif\r\n\r\n// #if DEBUG == 1\r\n// // Show coc\r\n// gl_FragColor = vec4(vec3(fCoc), 1.0);\r\n// #elif DEBUG == 2\r\n// // Show near coc\r\n// gl_FragColor = vec4(vec3(fNearCoc), 1.0);\r\n// #elif DEBUG == 3\r\n// gl_FragColor = encodeHDR(blurredColor);\r\n// #elif DEBUG == 4\r\n// // gl_FragColor = vec4(vec3(nearfieldTexel.a), 1.0);\r\n// gl_FragColor = encodeHDR(nearfieldColor);\r\n// #endif\r\n}\r\n\r\n@end\r\n\r\n\r\n\r\n@export ecgl.dof.diskBlur\r\n\r\n#define POISSON_KERNEL_SIZE 16;\r\n\r\nuniform sampler2D texture;\r\nuniform sampler2D coc;\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform float blurRadius : 10.0;\r\nuniform vec2 textureSize : [512.0, 512.0];\r\n\r\nuniform vec2 poissonKernel[POISSON_KERNEL_SIZE];\r\n\r\nuniform float percent;\r\n\r\nfloat nrand(const in vec2 n) {\r\n return fract(sin(dot(n.xy ,vec2(12.9898,78.233))) * 43758.5453);\r\n}\r\n\r\n@import clay.util.rgbm\r\n@import clay.util.float\r\n\r\n\r\nvoid main()\r\n{\r\n vec2 offset = blurRadius / textureSize;\r\n\r\n float rnd = 6.28318 * nrand(v_Texcoord + 0.07 * percent );\r\n float cosa = cos(rnd);\r\n float sina = sin(rnd);\r\n vec4 basis = vec4(cosa, -sina, sina, cosa);\r\n\r\n#if !defined(BLUR_NEARFIELD) && !defined(BLUR_COC)\r\n offset *= abs(decodeFloat(texture2D(coc, v_Texcoord)) * 2.0 - 1.0);\r\n#endif\r\n\r\n#ifdef BLUR_COC\r\n float cocSum = 0.0;\r\n#else\r\n vec4 color = vec4(0.0);\r\n#endif\r\n\r\n\r\n float weightSum = 0.0;\r\n\r\n for (int i = 0; i < POISSON_KERNEL_SIZE; i++) {\r\n vec2 ofs = poissonKernel[i];\r\n\r\n ofs = vec2(dot(ofs, basis.xy), dot(ofs, basis.zw));\r\n\r\n vec2 uv = v_Texcoord + ofs * offset;\r\n vec4 texel = texture2D(texture, uv);\r\n\r\n float w = 1.0;\r\n#ifdef BLUR_COC\r\n float fCoc = decodeFloat(texel) * 2.0 - 1.0;\r\n // Blur coc in nearfield\r\n cocSum += clamp(fCoc, -1.0, 0.0) * w;\r\n#else\r\n texel = texel;\r\n #if !defined(BLUR_NEARFIELD)\r\n float fCoc = decodeFloat(texture2D(coc, uv)) * 2.0 - 1.0;\r\n // TODO DOF premult to avoid bleeding, can be tweaked (currently x^3)\r\n // tradeoff between bleeding dof and out of focus object that shrinks too much\r\n w *= abs(fCoc);\r\n #endif\r\n texel.rgb *= texel.a;\r\n color += texel * w;\r\n#endif\r\n\r\n weightSum += w;\r\n }\r\n\r\n#ifdef BLUR_COC\r\n gl_FragColor = encodeFloat(clamp(cocSum / weightSum, -1.0, 0.0) * 0.5 + 0.5);\r\n#else\r\n color /= weightSum;\r\n color.rgb /= (color.a + 0.0001);\r\n // TODO Windows will not be totally transparent if color.rgb is not 0 and color.a is 0.\r\n gl_FragColor = color;\r\n#endif\r\n}\r\n\r\n@end");
+/* harmony default export */ var DOF_glsl = ("@export ecgl.dof.coc\r\n\r\nuniform sampler2D depth;\r\n\r\nuniform float zNear: 0.1;\r\nuniform float zFar: 2000;\r\n\r\nuniform float focalDistance: 3;\r\n// Object in range are perfectly in focus\r\nuniform float focalRange: 1;\r\n// 30mm\r\nuniform float focalLength: 30;\r\n// f/2.8\r\nuniform float fstop: 2.8;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n@import clay.util.encode_float\r\n\r\nvoid main()\r\n{\r\n float z = texture2D(depth, v_Texcoord).r * 2.0 - 1.0;\r\n\r\n float dist = 2.0 * zNear * zFar / (zFar + zNear - z * (zFar - zNear));\r\n\r\n float aperture = focalLength / fstop;\r\n\r\n float coc;\r\n\r\n float uppper = focalDistance + focalRange;\r\n float lower = focalDistance - focalRange;\r\n if (dist <= uppper && dist >= lower) {\r\n // Object in range are perfectly in focus\r\n coc = 0.5;\r\n }\r\n else {\r\n // Adjust focalDistance\r\n float focalAdjusted = dist > uppper ? uppper : lower;\r\n\r\n // GPU Gems Depth of Field: A Survey of Techniques\r\n coc = abs(aperture * (focalLength * (dist - focalAdjusted)) / (dist * (focalAdjusted - focalLength)));\r\n // Clamp on the near focus plane and far focus plane\r\n // PENDING\r\n // Float value can only be [0.0 - 1.0)\r\n coc = clamp(coc, 0.0, 2.0) / 2.00001;\r\n\r\n // Near field\r\n if (dist < lower) {\r\n coc = -coc;\r\n }\r\n coc = coc * 0.5 + 0.5;\r\n }\r\n\r\n // R: coc, < 0.5 is near field, > 0.5 is far field\r\n gl_FragColor = encodeFloat(coc);\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.dof.composite\r\n\r\n#define DEBUG 0\r\n\r\nuniform sampler2D original;\r\nuniform sampler2D blurred;\r\nuniform sampler2D nearfield;\r\nuniform sampler2D coc;\r\nuniform sampler2D nearcoc;\r\nvarying vec2 v_Texcoord;\r\n\r\n@import clay.util.rgbm\r\n@import clay.util.float\r\n\r\nvoid main()\r\n{\r\n vec4 blurredColor = texture2D(blurred, v_Texcoord);\r\n vec4 originalColor = texture2D(original, v_Texcoord);\r\n\r\n float fCoc = decodeFloat(texture2D(coc, v_Texcoord));\r\n\r\n // FIXME blur after premultiply will have white edge\r\n // blurredColor.rgb /= max(fCoc, 0.1);\r\n fCoc = abs(fCoc * 2.0 - 1.0);\r\n\r\n float weight = smoothstep(0.0, 1.0, fCoc);\r\n // float weight = fCoc;\r\n\r\n#ifdef NEARFIELD_ENABLED\r\n vec4 nearfieldColor = texture2D(nearfield, v_Texcoord);\r\n float fNearCoc = decodeFloat(texture2D(nearcoc, v_Texcoord));\r\n fNearCoc = abs(fNearCoc * 2.0 - 1.0);\r\n\r\n // FIXME\r\n gl_FragColor = encodeHDR(\r\n mix(\r\n nearfieldColor, mix(originalColor, blurredColor, weight),\r\n // near field blur is too unobvious if use linear blending\r\n pow(1.0 - fNearCoc, 4.0)\r\n )\r\n );\r\n#else\r\n gl_FragColor = encodeHDR(mix(originalColor, blurredColor, weight));\r\n#endif\r\n\r\n// #if DEBUG == 1\r\n// // Show coc\r\n// gl_FragColor = vec4(vec3(fCoc), 1.0);\r\n// #elif DEBUG == 2\r\n// // Show near coc\r\n// gl_FragColor = vec4(vec3(fNearCoc), 1.0);\r\n// #elif DEBUG == 3\r\n// gl_FragColor = encodeHDR(blurredColor);\r\n// #elif DEBUG == 4\r\n// // gl_FragColor = vec4(vec3(nearfieldTexel.a), 1.0);\r\n// gl_FragColor = encodeHDR(nearfieldColor);\r\n// #endif\r\n}\r\n\r\n@end\r\n\r\n\r\n\r\n@export ecgl.dof.diskBlur\r\n\r\n#define POISSON_KERNEL_SIZE 16;\r\n\r\nuniform sampler2D texture;\r\nuniform sampler2D coc;\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform float blurRadius : 10.0;\r\nuniform vec2 textureSize : [512.0, 512.0];\r\n\r\nuniform vec2 poissonKernel[POISSON_KERNEL_SIZE];\r\n\r\nuniform float percent;\r\n\r\nfloat nrand(const in vec2 n) {\r\n return fract(sin(dot(n.xy ,vec2(12.9898,78.233))) * 43758.5453);\r\n}\r\n\r\n@import clay.util.rgbm\r\n@import clay.util.float\r\n\r\n\r\nvoid main()\r\n{\r\n vec2 offset = blurRadius / textureSize;\r\n\r\n float rnd = 6.28318 * nrand(v_Texcoord + 0.07 * percent );\r\n float cosa = cos(rnd);\r\n float sina = sin(rnd);\r\n vec4 basis = vec4(cosa, -sina, sina, cosa);\r\n\r\n#if !defined(BLUR_NEARFIELD) && !defined(BLUR_COC)\r\n offset *= abs(decodeFloat(texture2D(coc, v_Texcoord)) * 2.0 - 1.0);\r\n#endif\r\n\r\n#ifdef BLUR_COC\r\n float cocSum = 0.0;\r\n#else\r\n vec4 color = vec4(0.0);\r\n#endif\r\n\r\n\r\n float weightSum = 0.0;\r\n\r\n for (int i = 0; i < POISSON_KERNEL_SIZE; i++) {\r\n vec2 ofs = poissonKernel[i];\r\n\r\n ofs = vec2(dot(ofs, basis.xy), dot(ofs, basis.zw));\r\n\r\n vec2 uv = v_Texcoord + ofs * offset;\r\n vec4 texel = texture2D(texture, uv);\r\n\r\n float w = 1.0;\r\n#ifdef BLUR_COC\r\n float fCoc = decodeFloat(texel) * 2.0 - 1.0;\r\n // Blur coc in nearfield\r\n cocSum += clamp(fCoc, -1.0, 0.0) * w;\r\n#else\r\n texel = texel;\r\n #if !defined(BLUR_NEARFIELD)\r\n float fCoc = decodeFloat(texture2D(coc, uv)) * 2.0 - 1.0;\r\n // TODO DOF premult to avoid bleeding, can be tweaked (currently x^3)\r\n // tradeoff between bleeding dof and out of focus object that shrinks too much\r\n w *= abs(fCoc);\r\n #endif\r\n texel.rgb *= texel.a;\r\n color += texel * w;\r\n#endif\r\n\r\n weightSum += w;\r\n }\r\n\r\n#ifdef BLUR_COC\r\n gl_FragColor = encodeFloat(clamp(cocSum / weightSum, -1.0, 0.0) * 0.5 + 0.5);\r\n#else\r\n color /= weightSum;\r\n color.rgb /= (color.a + 0.0001);\r\n // TODO Windows will not be totally transparent if color.rgb is not 0 and color.a is 0.\r\n gl_FragColor = color;\r\n#endif\r\n}\r\n\r\n@end");
 
 ;// ./src/effect/edge.glsl.js
-/* harmony default export */ const edge_glsl = ("@export ecgl.edge\r\n// http://williamchyr.com/2014/03/development-update-edge-detection/\r\n// http://williamchyr.com/2014/05/revisiting-edge-detection/\r\n// http://williamchyr.com/2015/08/edge-detection-shader-deep-dive-part-1-even-or-thinner-edges/\r\n// http://www.thomaseichhorn.de/npr-sketch-shader-vvvv/\r\n\r\nuniform sampler2D texture;\r\n\r\nuniform sampler2D normalTexture;\r\nuniform sampler2D depthTexture;\r\n\r\nuniform mat4 projectionInv;\r\n\r\nuniform vec2 textureSize;\r\n\r\nuniform vec4 edgeColor: [0,0,0,0.8];\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvec3 packColor(vec2 coord) {\r\n float z = texture2D(depthTexture, coord).r * 2.0 - 1.0;\r\n vec4 p = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\r\n vec4 p4 = projectionInv * p;\r\n\r\n return vec3(\r\n texture2D(normalTexture, coord).rg,\r\n -p4.z / p4.w / 5.0\r\n );\r\n}\r\n\r\nvoid main() {\r\n vec2 cc = v_Texcoord;\r\n // center\r\n vec3 center = packColor(cc);\r\n\r\n // PENDING Fade out in 100 - 500\r\n float size = clamp(1.0 - (center.z - 10.0) / 100.0, 0.0, 1.0) * 0.5;\r\n float dx = size / textureSize.x;\r\n float dy = size / textureSize.y;\r\n\r\n vec2 coord;\r\n // top left\r\n vec3 topLeft = packColor(cc+vec2(-dx, -dy));\r\n // top\r\n vec3 top = packColor(cc+vec2(0.0, -dy));\r\n // top right\r\n vec3 topRight = packColor(cc+vec2(dx, -dy));\r\n // left\r\n vec3 left = packColor(cc+vec2(-dx, 0.0));\r\n // right\r\n vec3 right = packColor(cc+vec2(dx, 0.0));\r\n // bottom left\r\n vec3 bottomLeft = packColor(cc+vec2(-dx, dy));\r\n // bottom\r\n vec3 bottom = packColor(cc+vec2(0.0, dy));\r\n // bottom right\r\n vec3 bottomRight = packColor(cc+vec2(dx, dy));\r\n\r\n vec3 v = -topLeft-2.0*top-topRight+bottomLeft+2.0*bottom+bottomRight;\r\n vec3 h = -bottomLeft-2.0*left-topLeft+bottomRight+2.0*right+topRight;\r\n\r\n float edge = sqrt(dot(h, h) + dot(v, v));\r\n\r\n edge = smoothstep(0.8, 1.0, edge);\r\n\r\n gl_FragColor = mix(texture2D(texture, v_Texcoord), vec4(edgeColor.rgb, 1.0), edgeColor.a * edge);\r\n}\r\n@end");
+/* harmony default export */ var edge_glsl = ("@export ecgl.edge\r\n// http://williamchyr.com/2014/03/development-update-edge-detection/\r\n// http://williamchyr.com/2014/05/revisiting-edge-detection/\r\n// http://williamchyr.com/2015/08/edge-detection-shader-deep-dive-part-1-even-or-thinner-edges/\r\n// http://www.thomaseichhorn.de/npr-sketch-shader-vvvv/\r\n\r\nuniform sampler2D texture;\r\n\r\nuniform sampler2D normalTexture;\r\nuniform sampler2D depthTexture;\r\n\r\nuniform mat4 projectionInv;\r\n\r\nuniform vec2 textureSize;\r\n\r\nuniform vec4 edgeColor: [0,0,0,0.8];\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvec3 packColor(vec2 coord) {\r\n float z = texture2D(depthTexture, coord).r * 2.0 - 1.0;\r\n vec4 p = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\r\n vec4 p4 = projectionInv * p;\r\n\r\n return vec3(\r\n texture2D(normalTexture, coord).rg,\r\n -p4.z / p4.w / 5.0\r\n );\r\n}\r\n\r\nvoid main() {\r\n vec2 cc = v_Texcoord;\r\n // center\r\n vec3 center = packColor(cc);\r\n\r\n // PENDING Fade out in 100 - 500\r\n float size = clamp(1.0 - (center.z - 10.0) / 100.0, 0.0, 1.0) * 0.5;\r\n float dx = size / textureSize.x;\r\n float dy = size / textureSize.y;\r\n\r\n vec2 coord;\r\n // top left\r\n vec3 topLeft = packColor(cc+vec2(-dx, -dy));\r\n // top\r\n vec3 top = packColor(cc+vec2(0.0, -dy));\r\n // top right\r\n vec3 topRight = packColor(cc+vec2(dx, -dy));\r\n // left\r\n vec3 left = packColor(cc+vec2(-dx, 0.0));\r\n // right\r\n vec3 right = packColor(cc+vec2(dx, 0.0));\r\n // bottom left\r\n vec3 bottomLeft = packColor(cc+vec2(-dx, dy));\r\n // bottom\r\n vec3 bottom = packColor(cc+vec2(0.0, dy));\r\n // bottom right\r\n vec3 bottomRight = packColor(cc+vec2(dx, dy));\r\n\r\n vec3 v = -topLeft-2.0*top-topRight+bottomLeft+2.0*bottom+bottomRight;\r\n vec3 h = -bottomLeft-2.0*left-topLeft+bottomRight+2.0*right+topRight;\r\n\r\n float edge = sqrt(dot(h, h) + dot(v, v));\r\n\r\n edge = smoothstep(0.8, 1.0, edge);\r\n\r\n gl_FragColor = mix(texture2D(texture, v_Texcoord), vec4(edgeColor.rgb, 1.0), edgeColor.a * edge);\r\n}\r\n@end");
 
 ;// ./src/effect/EffectCompositor.js
 
@@ -46571,7 +46571,7 @@ EffectCompositor.prototype.dispose = function (renderer) {
     this._ssaoPass.dispose(renderer);
 };
 
-/* harmony default export */ const effect_EffectCompositor = (EffectCompositor);
+/* harmony default export */ var effect_EffectCompositor = (EffectCompositor);
 ;// ./src/effect/TemporalSuperSampling.js
 // Temporal Super Sample for static Scene
 
@@ -46738,7 +46738,7 @@ TemporalSuperSampling.prototype = {
     }
 };
 
-/* harmony default export */ const effect_TemporalSuperSampling = (TemporalSuperSampling);
+/* harmony default export */ var effect_TemporalSuperSampling = (TemporalSuperSampling);
 ;// ./src/core/ViewGL.js
 /*
  * @module echarts-gl/core/ViewGL
@@ -47192,7 +47192,7 @@ ViewGL.prototype.removeAll = function (node3D) {
 
 Object.assign(ViewGL.prototype, mixin_notifier);
 
-/* harmony default export */ const core_ViewGL = (ViewGL);
+/* harmony default export */ var core_ViewGL = (ViewGL);
 ;// ./src/coord/grid3DCreator.js
 
 
@@ -47382,7 +47382,7 @@ var grid3DCreator = {
     }
 };
 
-/* harmony default export */ const coord_grid3DCreator = (grid3DCreator);
+/* harmony default export */ var coord_grid3DCreator = (grid3DCreator);
 ;// ./src/component/grid3D/Axis3DModel.js
 
 
@@ -47406,7 +47406,7 @@ var Axis3DModel = external_echarts_.ComponentModel.extend({
 
 external_echarts_.helper.mixinAxisModelCommonMethods(Axis3DModel);
 
-/* harmony default export */ const grid3D_Axis3DModel = (Axis3DModel);
+/* harmony default export */ var grid3D_Axis3DModel = (Axis3DModel);
 ;// ./src/component/grid3D/axis3DDefault.js
 
 
@@ -47493,7 +47493,7 @@ var logAxis = external_echarts_.util.defaults({
 }, valueAxis);
 logAxis.scale = true;
 
-/* harmony default export */ const axis3DDefault = ({
+/* harmony default export */ var axis3DDefault = ({
     categoryAxis3D: categoryAxis,
     valueAxis3D: valueAxis,
     timeAxis3D: timeAxis,
@@ -47623,7 +47623,7 @@ function getName(obj) {
     return obj + '';
   }
 }
-/* harmony default export */ const data_OrdinalMeta = (OrdinalMeta);
+/* harmony default export */ var data_OrdinalMeta = (OrdinalMeta);
 ;// ./src/component/grid3D/createAxis3DModel.js
 
 
@@ -47764,7 +47764,7 @@ function install(registers) {
 
 (0,external_echarts_.use)(install);
 ;// ./src/component/common/componentShadingMixin.js
-/* harmony default export */ const componentShadingMixin = ({
+/* harmony default export */ var componentShadingMixin = ({
     defaultOption: {
         shading: null,
 
@@ -47800,7 +47800,7 @@ function install(registers) {
 ;// ./src/coord/geo3D/geo3DModelMixin.js
 
 
-/* harmony default export */ const geo3DModelMixin = ({
+/* harmony default export */ var geo3DModelMixin = ({
 
     getFilledRegions: function (regions, mapData) {
         var regionsArr = (regions || []).slice();
@@ -48039,11 +48039,11 @@ external_echarts_.util.merge(Geo3DModel.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(Geo3DModel.prototype, componentLightMixin);
 external_echarts_.util.merge(Geo3DModel.prototype, componentShadingMixin);
 
-/* harmony default export */ const geo3D_Geo3DModel = (Geo3DModel);
+/* harmony default export */ var geo3D_Geo3DModel = (Geo3DModel);
 ;// ./src/util/earcut.js
 // https://github.com/mapbox/earcut/blob/master/src/earcut.js
 
-/* harmony default export */ const earcut = (earcut_earcut);
+/* harmony default export */ var earcut = (earcut_earcut);
 
 function earcut_earcut(data, holeIndices, dim) {
 
@@ -48788,7 +48788,7 @@ ProgressiveQuickSort.prototype.step = function (arr, compare, frame) {
 
 ProgressiveQuickSort.sort = quickSort;
 
-/* harmony default export */ const util_ProgressiveQuickSort = (ProgressiveQuickSort);
+/* harmony default export */ var util_ProgressiveQuickSort = (ProgressiveQuickSort);
 ;// ./src/util/geometry/trianglesSortMixin.js
 
 
@@ -48799,7 +48799,7 @@ var p1 = trianglesSortMixin_vec3.create();
 var p2 = trianglesSortMixin_vec3.create();
 // var cp = vec3.create();
 
-/* harmony default export */ const trianglesSortMixin = ({
+/* harmony default export */ var trianglesSortMixin = ({
 
     needsSortTriangles: function () {
         return this.indices && this.sortTriangles;
@@ -49128,7 +49128,7 @@ LabelsBuilder.prototype.dispose = function () {
     this._labelTextureSurface.dispose();
 }
 
-/* harmony default export */ const common_LabelsBuilder = (LabelsBuilder);
+/* harmony default export */ var common_LabelsBuilder = (LabelsBuilder);
 ;// ./src/component/common/Geo3DBuilder.js
 
 
@@ -49901,7 +49901,7 @@ Geo3DBuilder.prototype = {
     }
 };
 
-/* harmony default export */ const common_Geo3DBuilder = (Geo3DBuilder);
+/* harmony default export */ var common_Geo3DBuilder = (Geo3DBuilder);
 ;// ./src/component/geo3D/Geo3DView.js
 
 
@@ -49910,7 +49910,7 @@ Geo3DBuilder.prototype = {
 
 
 
-/* harmony default export */ const Geo3DView = (external_echarts_.ComponentView.extend({
+/* harmony default export */ var Geo3DView = (external_echarts_.ComponentView.extend({
 
     type: 'geo3D',
 
@@ -50305,7 +50305,7 @@ Geo3D.prototype = {
     }
 };
 
-/* harmony default export */ const geo3D_Geo3D = (Geo3D);
+/* harmony default export */ var geo3D_Geo3D = (Geo3D);
 ;// ./src/coord/geo3DCreator.js
 
 
@@ -50515,7 +50515,7 @@ var geo3DCreator = {
     }
 };
 
-/* harmony default export */ const coord_geo3DCreator = (geo3DCreator);
+/* harmony default export */ var coord_geo3DCreator = (geo3DCreator);
 ;// ./src/component/geo3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
@@ -50755,7 +50755,7 @@ external_echarts_.util.merge(GlobeModel.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(GlobeModel.prototype, componentLightMixin);
 external_echarts_.util.merge(GlobeModel.prototype, componentShadingMixin);
 
-/* harmony default export */ const globe_GlobeModel = (GlobeModel);
+/* harmony default export */ var globe_GlobeModel = (GlobeModel);
 ;// ./src/util/sunCalc.js
 /*
  (c) 2011-2014, Vladimir Agafonkin
@@ -50841,9 +50841,9 @@ SunCalc.getPosition = function (date, lat, lng) {
     };
 };
 
-/* harmony default export */ const sunCalc = (SunCalc);
+/* harmony default export */ var sunCalc = (SunCalc);
 ;// ./src/component/globe/atmosphere.glsl.js
-/* harmony default export */ const atmosphere_glsl = ("@export ecgl.atmosphere.vertex\r\nattribute vec3 position: POSITION;\r\nattribute vec3 normal : NORMAL;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform mat4 normalMatrix : WORLDINVERSETRANSPOSE;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main() {\r\n v_Normal = normalize((normalMatrix * vec4(normal, 0.0)).xyz);\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.atmosphere.fragment\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform float glowPower;\r\nuniform vec3 glowColor;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main() {\r\n float intensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor = vec4(glowColor, intensity * intensity);\r\n}\r\n@end");
+/* harmony default export */ var atmosphere_glsl = ("@export ecgl.atmosphere.vertex\r\nattribute vec3 position: POSITION;\r\nattribute vec3 normal : NORMAL;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform mat4 normalMatrix : WORLDINVERSETRANSPOSE;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main() {\r\n v_Normal = normalize((normalMatrix * vec4(normal, 0.0)).xyz);\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.atmosphere.fragment\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform float glowPower;\r\nuniform vec3 glowColor;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main() {\r\n float intensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor = vec4(glowColor, intensity * intensity);\r\n}\r\n@end");
 
 ;// ./src/component/globe/GlobeView.js
 
@@ -50861,7 +50861,7 @@ SunCalc.getPosition = function (date, lat, lng) {
 util_graphicGL.Shader['import'](util_glsl);
 util_graphicGL.Shader['import'](atmosphere_glsl);
 
-/* harmony default export */ const GlobeView = (external_echarts_.ComponentView.extend({
+/* harmony default export */ var GlobeView = (external_echarts_.ComponentView.extend({
 
     type: 'globe',
 
@@ -51405,7 +51405,7 @@ Globe.prototype = {
     }
 };
 
-/* harmony default export */ const globe_Globe = (Globe);
+/* harmony default export */ var globe_Globe = (Globe);
 ;// ./src/coord/globeCreator.js
 
 
@@ -51583,7 +51583,7 @@ var globeCreator = {
     }
 };
 
-/* harmony default export */ const coord_globeCreator = (globeCreator);
+/* harmony default export */ var coord_globeCreator = (globeCreator);
 ;// ./src/component/globe/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
@@ -51697,7 +51697,7 @@ var Mapbox3DModel = external_echarts_.ComponentModel.extend({
 external_echarts_.util.merge(Mapbox3DModel.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(Mapbox3DModel.prototype, componentLightMixin);
 
-/* harmony default export */ const mapbox3D_Mapbox3DModel = (Mapbox3DModel);
+/* harmony default export */ var mapbox3D_Mapbox3DModel = (Mapbox3DModel);
 ;// ./src/component/mapbox3D/Mapbox3DLayer.js
 /**
  * @constructor
@@ -51776,9 +51776,9 @@ Mapbox3DLayer.prototype.dispose = function () {
     }, this);
 };
 
-/* harmony default export */ const mapbox3D_Mapbox3DLayer = (Mapbox3DLayer);
+/* harmony default export */ var mapbox3D_Mapbox3DLayer = (Mapbox3DLayer);
 ;// ./src/util/shader/displayShadow.glsl.js
-/* harmony default export */ const displayShadow_glsl = ("// Only display shadow\r\n\r\n@export ecgl.displayShadow.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\nvarying vec3 v_WorldPosition;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main()\r\n{\r\n @import ecgl.common.uv.main\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n\r\n v_WorldPosition = (world * vec4(position, 1.0)).xyz;\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.displayShadow.fragment\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n// For reflection.\r\nuniform float roughness: 0.2;\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nvoid main()\r\n{\r\n float shadow = 1.0;\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#if defined(DIRECTIONAL_LIGHT_COUNT) && defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n for (int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++) {\r\n shadow = min(shadow, shadowContribsDir[i] * 0.5 + 0.5);\r\n }\r\n#endif\r\n\r\n shadow *= 0.5 + ao * 0.5;\r\n shadow = clamp(shadow, 0.0, 1.0);\r\n\r\n gl_FragColor = vec4(vec3(0.0), 1.0 - shadow);\r\n}\r\n\r\n@end");
+/* harmony default export */ var displayShadow_glsl = ("// Only display shadow\r\n\r\n@export ecgl.displayShadow.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\nvarying vec3 v_WorldPosition;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main()\r\n{\r\n @import ecgl.common.uv.main\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n\r\n v_WorldPosition = (world * vec4(position, 1.0)).xyz;\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.displayShadow.fragment\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n// For reflection.\r\nuniform float roughness: 0.2;\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nvoid main()\r\n{\r\n float shadow = 1.0;\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#if defined(DIRECTIONAL_LIGHT_COUNT) && defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n for (int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++) {\r\n shadow = min(shadow, shadowContribsDir[i] * 0.5 + 0.5);\r\n }\r\n#endif\r\n\r\n shadow *= 0.5 + ao * 0.5;\r\n shadow = clamp(shadow, 0.0, 1.0);\r\n\r\n gl_FragColor = vec4(vec3(0.0), 1.0 - shadow);\r\n}\r\n\r\n@end");
 
 ;// ./src/component/mapbox3D/Mapbox3DView.js
 
@@ -51792,7 +51792,7 @@ util_graphicGL.Shader.import(displayShadow_glsl);
 
 var TILE_SIZE = 512;
 
-/* harmony default export */ const Mapbox3DView = (external_echarts_.ComponentView.extend({
+/* harmony default export */ var Mapbox3DView = (external_echarts_.ComponentView.extend({
 
     type: 'mapbox3D',
 
@@ -52116,7 +52116,7 @@ MapServiceCoordSys3D.prototype = {
     }
 };
 
-/* harmony default export */ const MapService3D = (MapServiceCoordSys3D);
+/* harmony default export */ var MapService3D = (MapServiceCoordSys3D);
 ;// ./src/coord/mapbox3D/Mapbox3D.js
 
 
@@ -52128,7 +52128,7 @@ Mapbox3D.prototype = new MapService3D();
 Mapbox3D.prototype.constructor = Mapbox3D;
 Mapbox3D.prototype.type = 'mapbox3D';
 
-/* harmony default export */ const mapbox3D_Mapbox3D = (Mapbox3D);
+/* harmony default export */ var mapbox3D_Mapbox3D = (Mapbox3D);
 ;// ./src/coord/mapServiceCommon/createMapService3DCreator.js
 
 
@@ -52249,7 +52249,7 @@ var mapbox3DCreator = createMapService3DCreator('mapbox3D', mapbox3D_Mapbox3D, f
     });
 });
 
-/* harmony default export */ const coord_mapbox3DCreator = (mapbox3DCreator);
+/* harmony default export */ var coord_mapbox3DCreator = (mapbox3DCreator);
 ;// ./src/component/mapbox3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
@@ -52355,7 +52355,7 @@ var Maptalks3DModel = external_echarts_.ComponentModel.extend({
 external_echarts_.util.merge(Maptalks3DModel.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(Maptalks3DModel.prototype, componentLightMixin);
 
-/* harmony default export */ const maptalks3D_Maptalks3DModel = (Maptalks3DModel);
+/* harmony default export */ var maptalks3D_Maptalks3DModel = (Maptalks3DModel);
 ;// ./src/component/maptalks3D/Maptalks3DLayer.js
 /**
  * @constructor
@@ -52445,7 +52445,7 @@ Maptalks3DLayer.prototype.dispose = function () {
     this._maptalks.remove();
 };
 
-/* harmony default export */ const maptalks3D_Maptalks3DLayer = (Maptalks3DLayer);
+/* harmony default export */ var maptalks3D_Maptalks3DLayer = (Maptalks3DLayer);
 
 ;// ./src/component/maptalks3D/Maptalks3DView.js
 
@@ -52457,7 +52457,7 @@ Maptalks3DLayer.prototype.dispose = function () {
 
 util_graphicGL.Shader.import(displayShadow_glsl);
 
-/* harmony default export */ const Maptalks3DView = (external_echarts_.ComponentView.extend({
+/* harmony default export */ var Maptalks3DView = (external_echarts_.ComponentView.extend({
 
     type: 'maptalks3D',
 
@@ -52634,7 +52634,7 @@ Maptalks3D.prototype = new MapService3D();
 Maptalks3D.prototype.constructor = Maptalks3D;
 Maptalks3D.prototype.type = 'maptalks3D';
 
-/* harmony default export */ const maptalks3D_Maptalks3D = (Maptalks3D);
+/* harmony default export */ var maptalks3D_Maptalks3D = (Maptalks3D);
 ;// ./src/coord/maptalks3DCreator.js
 
 
@@ -52645,7 +52645,7 @@ var maptalks3DCreator = createMapService3DCreator('maptalks3D', maptalks3D_Mapta
     });
 });
 
-/* harmony default export */ const coord_maptalks3DCreator = (maptalks3DCreator);
+/* harmony default export */ var coord_maptalks3DCreator = (maptalks3DCreator);
 ;// ./src/component/maptalks3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
@@ -52757,7 +52757,7 @@ function cartesian3DLayout(seriesModel, coordSys) {
     data.setLayout('orient', [1, 0, 0]);
 }
 
-/* harmony default export */ const bar3D_cartesian3DLayout = (cartesian3DLayout);
+/* harmony default export */ var bar3D_cartesian3DLayout = (cartesian3DLayout);
 ;// ./src/chart/bar3D/evaluateBarSparseness.js
 /* harmony default export */ function evaluateBarSparseness(data, dimX, dimY) {
     var xExtent = data.getDataExtent(dimX);
@@ -53003,7 +53003,7 @@ formatUtil.normalizeToArray = function (value) {
         : [value];
 };
 
-/* harmony default export */ const util_format = (formatUtil);
+/* harmony default export */ var util_format = (formatUtil);
 ;// ./src/chart/common/formatTooltip.js
 
 
@@ -53217,7 +53217,7 @@ var Bar3DSeries = external_echarts_.SeriesModel.extend({
 
 external_echarts_.util.merge(Bar3DSeries.prototype, componentShadingMixin);
 
-/* harmony default export */ const bar3D_Bar3DSeries = (Bar3DSeries);
+/* harmony default export */ var bar3D_Bar3DSeries = (Bar3DSeries);
 ;// ./src/util/geometry/Bars3DGeometry.js
 /**
  * Geometry collecting bars data
@@ -53611,7 +53611,7 @@ var BarsGeometry = src_Geometry.extend(function () {
 external_echarts_.util.defaults(BarsGeometry.prototype, dynamicConvertMixin);
 external_echarts_.util.defaults(BarsGeometry.prototype, trianglesSortMixin);
 
-/* harmony default export */ const Bars3DGeometry = (BarsGeometry);
+/* harmony default export */ var Bars3DGeometry = (BarsGeometry);
 ;// ./src/chart/bar3D/Bar3DView.js
 
 
@@ -53624,7 +53624,7 @@ external_echarts_.util.defaults(BarsGeometry.prototype, trianglesSortMixin);
 
 var Bar3DView_vec3 = dep_glmatrix.vec3;
 
-/* harmony default export */ const Bar3DView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var Bar3DView = (external_echarts_.ChartView.extend({
 
     type: 'bar3D',
 
@@ -54002,7 +54002,7 @@ var Line3DSeries = external_echarts_.SeriesModel.extend({
     }
 });
 
-/* harmony default export */ const line3D_Line3DSeries = (Line3DSeries);
+/* harmony default export */ var line3D_Line3DSeries = (Line3DSeries);
 ;// ./src/chart/line3D/Line3DView.js
 
 
@@ -54020,7 +54020,7 @@ var Line3DView_vec3 = dep_glmatrix.vec3;
 
 util_graphicGL.Shader.import(lines3D_glsl);
 
-/* harmony default export */ const Line3DView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var Line3DView = (external_echarts_.ChartView.extend({
 
     type: 'line3D',
 
@@ -54360,7 +54360,7 @@ function line3D_install_install(registers) {
 
 
 
-/* harmony default export */ const Scatter3DSeries = (external_echarts_.SeriesModel.extend({
+/* harmony default export */ var Scatter3DSeries = (external_echarts_.SeriesModel.extend({
 
     type: 'series.scatter3D',
 
@@ -54614,13 +54614,13 @@ var spriteUtil = {
     }
 };
 
-/* harmony default export */ const sprite = (spriteUtil);
+/* harmony default export */ var sprite = (spriteUtil);
 ;// ./src/util/geometry/verticesSortMixin.js
 
 
 var verticesSortMixin_vec3 = dep_glmatrix.vec3;
 
-/* harmony default export */ const verticesSortMixin = ({
+/* harmony default export */ var verticesSortMixin = ({
 
     needsSortVertices: function () {
         return this.sortVertices;
@@ -54721,7 +54721,7 @@ var verticesSortMixin_vec3 = dep_glmatrix.vec3;
     }
 });
 ;// ./src/chart/common/sdfSprite.glsl.js
-/* harmony default export */ const sdfSprite_glsl = ("@export ecgl.sdfSprite.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform float elapsedTime : 0;\r\n\r\nattribute vec3 position : POSITION;\r\n\r\n#ifdef VERTEX_SIZE\r\nattribute float size;\r\n#else\r\nuniform float u_Size;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_FillColor: COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute float prevSize;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\nuniform sampler2D positionTexture;\r\n#endif\r\n\r\nvarying float v_Size;\r\n\r\nvoid main()\r\n{\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\n // Only 2d position texture supported\r\n gl_Position = worldViewProjection * vec4(texture2D(positionTexture, position.xy).xy, -10.0, 1.0);\r\n#else\r\n\r\n #ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n #else\r\n vec3 pos = position;\r\n #endif\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n#endif\r\n\r\n#ifdef VERTEX_SIZE\r\n#ifdef VERTEX_ANIMATION\r\n v_Size = mix(prevSize, size, percent);\r\n#else\r\n v_Size = size;\r\n#endif\r\n#else\r\n v_Size = u_Size;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_FillColor;\r\n // v_StrokeColor = a_StrokeColor;\r\n#endif\r\n\r\n gl_PointSize = v_Size;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.sdfSprite.fragment\r\n\r\nuniform vec4 color: [1, 1, 1, 1];\r\nuniform vec4 strokeColor: [1, 1, 1, 1];\r\nuniform float smoothing: 0.07;\r\n\r\nuniform float lineWidth: 0.0;\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n// varying vec4 v_StrokeColor;\r\n#endif\r\n\r\nvarying float v_Size;\r\n\r\nuniform sampler2D sprite;\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n\r\n vec4 _strokeColor = strokeColor;\r\n\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n // TODO\r\n // _strokeColor *= v_StrokeColor;\r\n#endif\r\n\r\n#ifdef SPRITE_ENABLED\r\n float d = texture2D(sprite, gl_PointCoord).r;\r\n // Antialias\r\n gl_FragColor.a *= smoothstep(0.5 - smoothing, 0.5 + smoothing, d);\r\n\r\n if (lineWidth > 0.0) {\r\n // TODO SCREEN SPACE OUTLINE\r\n float sLineWidth = lineWidth / 2.0;\r\n\r\n float outlineMaxValue0 = 0.5 + sLineWidth;\r\n float outlineMaxValue1 = 0.5 + sLineWidth + smoothing;\r\n float outlineMinValue0 = 0.5 - sLineWidth - smoothing;\r\n float outlineMinValue1 = 0.5 - sLineWidth;\r\n\r\n // FIXME Aliasing\r\n if (d <= outlineMaxValue1 && d >= outlineMinValue0) {\r\n float a = _strokeColor.a;\r\n if (d <= outlineMinValue1) {\r\n a = a * smoothstep(outlineMinValue0, outlineMinValue1, d);\r\n }\r\n else {\r\n a = a * smoothstep(outlineMaxValue1, outlineMaxValue0, d);\r\n }\r\n gl_FragColor.rgb = mix(gl_FragColor.rgb * gl_FragColor.a, _strokeColor.rgb, a);\r\n gl_FragColor.a = gl_FragColor.a * (1.0 - a) + a;\r\n }\r\n }\r\n#endif\r\n\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(gl_FragColor);\r\n#endif\r\n}\r\n@end");
+/* harmony default export */ var sdfSprite_glsl = ("@export ecgl.sdfSprite.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform float elapsedTime : 0;\r\n\r\nattribute vec3 position : POSITION;\r\n\r\n#ifdef VERTEX_SIZE\r\nattribute float size;\r\n#else\r\nuniform float u_Size;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_FillColor: COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute float prevSize;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\nuniform sampler2D positionTexture;\r\n#endif\r\n\r\nvarying float v_Size;\r\n\r\nvoid main()\r\n{\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\n // Only 2d position texture supported\r\n gl_Position = worldViewProjection * vec4(texture2D(positionTexture, position.xy).xy, -10.0, 1.0);\r\n#else\r\n\r\n #ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n #else\r\n vec3 pos = position;\r\n #endif\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n#endif\r\n\r\n#ifdef VERTEX_SIZE\r\n#ifdef VERTEX_ANIMATION\r\n v_Size = mix(prevSize, size, percent);\r\n#else\r\n v_Size = size;\r\n#endif\r\n#else\r\n v_Size = u_Size;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_FillColor;\r\n // v_StrokeColor = a_StrokeColor;\r\n#endif\r\n\r\n gl_PointSize = v_Size;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.sdfSprite.fragment\r\n\r\nuniform vec4 color: [1, 1, 1, 1];\r\nuniform vec4 strokeColor: [1, 1, 1, 1];\r\nuniform float smoothing: 0.07;\r\n\r\nuniform float lineWidth: 0.0;\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n// varying vec4 v_StrokeColor;\r\n#endif\r\n\r\nvarying float v_Size;\r\n\r\nuniform sampler2D sprite;\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n\r\n vec4 _strokeColor = strokeColor;\r\n\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n // TODO\r\n // _strokeColor *= v_StrokeColor;\r\n#endif\r\n\r\n#ifdef SPRITE_ENABLED\r\n float d = texture2D(sprite, gl_PointCoord).r;\r\n // Antialias\r\n gl_FragColor.a *= smoothstep(0.5 - smoothing, 0.5 + smoothing, d);\r\n\r\n if (lineWidth > 0.0) {\r\n // TODO SCREEN SPACE OUTLINE\r\n float sLineWidth = lineWidth / 2.0;\r\n\r\n float outlineMaxValue0 = 0.5 + sLineWidth;\r\n float outlineMaxValue1 = 0.5 + sLineWidth + smoothing;\r\n float outlineMinValue0 = 0.5 - sLineWidth - smoothing;\r\n float outlineMinValue1 = 0.5 - sLineWidth;\r\n\r\n // FIXME Aliasing\r\n if (d <= outlineMaxValue1 && d >= outlineMinValue0) {\r\n float a = _strokeColor.a;\r\n if (d <= outlineMinValue1) {\r\n a = a * smoothstep(outlineMinValue0, outlineMinValue1, d);\r\n }\r\n else {\r\n a = a * smoothstep(outlineMaxValue1, outlineMaxValue0, d);\r\n }\r\n gl_FragColor.rgb = mix(gl_FragColor.rgb * gl_FragColor.a, _strokeColor.rgb, a);\r\n gl_FragColor.a = gl_FragColor.a * (1.0 - a) + a;\r\n }\r\n }\r\n#endif\r\n\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(gl_FragColor);\r\n#endif\r\n}\r\n@end");
 
 ;// ./src/chart/common/PointsMesh.js
 
@@ -54855,7 +54855,7 @@ var PointsMesh = util_graphicGL.Mesh.extend(function () {
     }
 });
 
-/* harmony default export */ const common_PointsMesh = (PointsMesh);
+/* harmony default export */ var common_PointsMesh = (PointsMesh);
 ;// ./src/chart/common/PointsBuilder.js
 
 
@@ -55441,7 +55441,7 @@ PointsBuilder.prototype = {
     }
 };
 
-/* harmony default export */ const common_PointsBuilder = (PointsBuilder);
+/* harmony default export */ var common_PointsBuilder = (PointsBuilder);
 
 ;// ./src/chart/scatter3D/Scatter3DView.js
 
@@ -55451,7 +55451,7 @@ PointsBuilder.prototype = {
 
 
 
-/* harmony default export */ const Scatter3DView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var Scatter3DView = (external_echarts_.ChartView.extend({
 
     type: 'scatter3D',
 
@@ -55804,7 +55804,7 @@ function lines3DLayout(ecModel, api) {
 ;// ./src/chart/lines3D/Lines3DSeries.js
 
 
-/* harmony default export */ const Lines3DSeries = (external_echarts_.SeriesModel.extend({
+/* harmony default export */ var Lines3DSeries = (external_echarts_.SeriesModel.extend({
 
     type: 'series.lines3D',
 
@@ -55868,7 +55868,7 @@ function lines3DLayout(ecModel, api) {
     }
 }));
 ;// ./src/chart/lines3D/shader/trail2.glsl.js
-/* harmony default export */ const trail2_glsl = ("// Inspired by https://github.com/uber/deck.gl/tree/master/examples/trips/trips-layer\r\n@export ecgl.trail2.vertex\r\nattribute vec3 position: POSITION;\r\nattribute vec3 positionPrev;\r\nattribute vec3 positionNext;\r\nattribute float offset;\r\n// Distance to first point.\r\nattribute float dist;\r\nattribute float distAll;\r\n// Start distance/time\r\nattribute float start;\r\n\r\nattribute vec4 a_Color : COLOR;\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\nuniform float near : NEAR;\r\n\r\nuniform float speed : 0;\r\nuniform float trailLength: 0.3;\r\nuniform float time;\r\nuniform float period: 1000;\r\n\r\nuniform float spotSize: 1;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Percent;\r\nvarying float v_SpotPercent;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n@import ecgl.lines3D.clipNear\r\n\r\nvoid main()\r\n{\r\n @import ecgl.lines3D.expandLine\r\n\r\n gl_Position = currProj;\r\n\r\n v_Color = a_Color;\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n#ifdef CONSTANT_SPEED\r\n float t = mod((speed * time + start) / distAll, 1. + trailLength) - trailLength;\r\n#else\r\n float t = mod((time + start) / period, 1. + trailLength) - trailLength;\r\n#endif\r\n\r\n float trailLen = distAll * trailLength;\r\n\r\n v_Percent = (dist - t * distAll) / trailLen;\r\n\r\n v_SpotPercent = spotSize / distAll;\r\n\r\n // if (t > 1.0 - trailLength) {\r\n // float t2 = t - 1.0;\r\n // v_Percent = max(v_Percent, (dist - t2 * distAll) / trailLen);\r\n // }\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.trail2.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform float spotIntensity: 5;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Percent;\r\nvarying float v_SpotPercent;\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n if (v_Percent > 1.0 || v_Percent < 0.0) {\r\n discard;\r\n }\r\n\r\n float fade = v_Percent;\r\n\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n\r\n // Spot part\r\n // PENDING\r\n if (v_Percent > (1.0 - v_SpotPercent)) {\r\n gl_FragColor.rgb *= spotIntensity;\r\n // gl_FragColor.rgb *= (10.0 * (v_Percent - 1.0 + v_SpotPercent) / v_SpotPercent + 1.0);\r\n }\r\n\r\n gl_FragColor.a *= fade;\r\n}\r\n\r\n@end");
+/* harmony default export */ var trail2_glsl = ("// Inspired by https://github.com/uber/deck.gl/tree/master/examples/trips/trips-layer\r\n@export ecgl.trail2.vertex\r\nattribute vec3 position: POSITION;\r\nattribute vec3 positionPrev;\r\nattribute vec3 positionNext;\r\nattribute float offset;\r\n// Distance to first point.\r\nattribute float dist;\r\nattribute float distAll;\r\n// Start distance/time\r\nattribute float start;\r\n\r\nattribute vec4 a_Color : COLOR;\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\nuniform float near : NEAR;\r\n\r\nuniform float speed : 0;\r\nuniform float trailLength: 0.3;\r\nuniform float time;\r\nuniform float period: 1000;\r\n\r\nuniform float spotSize: 1;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Percent;\r\nvarying float v_SpotPercent;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n@import ecgl.lines3D.clipNear\r\n\r\nvoid main()\r\n{\r\n @import ecgl.lines3D.expandLine\r\n\r\n gl_Position = currProj;\r\n\r\n v_Color = a_Color;\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n#ifdef CONSTANT_SPEED\r\n float t = mod((speed * time + start) / distAll, 1. + trailLength) - trailLength;\r\n#else\r\n float t = mod((time + start) / period, 1. + trailLength) - trailLength;\r\n#endif\r\n\r\n float trailLen = distAll * trailLength;\r\n\r\n v_Percent = (dist - t * distAll) / trailLen;\r\n\r\n v_SpotPercent = spotSize / distAll;\r\n\r\n // if (t > 1.0 - trailLength) {\r\n // float t2 = t - 1.0;\r\n // v_Percent = max(v_Percent, (dist - t2 * distAll) / trailLen);\r\n // }\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.trail2.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform float spotIntensity: 5;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Percent;\r\nvarying float v_SpotPercent;\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n if (v_Percent > 1.0 || v_Percent < 0.0) {\r\n discard;\r\n }\r\n\r\n float fade = v_Percent;\r\n\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n\r\n // Spot part\r\n // PENDING\r\n if (v_Percent > (1.0 - v_SpotPercent)) {\r\n gl_FragColor.rgb *= spotIntensity;\r\n // gl_FragColor.rgb *= (10.0 * (v_Percent - 1.0 + v_SpotPercent) / v_SpotPercent + 1.0);\r\n }\r\n\r\n gl_FragColor.a *= fade;\r\n}\r\n\r\n@end");
 
 ;// ./src/chart/lines3D/TrailMesh2.js
 
@@ -55887,7 +55887,7 @@ function sign(a) {
 
 util_graphicGL.Shader.import(trail2_glsl);
 
-/* harmony default export */ const TrailMesh2 = (util_graphicGL.Mesh.extend(function () {
+/* harmony default export */ var TrailMesh2 = (util_graphicGL.Mesh.extend(function () {
 
     var material = new util_graphicGL.Material({
         shader: new util_graphicGL.Shader(
@@ -56049,7 +56049,7 @@ function getCoordSysSize(coordSys) {
     }
 }
 
-/* harmony default export */ const Lines3DView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var Lines3DView = (external_echarts_.ChartView.extend({
 
     type: 'lines3D',
 
@@ -56361,13 +56361,13 @@ var Polygons3DSeries = external_echarts_.SeriesModel.extend({
 
 external_echarts_.util.merge(Polygons3DSeries.prototype, componentShadingMixin);
 
-/* harmony default export */ const polygons3D_Polygons3DSeries = (Polygons3DSeries);
+/* harmony default export */ var polygons3D_Polygons3DSeries = (Polygons3DSeries);
 ;// ./src/chart/polygons3D/Polygons3DView.js
 
 
 
 
-/* harmony default export */ const Polygons3DView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var Polygons3DView = (external_echarts_.ChartView.extend({
 
     type: 'polygons3D',
 
@@ -56677,7 +56677,7 @@ var SurfaceSeries = external_echarts_.SeriesModel.extend({
 
 external_echarts_.util.merge(SurfaceSeries.prototype, componentShadingMixin);
 
-/* harmony default export */ const surface_SurfaceSeries = (SurfaceSeries);
+/* harmony default export */ var surface_SurfaceSeries = (SurfaceSeries);
 ;// ./src/chart/surface/SurfaceView.js
 
 
@@ -56691,7 +56691,7 @@ function isPointsNaN(pt) {
     return isNaN(pt[0]) || isNaN(pt[1]) || isNaN(pt[2]);
 }
 
-/* harmony default export */ const SurfaceView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var SurfaceView = (external_echarts_.ChartView.extend({
 
     type: 'surface',
 
@@ -57378,7 +57378,7 @@ external_echarts_.util.merge(Map3DSeries.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(Map3DSeries.prototype, componentLightMixin);
 external_echarts_.util.merge(Map3DSeries.prototype, componentShadingMixin);
 
-/* harmony default export */ const map3D_Map3DSeries = (Map3DSeries);
+/* harmony default export */ var map3D_Map3DSeries = (Map3DSeries);
 ;// ./src/chart/map3D/Map3DView.js
 
 
@@ -57387,7 +57387,7 @@ external_echarts_.util.merge(Map3DSeries.prototype, componentShadingMixin);
 
 
 
-/* harmony default export */ const Map3DView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var Map3DView = (external_echarts_.ChartView.extend({
 
     type: 'map3D',
 
@@ -57525,7 +57525,7 @@ function map3D_install_install(registers) {
 ;// ./src/chart/scatterGL/ScatterGLSeries.js
 
 
-/* harmony default export */ const ScatterGLSeries = (external_echarts_.SeriesModel.extend({
+/* harmony default export */ var ScatterGLSeries = (external_echarts_.SeriesModel.extend({
 
     type: 'series.scatterGL',
 
@@ -57668,7 +57668,7 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
     camera.far = 100;
 };
 
-/* harmony default export */ const common_GLViewHelper = (GLViewHelper);
+/* harmony default export */ var common_GLViewHelper = (GLViewHelper);
 ;// ./src/chart/scatterGL/ScatterGLView.js
 
 
@@ -57677,7 +57677,7 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
 
 
 
-/* harmony default export */ const ScatterGLView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var ScatterGLView = (external_echarts_.ChartView.extend({
 
     type: 'scatterGL',
 
@@ -58312,7 +58312,7 @@ function createGraphDataProxyMixin(hostName, dataName) {
 ;
 mixin(GraphNode, createGraphDataProxyMixin('hostGraph', 'data'));
 mixin(GraphEdge, createGraphDataProxyMixin('hostGraph', 'edgeData'));
-/* harmony default export */ const data_Graph = (Graph_Graph);
+/* harmony default export */ var data_Graph = (Graph_Graph);
 
 ;// ./node_modules/echarts/lib/data/helper/linkSeriesData.js
 
@@ -58464,7 +58464,7 @@ function linkSingle(data, dataType, mainData, opt) {
   data.getLinkedData = getLinkedData;
   data.getLinkedDataAll = getLinkedDataAll;
 }
-/* harmony default export */ const helper_linkSeriesData = (linkSeriesData);
+/* harmony default export */ var helper_linkSeriesData = (linkSeriesData);
 ;// ./node_modules/echarts/lib/data/helper/linkList.js
 
 /*
@@ -58511,7 +58511,7 @@ function linkSingle(data, dataType, mainData, opt) {
 */
 // TODO: this module is only for compatibility with echarts-gl
 
-/* harmony default export */ const linkList = (helper_linkSeriesData);
+/* harmony default export */ var linkList = (helper_linkSeriesData);
 ;// ./src/chart/graphGL/createGraphFromNodeEdge.js
 
 
@@ -58852,7 +58852,7 @@ var GraphSeries = external_echarts_.SeriesModel.extend({
     }
 });
 
-/* harmony default export */ const GraphGLSeries = (GraphSeries);
+/* harmony default export */ var GraphGLSeries = (GraphSeries);
 ;// ./src/util/geometry/Lines2D.js
 /**
  * Lines geometry
@@ -59319,9 +59319,9 @@ var Lines2D_LinesGeometry = src_Geometry.extend(function () {
 
 external_echarts_.util.defaults(Lines2D_LinesGeometry.prototype, dynamicConvertMixin);
 
-/* harmony default export */ const Lines2D = (Lines2D_LinesGeometry);
+/* harmony default export */ var Lines2D = (Lines2D_LinesGeometry);
 ;// ./src/chart/graphGL/forceAtlas2.glsl.js
-/* harmony default export */ const forceAtlas2_glsl = ("@export ecgl.forceAtlas2.updateNodeRepulsion\r\n\r\n#define NODE_COUNT 0\r\n\r\nuniform sampler2D positionTex;\r\n\r\nuniform vec2 textureSize;\r\nuniform float gravity;\r\nuniform float scaling;\r\nuniform vec2 gravityCenter;\r\n\r\nuniform bool strongGravityMode;\r\nuniform bool preventOverlap;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main() {\r\n\r\n vec4 n0 = texture2D(positionTex, v_Texcoord);\r\n\r\n vec2 force = vec2(0.0);\r\n for (int i = 0; i < NODE_COUNT; i++) {\r\n vec2 uv = vec2(\r\n mod(float(i), textureSize.x) / (textureSize.x - 1.0),\r\n floor(float(i) / textureSize.x) / (textureSize.y - 1.0)\r\n );\r\n vec4 n1 = texture2D(positionTex, uv);\r\n\r\n vec2 dir = n0.xy - n1.xy;\r\n float d2 = dot(dir, dir);\r\n\r\n if (d2 > 0.0) {\r\n float factor = 0.0;\r\n if (preventOverlap) {\r\n float d = sqrt(d2);\r\n d = d - n0.w - n1.w;\r\n if (d > 0.0) {\r\n factor = scaling * n0.z * n1.z / (d * d);\r\n }\r\n else if (d < 0.0) {\r\n // A stronger repulsion if overlap\r\n factor = scaling * 100.0 * n0.z * n1.z;\r\n }\r\n }\r\n else {\r\n // Divide factor by an extra `d` to normalize the `v`\r\n factor = scaling * n0.z * n1.z / d2;\r\n }\r\n force += dir * factor;\r\n }\r\n }\r\n\r\n // Gravity\r\n vec2 dir = gravityCenter - n0.xy;\r\n float d = 1.0;\r\n if (!strongGravityMode) {\r\n d = length(dir);\r\n }\r\n\r\n force += dir * n0.z * gravity / (d + 1.0);\r\n\r\n gl_FragColor = vec4(force, 0.0, 1.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updateEdgeAttraction.vertex\r\n\r\nattribute vec2 node1;\r\nattribute vec2 node2;\r\nattribute float weight;\r\n\r\nuniform sampler2D positionTex;\r\nuniform float edgeWeightInfluence;\r\nuniform bool preventOverlap;\r\nuniform bool linLogMode;\r\n\r\nuniform vec2 windowSize: WINDOW_SIZE;\r\n\r\nvarying vec2 v_Force;\r\n\r\nvoid main() {\r\n\r\n vec4 n0 = texture2D(positionTex, node1);\r\n vec4 n1 = texture2D(positionTex, node2);\r\n\r\n vec2 dir = n1.xy - n0.xy;\r\n float d = length(dir);\r\n float w;\r\n if (edgeWeightInfluence == 0.0) {\r\n w = 1.0;\r\n }\r\n else if (edgeWeightInfluence == 1.0) {\r\n w = weight;\r\n }\r\n else {\r\n w = pow(weight, edgeWeightInfluence);\r\n }\r\n // Add 0.5 offset.\r\n // PENDING.\r\n vec2 offset = vec2(1.0 / windowSize.x, 1.0 / windowSize.y);\r\n vec2 scale = vec2((windowSize.x - 1.0) / windowSize.x, (windowSize.y - 1.0) / windowSize.y);\r\n vec2 pos = node1 * scale * 2.0 - 1.0;\r\n gl_Position = vec4(pos + offset, 0.0, 1.0);\r\n gl_PointSize = 1.0;\r\n\r\n float factor;\r\n if (preventOverlap) {\r\n d = d - n1.w - n0.w;\r\n }\r\n if (d <= 0.0) {\r\n v_Force = vec2(0.0);\r\n return;\r\n }\r\n\r\n if (linLogMode) {\r\n // Divide factor by an extra `d` to normalize the `v`\r\n factor = w * log(d) / d;\r\n }\r\n else {\r\n factor = w;\r\n }\r\n v_Force = dir * factor;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updateEdgeAttraction.fragment\r\n\r\nvarying vec2 v_Force;\r\n\r\nvoid main() {\r\n gl_FragColor = vec4(v_Force, 0.0, 0.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcWeightedSum.vertex\r\n\r\nattribute vec2 node;\r\n\r\nvarying vec2 v_NodeUv;\r\n\r\nvoid main() {\r\n\r\n v_NodeUv = node;\r\n gl_Position = vec4(0.0, 0.0, 0.0, 1.0);\r\n gl_PointSize = 1.0;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcWeightedSum.fragment\r\n\r\nvarying vec2 v_NodeUv;\r\n\r\nuniform sampler2D positionTex;\r\nuniform sampler2D forceTex;\r\nuniform sampler2D forcePrevTex;\r\n\r\nvoid main() {\r\n vec2 force = texture2D(forceTex, v_NodeUv).rg;\r\n vec2 forcePrev = texture2D(forcePrevTex, v_NodeUv).rg;\r\n\r\n float mass = texture2D(positionTex, v_NodeUv).z;\r\n float swing = length(force - forcePrev) * mass;\r\n float traction = length(force + forcePrev) * 0.5 * mass;\r\n\r\n gl_FragColor = vec4(swing, traction, 0.0, 0.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcGlobalSpeed\r\n\r\nuniform sampler2D globalSpeedPrevTex;\r\nuniform sampler2D weightedSumTex;\r\nuniform float jitterTolerence;\r\n\r\nvoid main() {\r\n vec2 weightedSum = texture2D(weightedSumTex, vec2(0.5)).xy;\r\n float prevGlobalSpeed = texture2D(globalSpeedPrevTex, vec2(0.5)).x;\r\n float globalSpeed = jitterTolerence * jitterTolerence\r\n // traction / swing\r\n * weightedSum.y / weightedSum.x;\r\n if (prevGlobalSpeed > 0.0) {\r\n globalSpeed = min(globalSpeed / prevGlobalSpeed, 1.5) * prevGlobalSpeed;\r\n }\r\n gl_FragColor = vec4(globalSpeed, 0.0, 0.0, 1.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updatePosition\r\n\r\nuniform sampler2D forceTex;\r\nuniform sampler2D forcePrevTex;\r\nuniform sampler2D positionTex;\r\nuniform sampler2D globalSpeedTex;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main() {\r\n vec2 force = texture2D(forceTex, v_Texcoord).xy;\r\n vec2 forcePrev = texture2D(forcePrevTex, v_Texcoord).xy;\r\n vec4 node = texture2D(positionTex, v_Texcoord);\r\n\r\n float globalSpeed = texture2D(globalSpeedTex, vec2(0.5)).r;\r\n float swing = length(force - forcePrev);\r\n float speed = 0.1 * globalSpeed / (0.1 + globalSpeed * sqrt(swing));\r\n\r\n // Additional constraint to prevent local speed gets too high\r\n float df = length(force);\r\n if (df > 0.0) {\r\n speed = min(df * speed, 10.0) / df;\r\n\r\n gl_FragColor = vec4(node.xy + speed * force, node.zw);\r\n }\r\n else {\r\n gl_FragColor = node;\r\n }\r\n}\r\n@end\r\n\r\n// For edge draw\r\n@export ecgl.forceAtlas2.edges.vertex\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec2 node;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\nuniform sampler2D positionTex;\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(\r\n texture2D(positionTex, node).xy, -10.0, 1.0\r\n );\r\n v_Color = a_Color;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.edges.fragment\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nvarying vec4 v_Color;\r\nvoid main() {\r\n gl_FragColor = color * v_Color;\r\n}\r\n@end");
+/* harmony default export */ var forceAtlas2_glsl = ("@export ecgl.forceAtlas2.updateNodeRepulsion\r\n\r\n#define NODE_COUNT 0\r\n\r\nuniform sampler2D positionTex;\r\n\r\nuniform vec2 textureSize;\r\nuniform float gravity;\r\nuniform float scaling;\r\nuniform vec2 gravityCenter;\r\n\r\nuniform bool strongGravityMode;\r\nuniform bool preventOverlap;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main() {\r\n\r\n vec4 n0 = texture2D(positionTex, v_Texcoord);\r\n\r\n vec2 force = vec2(0.0);\r\n for (int i = 0; i < NODE_COUNT; i++) {\r\n vec2 uv = vec2(\r\n mod(float(i), textureSize.x) / (textureSize.x - 1.0),\r\n floor(float(i) / textureSize.x) / (textureSize.y - 1.0)\r\n );\r\n vec4 n1 = texture2D(positionTex, uv);\r\n\r\n vec2 dir = n0.xy - n1.xy;\r\n float d2 = dot(dir, dir);\r\n\r\n if (d2 > 0.0) {\r\n float factor = 0.0;\r\n if (preventOverlap) {\r\n float d = sqrt(d2);\r\n d = d - n0.w - n1.w;\r\n if (d > 0.0) {\r\n factor = scaling * n0.z * n1.z / (d * d);\r\n }\r\n else if (d < 0.0) {\r\n // A stronger repulsion if overlap\r\n factor = scaling * 100.0 * n0.z * n1.z;\r\n }\r\n }\r\n else {\r\n // Divide factor by an extra `d` to normalize the `v`\r\n factor = scaling * n0.z * n1.z / d2;\r\n }\r\n force += dir * factor;\r\n }\r\n }\r\n\r\n // Gravity\r\n vec2 dir = gravityCenter - n0.xy;\r\n float d = 1.0;\r\n if (!strongGravityMode) {\r\n d = length(dir);\r\n }\r\n\r\n force += dir * n0.z * gravity / (d + 1.0);\r\n\r\n gl_FragColor = vec4(force, 0.0, 1.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updateEdgeAttraction.vertex\r\n\r\nattribute vec2 node1;\r\nattribute vec2 node2;\r\nattribute float weight;\r\n\r\nuniform sampler2D positionTex;\r\nuniform float edgeWeightInfluence;\r\nuniform bool preventOverlap;\r\nuniform bool linLogMode;\r\n\r\nuniform vec2 windowSize: WINDOW_SIZE;\r\n\r\nvarying vec2 v_Force;\r\n\r\nvoid main() {\r\n\r\n vec4 n0 = texture2D(positionTex, node1);\r\n vec4 n1 = texture2D(positionTex, node2);\r\n\r\n vec2 dir = n1.xy - n0.xy;\r\n float d = length(dir);\r\n float w;\r\n if (edgeWeightInfluence == 0.0) {\r\n w = 1.0;\r\n }\r\n else if (edgeWeightInfluence == 1.0) {\r\n w = weight;\r\n }\r\n else {\r\n w = pow(weight, edgeWeightInfluence);\r\n }\r\n // Add 0.5 offset.\r\n // PENDING.\r\n vec2 offset = vec2(1.0 / windowSize.x, 1.0 / windowSize.y);\r\n vec2 scale = vec2((windowSize.x - 1.0) / windowSize.x, (windowSize.y - 1.0) / windowSize.y);\r\n vec2 pos = node1 * scale * 2.0 - 1.0;\r\n gl_Position = vec4(pos + offset, 0.0, 1.0);\r\n gl_PointSize = 1.0;\r\n\r\n float factor;\r\n if (preventOverlap) {\r\n d = d - n1.w - n0.w;\r\n }\r\n if (d <= 0.0) {\r\n v_Force = vec2(0.0);\r\n return;\r\n }\r\n\r\n if (linLogMode) {\r\n // Divide factor by an extra `d` to normalize the `v`\r\n factor = w * log(d) / d;\r\n }\r\n else {\r\n factor = w;\r\n }\r\n v_Force = dir * factor;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updateEdgeAttraction.fragment\r\n\r\nvarying vec2 v_Force;\r\n\r\nvoid main() {\r\n gl_FragColor = vec4(v_Force, 0.0, 0.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcWeightedSum.vertex\r\n\r\nattribute vec2 node;\r\n\r\nvarying vec2 v_NodeUv;\r\n\r\nvoid main() {\r\n\r\n v_NodeUv = node;\r\n gl_Position = vec4(0.0, 0.0, 0.0, 1.0);\r\n gl_PointSize = 1.0;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcWeightedSum.fragment\r\n\r\nvarying vec2 v_NodeUv;\r\n\r\nuniform sampler2D positionTex;\r\nuniform sampler2D forceTex;\r\nuniform sampler2D forcePrevTex;\r\n\r\nvoid main() {\r\n vec2 force = texture2D(forceTex, v_NodeUv).rg;\r\n vec2 forcePrev = texture2D(forcePrevTex, v_NodeUv).rg;\r\n\r\n float mass = texture2D(positionTex, v_NodeUv).z;\r\n float swing = length(force - forcePrev) * mass;\r\n float traction = length(force + forcePrev) * 0.5 * mass;\r\n\r\n gl_FragColor = vec4(swing, traction, 0.0, 0.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcGlobalSpeed\r\n\r\nuniform sampler2D globalSpeedPrevTex;\r\nuniform sampler2D weightedSumTex;\r\nuniform float jitterTolerence;\r\n\r\nvoid main() {\r\n vec2 weightedSum = texture2D(weightedSumTex, vec2(0.5)).xy;\r\n float prevGlobalSpeed = texture2D(globalSpeedPrevTex, vec2(0.5)).x;\r\n float globalSpeed = jitterTolerence * jitterTolerence\r\n // traction / swing\r\n * weightedSum.y / weightedSum.x;\r\n if (prevGlobalSpeed > 0.0) {\r\n globalSpeed = min(globalSpeed / prevGlobalSpeed, 1.5) * prevGlobalSpeed;\r\n }\r\n gl_FragColor = vec4(globalSpeed, 0.0, 0.0, 1.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updatePosition\r\n\r\nuniform sampler2D forceTex;\r\nuniform sampler2D forcePrevTex;\r\nuniform sampler2D positionTex;\r\nuniform sampler2D globalSpeedTex;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main() {\r\n vec2 force = texture2D(forceTex, v_Texcoord).xy;\r\n vec2 forcePrev = texture2D(forcePrevTex, v_Texcoord).xy;\r\n vec4 node = texture2D(positionTex, v_Texcoord);\r\n\r\n float globalSpeed = texture2D(globalSpeedTex, vec2(0.5)).r;\r\n float swing = length(force - forcePrev);\r\n float speed = 0.1 * globalSpeed / (0.1 + globalSpeed * sqrt(swing));\r\n\r\n // Additional constraint to prevent local speed gets too high\r\n float df = length(force);\r\n if (df > 0.0) {\r\n speed = min(df * speed, 10.0) / df;\r\n\r\n gl_FragColor = vec4(node.xy + speed * force, node.zw);\r\n }\r\n else {\r\n gl_FragColor = node;\r\n }\r\n}\r\n@end\r\n\r\n// For edge draw\r\n@export ecgl.forceAtlas2.edges.vertex\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec2 node;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\nuniform sampler2D positionTex;\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(\r\n texture2D(positionTex, node).xy, -10.0, 1.0\r\n );\r\n v_Color = a_Color;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.edges.fragment\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nvarying vec4 v_Color;\r\nvoid main() {\r\n gl_FragColor = color * v_Color;\r\n}\r\n@end");
 
 ;// ./src/chart/graphGL/ForceAtlas2GPU.js
 
@@ -59790,7 +59790,7 @@ ForceAtlas2GPU.prototype.dispose = function (renderer) {
     this._globalSpeedPrevTex.dispose(renderer);
 };
 
-/* harmony default export */ const graphGL_ForceAtlas2GPU = (ForceAtlas2GPU);
+/* harmony default export */ var graphGL_ForceAtlas2GPU = (ForceAtlas2GPU);
 ;// ./src/chart/graphGL/forceAtlas2Worker.js
 /****************************
  * Vector2 math functions
@@ -60452,7 +60452,7 @@ function forceAtlas2Worker() {
     }
 }
 
-/* harmony default export */ const graphGL_forceAtlas2Worker = (forceAtlas2Worker);
+/* harmony default export */ var graphGL_forceAtlas2Worker = (forceAtlas2Worker);
 ;// ./src/chart/graphGL/ForceAtlas2.js
 
 
@@ -60734,7 +60734,7 @@ ForceAtlas2.prototype.dispose = function (renderer) {
     this._worker = null;
 };
 
-/* harmony default export */ const graphGL_ForceAtlas2 = (ForceAtlas2);
+/* harmony default export */ var graphGL_ForceAtlas2 = (ForceAtlas2);
 ;// ./src/util/Roam2DControl.js
 
 
@@ -60932,9 +60932,9 @@ var Roam2DControl = core_Base.extend(function () {
     }
 });
 
-/* harmony default export */ const util_Roam2DControl = (Roam2DControl);
+/* harmony default export */ var util_Roam2DControl = (Roam2DControl);
 ;// ./src/util/shader/lines2D.glsl.js
-/* harmony default export */ const lines2D_glsl = ("@export ecgl.lines2D.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec2 position: POSITION;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\nuniform sampler2D positionTexture;\r\n#endif\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\r\n\r\n v_Color = a_Color;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines2D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color * v_Color;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines2D.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec2 position: POSITION;\r\nattribute vec2 normal;\r\nattribute float offset;\r\nattribute vec4 a_Color : COLOR;\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Miter;\r\n\r\nvoid main()\r\n{\r\n vec4 p2 = worldViewProjection * vec4(position + normal, -10.0, 1.0);\r\n gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\r\n\r\n p2.xy /= p2.w;\r\n gl_Position.xy /= gl_Position.w;\r\n\r\n // Get normal on projection space.\r\n vec2 N = normalize(p2.xy - gl_Position.xy);\r\n gl_Position.xy += N * offset / viewport.zw * 2.0;\r\n\r\n gl_Position.xy *= gl_Position.w;\r\n\r\n v_Color = a_Color;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines2D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Miter;\r\n\r\nvoid main()\r\n{\r\n // TODO Fadeout pixels v_Miter > 1\r\n gl_FragColor = color * v_Color;\r\n}\r\n\r\n@end");
+/* harmony default export */ var lines2D_glsl = ("@export ecgl.lines2D.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec2 position: POSITION;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\nuniform sampler2D positionTexture;\r\n#endif\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\r\n\r\n v_Color = a_Color;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines2D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color * v_Color;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines2D.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec2 position: POSITION;\r\nattribute vec2 normal;\r\nattribute float offset;\r\nattribute vec4 a_Color : COLOR;\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Miter;\r\n\r\nvoid main()\r\n{\r\n vec4 p2 = worldViewProjection * vec4(position + normal, -10.0, 1.0);\r\n gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\r\n\r\n p2.xy /= p2.w;\r\n gl_Position.xy /= gl_Position.w;\r\n\r\n // Get normal on projection space.\r\n vec2 N = normalize(p2.xy - gl_Position.xy);\r\n gl_Position.xy += N * offset / viewport.zw * 2.0;\r\n\r\n gl_Position.xy *= gl_Position.w;\r\n\r\n v_Color = a_Color;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines2D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Miter;\r\n\r\nvoid main()\r\n{\r\n // TODO Fadeout pixels v_Miter > 1\r\n gl_FragColor = color * v_Color;\r\n}\r\n\r\n@end");
 
 ;// ./src/chart/graphGL/GraphGLView.js
 
@@ -60960,7 +60960,7 @@ util_graphicGL.Shader.import(lines2D_glsl);
 
 var globalLayoutId = 1;
 
-/* harmony default export */ const GraphGLView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var GraphGLView = (external_echarts_.ChartView.extend({
 
     type: 'graphGL',
 
@@ -61845,7 +61845,7 @@ function graphGL_install_install(registers) {
 ;// ./src/chart/flowGL/FlowGLSeries.js
 
 
-/* harmony default export */ const FlowGLSeries = (external_echarts_.SeriesModel.extend({
+/* harmony default export */ var FlowGLSeries = (external_echarts_.SeriesModel.extend({
 
     type: 'series.flowGL',
 
@@ -61980,9 +61980,9 @@ var Line2D_LinesGeometry = src_Geometry.extend(function () {
     }
 });
 
-/* harmony default export */ const Line2D = (Line2D_LinesGeometry);
+/* harmony default export */ var Line2D = (Line2D_LinesGeometry);
 ;// ./src/chart/flowGL/vectorFieldParticle.glsl.js
-/* harmony default export */ const vectorFieldParticle_glsl = ("@export ecgl.vfParticle.particle.fragment\r\n\r\nuniform sampler2D particleTexture;\r\nuniform sampler2D spawnTexture;\r\nuniform sampler2D velocityTexture;\r\n\r\nuniform float deltaTime;\r\nuniform float elapsedTime;\r\n\r\nuniform float speedScaling : 1.0;\r\n\r\nuniform vec2 textureSize;\r\nuniform vec4 region : [0, 0, 1, 1];\r\nuniform float firstFrameTime;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n// vec2 bilinearFetch(vec2 uv)\r\n// {\r\n// vec2 off = 1.0 / textureSize;\r\n// vec2 sc = (floor(uv * textureSize)) * off;\r\n// vec2 f = fract(uv * textureSize);\r\n// vec2 tl = texture2D(velocityTexture, sc).xy;\r\n// vec2 tr = texture2D(velocityTexture, sc + vec2(off.x, 0)).xy;\r\n// vec2 bl = texture2D(velocityTexture, sc + vec2(0, off.y)).xy;\r\n// vec2 br = texture2D(velocityTexture, sc + off).xy;\r\n// return mix(mix(tl, tr, f.x), mix(bl, br, f.x), f.y);\r\n// }\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, v_Texcoord);\r\n bool spawn = false;\r\n if (p.w <= 0.0) {\r\n p = texture2D(spawnTexture, fract(v_Texcoord + elapsedTime / 10.0));\r\n p.w -= firstFrameTime;\r\n spawn = true;\r\n }\r\n vec2 v = texture2D(velocityTexture, fract(p.xy * region.zw + region.xy)).xy;\r\n // https://blog.mapbox.com/how-i-built-a-wind-map-with-webgl-b63022b5537f\r\n // vec2 v = bilinearFetch(fract(p.xy * region.zw + region.xy));\r\n v = (v - 0.5) * 2.0;\r\n p.z = length(v);\r\n p.xy += v * deltaTime / 10.0 * speedScaling;\r\n p.w -= deltaTime;\r\n\r\n // TODO Not show just spawned particle or crossed particle.\r\n if (spawn || p.xy != fract(p.xy)) {\r\n p.z = 0.0;\r\n }\r\n // Make the particle surface seamless\r\n p.xy = fract(p.xy);\r\n\r\n gl_FragColor = p;\r\n}\r\n@end\r\n\r\n@export ecgl.vfParticle.renderPoints.vertex\r\n\r\n#define PI 3.1415926\r\n\r\nattribute vec2 texcoord : TEXCOORD_0;\r\n\r\nuniform sampler2D particleTexture;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nuniform float size : 1.0;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, texcoord);\r\n\r\n // PENDING If ignore 0 length vector\r\n if (p.w > 0.0 && p.z > 1e-5) {\r\n gl_Position = worldViewProjection * vec4(p.xy * 2.0 - 1.0, 0.0, 1.0);\r\n }\r\n else {\r\n gl_Position = vec4(100000.0, 100000.0, 100000.0, 1.0);\r\n }\r\n\r\n v_Mag = p.z;\r\n v_Uv = p.xy;\r\n\r\n gl_PointSize = size;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderPoints.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform sampler2D gradientTexture;\r\nuniform sampler2D colorTexture;\r\nuniform sampler2D spriteTexture;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n#ifdef SPRITETEXTURE_ENABLED\r\n gl_FragColor *= texture2D(spriteTexture, gl_PointCoord);\r\n if (color.a == 0.0) {\r\n discard;\r\n }\r\n#endif\r\n#ifdef GRADIENTTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(gradientTexture, vec2(v_Mag, 0.5));\r\n#endif\r\n#ifdef COLORTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(colorTexture, v_Uv);\r\n#endif\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderLines.vertex\r\n\r\n#define PI 3.1415926\r\n\r\nattribute vec3 position : POSITION;\r\n\r\nuniform sampler2D particleTexture;\r\nuniform sampler2D prevParticleTexture;\r\n\r\nuniform float size : 1.0;\r\nuniform vec4 vp: VIEWPORT;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\n@import clay.util.rand\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, position.xy);\r\n vec4 p2 = texture2D(prevParticleTexture, position.xy);\r\n\r\n p.xy = p.xy * 2.0 - 1.0;\r\n p2.xy = p2.xy * 2.0 - 1.0;\r\n\r\n // PENDING If ignore 0 length vector\r\n if (p.w > 0.0 && p.z > 1e-5) {\r\n vec2 dir = normalize(p.xy - p2.xy);\r\n vec2 norm = vec2(dir.y / vp.z, -dir.x / vp.w) * sign(position.z) * size;\r\n if (abs(position.z) == 2.0) {\r\n gl_Position = vec4(p.xy + norm, 0.0, 1.0);\r\n v_Uv = p.xy;\r\n v_Mag = p.z;\r\n }\r\n else {\r\n gl_Position = vec4(p2.xy + norm, 0.0, 1.0);\r\n v_Mag = p2.z;\r\n v_Uv = p2.xy;\r\n }\r\n gl_Position = worldViewProjection * gl_Position;\r\n }\r\n else {\r\n gl_Position = vec4(100000.0, 100000.0, 100000.0, 1.0);\r\n }\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderLines.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform sampler2D gradientTexture;\r\nuniform sampler2D colorTexture;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n // gl_FragColor = mix(vec4(1.0,0.0,0.0,1.0), vec4(0.0,0.0,1.0,1.0), 1.0 - v_Mag);\r\n#ifdef GRADIENTTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(gradientTexture, vec2(v_Mag, 0.5));\r\n#endif\r\n#ifdef COLORTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(colorTexture, v_Uv);\r\n#endif\r\n}\r\n\r\n@end\r\n");
+/* harmony default export */ var vectorFieldParticle_glsl = ("@export ecgl.vfParticle.particle.fragment\r\n\r\nuniform sampler2D particleTexture;\r\nuniform sampler2D spawnTexture;\r\nuniform sampler2D velocityTexture;\r\n\r\nuniform float deltaTime;\r\nuniform float elapsedTime;\r\n\r\nuniform float speedScaling : 1.0;\r\n\r\nuniform vec2 textureSize;\r\nuniform vec4 region : [0, 0, 1, 1];\r\nuniform float firstFrameTime;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n// vec2 bilinearFetch(vec2 uv)\r\n// {\r\n// vec2 off = 1.0 / textureSize;\r\n// vec2 sc = (floor(uv * textureSize)) * off;\r\n// vec2 f = fract(uv * textureSize);\r\n// vec2 tl = texture2D(velocityTexture, sc).xy;\r\n// vec2 tr = texture2D(velocityTexture, sc + vec2(off.x, 0)).xy;\r\n// vec2 bl = texture2D(velocityTexture, sc + vec2(0, off.y)).xy;\r\n// vec2 br = texture2D(velocityTexture, sc + off).xy;\r\n// return mix(mix(tl, tr, f.x), mix(bl, br, f.x), f.y);\r\n// }\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, v_Texcoord);\r\n bool spawn = false;\r\n if (p.w <= 0.0) {\r\n p = texture2D(spawnTexture, fract(v_Texcoord + elapsedTime / 10.0));\r\n p.w -= firstFrameTime;\r\n spawn = true;\r\n }\r\n vec2 v = texture2D(velocityTexture, fract(p.xy * region.zw + region.xy)).xy;\r\n // https://blog.mapbox.com/how-i-built-a-wind-map-with-webgl-b63022b5537f\r\n // vec2 v = bilinearFetch(fract(p.xy * region.zw + region.xy));\r\n v = (v - 0.5) * 2.0;\r\n p.z = length(v);\r\n p.xy += v * deltaTime / 10.0 * speedScaling;\r\n p.w -= deltaTime;\r\n\r\n // TODO Not show just spawned particle or crossed particle.\r\n if (spawn || p.xy != fract(p.xy)) {\r\n p.z = 0.0;\r\n }\r\n // Make the particle surface seamless\r\n p.xy = fract(p.xy);\r\n\r\n gl_FragColor = p;\r\n}\r\n@end\r\n\r\n@export ecgl.vfParticle.renderPoints.vertex\r\n\r\n#define PI 3.1415926\r\n\r\nattribute vec2 texcoord : TEXCOORD_0;\r\n\r\nuniform sampler2D particleTexture;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nuniform float size : 1.0;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, texcoord);\r\n\r\n // PENDING If ignore 0 length vector\r\n if (p.w > 0.0 && p.z > 1e-5) {\r\n gl_Position = worldViewProjection * vec4(p.xy * 2.0 - 1.0, 0.0, 1.0);\r\n }\r\n else {\r\n gl_Position = vec4(100000.0, 100000.0, 100000.0, 1.0);\r\n }\r\n\r\n v_Mag = p.z;\r\n v_Uv = p.xy;\r\n\r\n gl_PointSize = size;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderPoints.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform sampler2D gradientTexture;\r\nuniform sampler2D colorTexture;\r\nuniform sampler2D spriteTexture;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n#ifdef SPRITETEXTURE_ENABLED\r\n gl_FragColor *= texture2D(spriteTexture, gl_PointCoord);\r\n if (color.a == 0.0) {\r\n discard;\r\n }\r\n#endif\r\n#ifdef GRADIENTTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(gradientTexture, vec2(v_Mag, 0.5));\r\n#endif\r\n#ifdef COLORTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(colorTexture, v_Uv);\r\n#endif\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderLines.vertex\r\n\r\n#define PI 3.1415926\r\n\r\nattribute vec3 position : POSITION;\r\n\r\nuniform sampler2D particleTexture;\r\nuniform sampler2D prevParticleTexture;\r\n\r\nuniform float size : 1.0;\r\nuniform vec4 vp: VIEWPORT;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\n@import clay.util.rand\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, position.xy);\r\n vec4 p2 = texture2D(prevParticleTexture, position.xy);\r\n\r\n p.xy = p.xy * 2.0 - 1.0;\r\n p2.xy = p2.xy * 2.0 - 1.0;\r\n\r\n // PENDING If ignore 0 length vector\r\n if (p.w > 0.0 && p.z > 1e-5) {\r\n vec2 dir = normalize(p.xy - p2.xy);\r\n vec2 norm = vec2(dir.y / vp.z, -dir.x / vp.w) * sign(position.z) * size;\r\n if (abs(position.z) == 2.0) {\r\n gl_Position = vec4(p.xy + norm, 0.0, 1.0);\r\n v_Uv = p.xy;\r\n v_Mag = p.z;\r\n }\r\n else {\r\n gl_Position = vec4(p2.xy + norm, 0.0, 1.0);\r\n v_Mag = p2.z;\r\n v_Uv = p2.xy;\r\n }\r\n gl_Position = worldViewProjection * gl_Position;\r\n }\r\n else {\r\n gl_Position = vec4(100000.0, 100000.0, 100000.0, 1.0);\r\n }\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderLines.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform sampler2D gradientTexture;\r\nuniform sampler2D colorTexture;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n // gl_FragColor = mix(vec4(1.0,0.0,0.0,1.0), vec4(0.0,0.0,1.0,1.0), 1.0 - v_Mag);\r\n#ifdef GRADIENTTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(gradientTexture, vec2(v_Mag, 0.5));\r\n#endif\r\n#ifdef COLORTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(colorTexture, v_Uv);\r\n#endif\r\n}\r\n\r\n@end\r\n");
 
 ;// ./src/chart/flowGL/VectorFieldParticleSurface.js
 
@@ -62426,7 +62426,7 @@ VectorFieldParticleSurface.prototype = {
     }
 };
 
-/* harmony default export */ const flowGL_VectorFieldParticleSurface = (VectorFieldParticleSurface);
+/* harmony default export */ var flowGL_VectorFieldParticleSurface = (VectorFieldParticleSurface);
 ;// ./src/chart/flowGL/FlowGLView.js
 
 
@@ -62437,7 +62437,7 @@ VectorFieldParticleSurface.prototype = {
 
 
 // TODO 百度地图不是 linear 的
-/* harmony default export */ const FlowGLView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var FlowGLView = (external_echarts_.ChartView.extend({
 
     type: 'flowGL',
 
@@ -63005,7 +63005,7 @@ var LinesGLSeries = external_echarts_.SeriesModel.extend({
     }
 });
 
-/* harmony default export */ const linesGL_LinesGLSeries = (LinesGLSeries);
+/* harmony default export */ var linesGL_LinesGLSeries = (LinesGLSeries);
 ;// ./src/chart/linesGL/LinesGLView.js
 
 
@@ -63016,7 +63016,7 @@ var LinesGLSeries = external_echarts_.SeriesModel.extend({
 
 
 
-/* harmony default export */ const LinesGLView = (external_echarts_.ChartView.extend({
+/* harmony default export */ var LinesGLView = (external_echarts_.ChartView.extend({
 
     type: 'linesGL',
 
@@ -63245,8 +63245,7 @@ function linesGL_install_install(registers) {
 
 
 
-})();
-
+}();
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
