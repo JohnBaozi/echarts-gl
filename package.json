@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "@babel/plugin-transform-arrow-functions": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
     "claygl": "^1.2.1",
     "zrender": "^5.1.1"
   },
