@@ -1,19 +1,4 @@
 {
-  "name": "echarts-gl-fix",
-  "description": "基于echarts-gl的2.0.9版本，修复了this._pointsBuilderList报错、并增加api.getPositionNDC解决dispatchAction('showTip')无效的问题",
-  "version": "2.0.9+build.20250530",
-  "author": "JohnBaozi",
-  "maintainers": [
-    {
-      "name": "Han Zhou"
-    }
-  ],
-  "scripts": {
-    "build": "node build/glsl2js.js && node node_modules/webpack/bin/webpack.js --mode development --devtool source-map && node node_modules/webpack/bin/webpack.js --mode production",
-    "dev": "node node_modules/webpack/bin/webpack.js --mode development -w --devtool eval-cheap-module-source-map",
-    "prepublish": "node build/glsl2js.js && ./node_modules/.bin/babel src -d lib",
-    "release": "yarn prepublish && yarn build"
-  },
   "dependencies": {
     "claygl": "^1.2.1",
     "zrender": "^5.1.1"
@@ -23,15 +8,6 @@
   },
   "main": "dist/echarts-gl.js",
   "module": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JohnBaozi/echarts-gl"
-  },
-  "keywords": [
-    "echarts-gl",
-    "fixShowTip"
-  ],
-  "license": "MIT",
   "sideEffects": [
     "lib/chart/*.js",
     "lib/component/*.js",
@@ -57,5 +33,29 @@
     "maptalks": "^0.38.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
-  }
+  },
+  "name": "echarts-gl-fix",
+  "description": "基于echarts-gl的2.0.9版本，修复了this._pointsBuilderList报错、并增加api.getPositionNDC解决dispatchAction('showTip')无效的问题",
+  "version": "2.0.9+build.20250530",
+  "author": "JohnBaozi",
+  "maintainers": [
+    {
+      "name": "Han Zhou"
+    }
+  ],
+  "scripts": {
+    "build": "node build/glsl2js.js && node node_modules/webpack/bin/webpack.js --mode development --devtool source-map && node node_modules/webpack/bin/webpack.js --mode production",
+    "dev": "node node_modules/webpack/bin/webpack.js --mode development -w --devtool eval-cheap-module-source-map",
+    "prepublish": "node build/glsl2js.js && ./node_modules/.bin/babel src -d lib",
+    "release": "yarn prepublish && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnBaozi/echarts-gl"
+  },
+  "keywords": [
+    "echarts-gl",
+    "fixShowTip"
+  ],
+  "license": "MIT"
 }
