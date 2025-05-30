@@ -54825,14 +54825,14 @@ var PointsMesh = util_graphicGL.Mesh.extend(function () {
             positionNDC = this._positionNDC = new Float32Array(geometry.vertexCount * 2);
         }
         // 参考网址：github仓库怎么同步npm：https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=github仓库怎么同步npm
-        
-        // //// --- new1：通过这里，将positionNDC信息放出来，实现三维坐标转为二维坐标
+
+        // ////// --- new1：通过这里，将positionNDC信息放出来，实现三维坐标转为二维坐标
         // // console.log('PointsMesh.js ==> updateNDCPosition | api', api);
         // api.getPositionNDC = function () {
         //     return [].concat(...positionNDC);
         // }
 
-        //// --- new3：通过这里，并通过index将position2d信息放出来（函数内部已实现三维坐标转为二维坐标）
+        ////// --- new3：通过这里，并通过index将position2d信息放出来（函数内部已实现三维坐标转为二维坐标）
         api.get2dPositionByIndex = function (index) {
             const _tempArr = [].concat(...positionNDC);
             return [ // canvas元素的原点位置(0,0)为其左上角
@@ -55547,8 +55547,8 @@ PointsBuilder.prototype = {
         var data = seriesModel.getData();
         var dataIndex = util_retrieve.queryDataIndex(data, payload);
         ////// --- new2：这里原本代码有问题，会导致报错，致使_positionNDC不更新
-        var _tempArr = this._pointsBuilderList;
         var isHighlight = status === 'highlight';
+        const _tempArr = this._pointsBuilderList;
         if (dataIndex != null) {
             external_echarts_.util.each(util_format.normalizeToArray(dataIndex), function (dataIdx) {
                 for (var i = 0; i < _tempArr.length; i++) {

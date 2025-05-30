@@ -101,8 +101,8 @@ export default echarts.ChartView.extend({
         var data = seriesModel.getData();
         var dataIndex = retrieve.queryDataIndex(data, payload);
         ////// --- new2：这里原本代码有问题，会导致报错，致使_positionNDC不更新
-        var _tempArr = this._pointsBuilderList;
         var isHighlight = status === 'highlight';
+        const _tempArr = this._pointsBuilderList;
         if (dataIndex != null) {
             echarts.util.each(format.normalizeToArray(dataIndex), function (dataIdx) {
                 for (var i = 0; i < _tempArr.length; i++) {
