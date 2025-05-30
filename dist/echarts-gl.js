@@ -54824,6 +54824,7 @@ var PointsMesh = util_graphicGL.Mesh.extend(function () {
         if (!positionNDC || positionNDC.length / 2 !== geometry.vertexCount) {
             positionNDC = this._positionNDC = new Float32Array(geometry.vertexCount * 2);
         }
+        // 参考网址：github仓库怎么同步npm：https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=github仓库怎么同步npm
         ////// --- new1：通过这里，将positionNDC信息放出来，实现三维坐标转为二维坐标
         // console.log('PointsMesh.js ==> updateNDCPosition | api', api);
         api.getPositionNDC = function () {

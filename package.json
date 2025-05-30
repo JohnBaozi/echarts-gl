@@ -1,7 +1,8 @@
 {
-  "name": "echarts-gl",
+  "name": "echarts-gl-fixShowTip",
   "description": "Extension pack of ECharts providing 3D plots and globe visualization",
   "version": "2.0.9",
+  "author": "JohnBaozi",
   "maintainers": [
     {
       "name": "Yi Shen"
@@ -11,7 +12,7 @@
     "build": "node build/glsl2js.js && node node_modules/webpack/bin/webpack.js --mode development --devtool source-map && node node_modules/webpack/bin/webpack.js --mode production",
     "dev": "node node_modules/webpack/bin/webpack.js --mode development -w --devtool eval-cheap-module-source-map",
     "prepublish": "node build/glsl2js.js && ./node_modules/.bin/babel src -d lib",
-    "release": "npm run prepublish && npm run build"
+    "release": "yarn prepublish && yarn build"
   },
   "dependencies": {
     "claygl": "^1.2.1",
@@ -22,7 +23,15 @@
   },
   "main": "dist/echarts-gl.js",
   "module": "index.js",
-  "repository": "https://github.com/ecomfe/echarts-gl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnBaozi/echarts-gl"
+  },
+  "keywords": [
+    "echarts-gl",
+    "fixShowTip"
+  ],
+  "license": "MIT",
   "sideEffects": [
     "lib/chart/*.js",
     "lib/component/*.js",
