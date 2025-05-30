@@ -1,11 +1,11 @@
 {
-  "name": "echarts-gl-fixShowTip",
-  "description": "Extension pack of ECharts providing 3D plots and globe visualization",
-  "version": "2.0.10",
+  "name": "echarts-gl-fix",
+  "description": "基于echarts-gl的2.0.9版本，修复了this._pointsBuilderList报错、并增加api.getPositionNDC解决dispatchAction('showTip')无效的问题",
+  "version": "2.0.9.0",
   "author": "JohnBaozi",
   "maintainers": [
     {
-      "name": "Yi Shen"
+      "name": "Han Zhou"
     }
   ],
   "scripts": {
