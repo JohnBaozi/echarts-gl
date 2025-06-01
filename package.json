@@ -36,7 +36,7 @@
   },
   "name": "echarts-gl-fix",
   "description": "基于echarts-gl的2.0.9版本，修复了this._pointsBuilderList报错、并增加api.getPositionNDC解决dispatchAction('showTip')无效的问题",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "author": "JohnBaozi",
   "maintainers": [
     {
@@ -62,5 +62,9 @@
     "chrome 60",
     "firefox 60",
     "ie 11"
-  ]
+  ],
+  "//": "参考网址：NPM 发布/更新自有库：https://zhuanlan.zhihu.com/p/104942080",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
