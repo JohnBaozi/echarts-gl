@@ -36,7 +36,7 @@
   },
   "name": "echarts-gl-fix",
   "description": "基于echarts-gl的2.0.9版本，修复了this._pointsBuilderList报错、并增加api.getPositionNDC解决dispatchAction('showTip')无效的问题",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "author": "JohnBaozi",
   "maintainers": [
     {
